@@ -482,14 +482,14 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>SECCIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link active"> REGISTRAR</a></li>
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">DEPARTAMENTO</a></li>
+								
 								<!--
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
@@ -648,14 +648,15 @@
 
 						<!-- Layout -->
 						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DEPARTAMENTOS</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
-								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">Fixed navbar</a></li>
-								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">Fixed sidebar - custom scroll</a></li>
-								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">Fixed sidebar - native scroll</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
+								
 								<li class="nav-item"><a href="layout_fixed_hideable_navbar.html" class="nav-link">Hideable navbar</a></li>
 								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
 								<li class="nav-item-divider"></li>
@@ -1286,6 +1287,7 @@
 		                		<a class="list-icons-item" data-action="remove"></a>
 		                	</div>
 	                	</div>
+
 					</div>
 
 					<div class="card-body">
@@ -1294,7 +1296,10 @@
 						<form action="#">
 							<fieldset class="mb-3">
 								<legend class="text-uppercase font-size-sm font-weight-bold">Empleados</legend>
-
+<p>Sexo:
+  <input type="radio" name="hm" value="h" required> Hombre
+  <input type="radio" name="hm" value="m" required> Mujer
+</p>
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">NOMBRE</label>
 									<div class="col-lg-10">
@@ -1350,6 +1355,177 @@
 										<input type="text" class="form-control" maxlength="4" placeholder="MAXIMO 7 CARACTERES">
 									</div>
 								</div>
+<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+								<div class="card-body">
+						<p class="mb-4"></p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">DEPARTAMENTOS</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE DEL DEPARTAMENTO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">N° DE DEPARTAMENTO</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">N° DE PISO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">EDIFICIO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CORREO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+		
+									<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+							</div>
+				<div class="card-body">
+						<p class="mb-4"></p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">VACACIONES</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE DEL EMPLEADO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">COMIENZO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FINALIZAN</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+							</div>
+							<div class="card-body">
+						<p class="mb-4"></p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">EMPREZAS</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE DE LA EMPRESA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">UBICACIÓN</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">RFC</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">PAIS</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">PROPIETARIO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">PROPIETARIO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CORREO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">REPRESENTANTE LEGAL</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">TELEFONO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FRANQUISIA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">IGNAGURACION</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+							</div>
 <!--
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
