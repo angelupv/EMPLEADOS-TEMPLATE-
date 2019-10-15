@@ -23,11 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/editor_summernote.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,39 +481,34 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>SECCIONES</span></a>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link active">EDITAR</a></li>
-								
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
-						
-						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTAR</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link active">LISTAR</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
-							
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES
-							</span></a>
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
 								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
@@ -522,9 +517,9 @@
 						</li>
 						
 							</ul>
-						</li></-->
+						</li>
 						<!-- /forms -->
-						
+
 						<!-- Components -->
 						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
@@ -633,15 +628,14 @@
 
 						<!-- Layout -->
 						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DEPARTAMENTOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
-								
+								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">Fixed navbar</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">Fixed sidebar - custom scroll</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">Fixed sidebar - native scroll</a></li>
 								<li class="nav-item"><a href="layout_fixed_hideable_navbar.html" class="nav-link">Hideable navbar</a></li>
 								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
 								<li class="nav-item-divider"></li>
@@ -949,7 +943,7 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
@@ -1205,7 +1199,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">EMPLEADOS</span></h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1222,8 +1216,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_select2.html" class="breadcrumb-item">Empleados</a>
-							<span class="breadcrumb-item active">Editar</span>
+							<a href="editor_summernote.html" class="breadcrumb-item">Editors</a>
+							<span class="breadcrumb-item active">Summernote</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1260,31 +1254,11 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Select2 selects -->
+				<!-- Summernote editor -->
 				<!--
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						EDITAR
-					</h6>
-					<span class="text-muted d-block"></span>
-				</div>/-->
-<!--
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Empleados</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>/-->
-							</div>
-							<div class="card">
+				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EDITAR</h5>
+						<h5 class="card-title">Summernote editor</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1295,1069 +1269,366 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-4"></p>
+						<div class="summernote">
+							<h2>Apollo 11</h2>
+							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Empleados</legend>
-								<p>Sexo:
-  <input type="radio" name="hm" value="h" required> Hombre
-  <input type="radio" name="hm" value="m" required> Mujer
-</p>
+							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
+							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">APELLIDO</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
+							<h5 class="font-weight-semibold">Technical details</h5>
+							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
+							<ol>
+								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
+								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
+								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
+							</ol>
+							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">EDAD</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
+							<h5 class="font-weight-semibold">Mission crew</h5>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">DIRECCIÓN</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
+							<div class="card card-table table-responsive shadow-0">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Position</th>
+											<th>Astronaut</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Commander</td>
+											<td>Neil A. Armstrong</td>
+										</tr>
+										<tr>
+											<td>Command Module Pilot</td>
+											<td>Michael Collins</td>
+										</tr>
+										<tr>
+											<td>Lunar Module Pilot</td>
+											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CELULAR</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
+							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /summernote editor -->
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE DE USUARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CORREO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="gabriela18@gmail.com" autocomplete="off">
-									</div>
-								</div>
+				<!-- Summernote click to edit -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Click to edit</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">MATRICULA</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="MAXIMO 7 CARACTERES">
-									</div>
-								</div>
-								<div class="modal-footer">
-									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
-								</div>
-										<div class="card-body">
-						<p class="mb-4"></p>
+					<div class="card-body">
+						<div class="form-group">
+							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
+							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
+						</div>
 
+						<div class="click2edit">
+							<h2>Apollo 11</h2>
+							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+
+							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+
+							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+
+							<h5 class="font-weight-semibold">Technical details</h5>
+							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
+							<ol>
+								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
+								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
+								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
+							</ol>
+							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+
+							<h5 class="font-weight-semibold">Mission crew</h5>
+							<div class="card card-table table-responsive shadow-0">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Position</th>
+											<th>Astronaut</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Commander</td>
+											<td>Neil A. Armstrong</td>
+										</tr>
+										<tr>
+											<td>Command Module Pilot</td>
+											<td>Michael Collins</td>
+										</tr>
+										<tr>
+											<td>Lunar Module Pilot</td>
+											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /summernote click to edit -->
+
+
+				<!-- Summernote fixed height -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Custom fixed height</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<div class="summernote-height">
+							<h2>Apollo 11</h2>
+							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+
+							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+
+							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+
+							<h5 class="font-weight-semibold">Technical details</h5>
+							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
+							<ol>
+								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
+								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
+								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
+							</ol>
+							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+
+							<h5 class="font-weight-semibold">Mission crew</h5>
+							<div class="card card-table table-responsive shadow-0">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Position</th>
+											<th>Astronaut</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Commander</td>
+											<td>Neil A. Armstrong</td>
+										</tr>
+										<tr>
+											<td>Command Module Pilot</td>
+											<td>Michael Collins</td>
+										</tr>
+										<tr>
+											<td>Lunar Module Pilot</td>
+											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /summernote fixed height -->
+
+
+				<!-- Summernote air mode -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Summernote air mode</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<div class="summernote-airmode">
+							<h2>Apollo 11</h2>
+							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+
+							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+
+							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+
+							<h5 class="font-weight-semibold">Technical details</h5>
+							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
+							<ol>
+								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
+								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
+								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
+							</ol>
+							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+
+							<h5 class="font-weight-semibold">Mission crew</h5>
+							<div class="card card-table table-responsive shadow-0">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Position</th>
+											<th>Astronaut</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Commander</td>
+											<td>Neil A. Armstrong</td>
+										</tr>
+										<tr>
+											<td>Command Module Pilot</td>
+											<td>Michael Collins</td>
+										</tr>
+										<tr>
+											<td>Lunar Module Pilot</td>
+											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /summernote air mode -->
+	<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">EMPRESAS</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+
+					<div class="card-body">
 						
-							</div>
-<!--
-							<div class="card-body">
-								<div class="form-group">
-									<label></label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Fixed select width</label>
-									<select class="form-control select-fixed-single" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with search</label>
-									<select class="form-control select-search" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with placeholder</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with icons</label>
-									<select data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox">Firefox</option>
-											<option value="safari" data-icon="safari">Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disable items</label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" disabled>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" disabled>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control select" disabled data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select background color</label>
-									<select class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select class="form-control select" data-dropdown-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom color</label>
-									<select class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom border and text color</label>
-									<select class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
+					</div>	
+<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>NOMBRE DE LA EMPRESA</th>
+									<th>UBICACIÓN</th>
+									<th>RFC</th>
+									<th>PAIS</th>
+									<th>PROPIETARIO</th>
+									<th>CORREO</th>
+									<th>REPRESENTANTE LEGAL</th>
+									<th>TELEFONO</th>
+									<th>FRANQUISIA</th>
+									<th>IGNAGURACION</th>
+																		
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>A&E COSMETICS</td>
+									<td>XICOTENCATL, TAMPS.</td>
+									<td>COCA19101331A</td>
+									<td>MEXICO</td>
+									<td>EMMA VERONICA PALACIOS VIERA</td>
+									<td>A&ECOSMETICS@GMAIL.COM</td>
+									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
+									<td>831 102 4044</td>
+									<td>COSMETICOS</td>
+									<td>23/10/18</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>PAPELERIA "3 HERMANOS"</td>
+									<td>CIUDAD MANTE, TAMPS.</td>
+									<td>PAC3191017RC9</td>
+									<td>MEXICO</td>
+									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
+									<td>3HERMANOS@HOTMAIL.COM</td>
+									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
+									<td>832 167 5638</td>
+									<td>MATERIAL ESCOLAR</td>
+									<td>12/05/19</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>"R Y H"</td>
+									<td>XICOTENCATL, TAMPS.</td>
+									<td>ROHA191012292</td>
+									<td>MEXICO</td>
+									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
+									<td>RYH@GMAIL.COM</td>
+									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
+									<td>832 456 7890</td>
+									<td>ABARROTES</td>
+									<td>31/08/15</td>
+								</tr>
+									<tr>
+									<td>4</td>
+									<td>CUIDADO CON EL PERRO</td>
+									<td>CIUDAD VICTORIA, TAMPS</td>
+									<td>CUCP191011839</td>
+									<td>MEXICO</td>
+									<td>SUGEY SALAZAR MALDONADO</td>
+									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
+									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
+									<td>832 487 1023</td>
+									<td>ROPA</td>
+									<td>23/12/16</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>LA COMERCIAL</td>
+									<td>XICOTENCATL, TAMPS.</td>
+									<td>COCA19101331A</td>
+									<td>MEXICO</td>
+									<td>BRYAN ISRAEL LEAL ALONSO</td>
+									<td>LACOMERCIAL@GMAIL.COM</td>
+									<td>HANNIA MELISSA PADRON SERNA</td>
+									<td>832 123 5647</td>
+									<td>ABARROTES</td>
+									<td>23/11/19</td>
+								</tr>
+									
+								</tr>
+							</tbody>
+						</table>
 					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Multiple select</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Fixed width select</label>
-									<select multiple="multiple" class="form-control select-fixed-multiple" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>With placeholder</label>
-									<select data-placeholder="Select a State..." multiple="multiple" class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>With icons</label>
-									<select multiple="multiple" data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox" selected>Firefox</option>
-											<option value="safari" data-icon="safari" selected>Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Drag and drop sorting</label>
-									<select class="form-control select-multiple-drag" multiple="multiple" data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="IL" selected>Illinois</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disable menu items</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" selected>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select multiple="multiple" class="form-control select" disabled data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID" selected>Idaho</option>
-										<option value="WY" selected>Wyoming</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Results background color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select multiple="multiple" class="form-control select" data-dropdown-css-class="bg-slate-700" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom colors</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom border color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /select2 selects -->
-
-
-				<!-- Select2 sizing -->
-				<!--
-				<div class="mb-3 pt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Select sizing
-					</h6>
-					<span class="text-muted d-block">Single and multiple selects sizing</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Single select sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" selected>Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" selected>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /select2 sizing -->
-
-
-				<!-- Select2 advanced -->
-				<!--
-				<div class="mb-3 pt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Advanced usage
-					</h6>
-					<span class="text-muted d-block">More complex configurations</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced single selects</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Minimum input</h6>
-									<p class="mb-2">Select2 supports a minimum input setting which is useful for large remote datasets where short search terms are not very useful. Simply specify a number of input characters using <code>minimumInputLength</code> option:</p>
-
-									<select data-placeholder="Enter 'as'" class="form-control select-minimum" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Customizing how results are matched</h6>
-									<p class="mb-2">Example of how matched results can be customized. Unlike other dropdowns on this page, this one matches options only if the term appears in the beginning of the string as opposed to anywhere.</p>
-
-									<select class="form-control select-matched-customize" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading array data</h6>
-									<p class="mb-2">Select2 provides a way to load the data from a local array. You can provide initial selections with array data by providing the option tag for the selected values, similar to how it would be done for a standard select.</p>
-
-									<div class="mb-3">
-										<p>1. Example below loads array:</p>
-										<select class="form-control select-data-array" data-fouc></select>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Example below loads array with selected option:</p>
-										<select class="form-control select-data-array" data-fouc>
-											<option value="2" selected>duplicate</option>
-										</select>
-									</div>	
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading remote data</h6>
-									<p class="mb-2">Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this example, we can search for repositories using GitHub's API. Example also includes infinite scrolling feature:</p>
-
-									<select class="form-control select-remote-data" data-fouc>
-										<option value="3620194" selected>select2/select2</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in single select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" class="form-control select-search" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Clearing results</h6>
-									<p class="mb-2">Whether or not a clear button is displayed when the select box has a selection. The button, when clicked, resets the value of the select box back to the placeholder.</p>
-
-									<select data-placeholder="Select a state" class="form-control select-clear" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Set and get value:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-value" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue access-set">Set to California</button>
-										<button type="button" class="btn bg-blue access-get">Alert selected value</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-enable" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-create" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-create">Create</button>
-									</div>
-
-									<div>
-										<p>4. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-open" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-close">Close</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced multiple selects</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Tagging support</h6>
-									<p class="mb-2">Select2 can be used to quickly set up fields used for tagging. When tagging is enabled the user can select from pre-existing tags or create a new tag by picking the first choice.</p>
-
-									<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Maximum input length</h6>
-									<p class="mb-2">Select2 can be set a limit on the number of characters that can be entered per tag. You would not be able to enter any input of more than 5 characters long.</p>
-
-									<select class="form-control select-multiple-maximum-length" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Auto tokenization</h6>
-									<p class="mb-2">Select2 supports ability to add choices automatically as the user is typing into the search field. Try typing in the search field below and entering a space or a comma.</p>
-
-									<select class="form-control select-multiple-tokenization" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Limiting the number of selections</h6>
-									<p class="mb-2">Select2 multi-value select boxes can set restrictions regarding the maximum number of options selected. The select below is declared with <code>maximumSelectionLength</code> option.</p>
-
-									<select class="form-control select-multiple-limited" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL">Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY" selected>Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in multiple select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" multiple="multiple" class="form-control select" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Reacting to external value changes:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-value" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue change-to-ca">Select California</button>
-										<button type="button" class="btn bg-blue change-to-ak-co">Select Alaska and Colorado</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-enable" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-multiple-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-multiple-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-create" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-multiple-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-multiple-create">Create</button>
-									</div>
-
-									<div class="mb-3">
-										<p>4. Clear selection:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select states" multiple="multiple" class="form-control select-access-multiple-clear" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-brown-400 access-multiple-clear">Clear selection</button>
-									</div>
-
-									<div>
-										<p>5. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-open" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-multiple-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-multiple-close">Close</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /select2 advanced -->          
-
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
+			<!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -2365,8 +1636,7 @@
 						Footer
 					</button>
 				</div>
-				<BUTTON>GUARDAR</BUTTON>
-<!--
+
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
 						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>

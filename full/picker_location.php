@@ -23,11 +23,17 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/editors/ckeditor/ckeditor.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyAPQXi7ZBZ73SPXi7JfHycSCi30thvQGCg&amp;libraries=places"></script>
+
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/location/typeahead_addresspicker.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/location/autocomplete_addresspicker.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/location/location.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/editor_ckeditor.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/picker_location.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -411,6 +417,7 @@
 								</span>
 							</a>
 						</li>
+						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
@@ -476,67 +483,52 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>/-->
 						<!-- /main -->
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
-								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
-								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
-								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
-								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
-								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
-								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
-								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">EMPLEADOS</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
+							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Basic inputs</a></li>
-								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Advanced inputs</a></li>
-								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Controls</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>Text editors</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">Summernote editor</a></li>
-								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link active">CKEditor</a></li>
-								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">Trumbowyg editor</a></li>
-								<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>Pickers</span></a>
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">Date &amp; time pickers</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">Color pickers</a></li>
-								<li class="nav-item"><a href="picker_location.html" class="nav-link">Location pickers</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="picker_location.html" class="nav-link active">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
-								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
-								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+						
 							</ul>
 						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -638,10 +630,11 @@
 								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /components -->
 
 						<!-- Layout -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -803,10 +796,11 @@
 								</li>
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /layout -->
 
 						<!-- Data visualization -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -907,10 +901,11 @@
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -955,10 +950,10 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
-						<!-- Tables -->
+						<!-- Tables --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
@@ -1024,10 +1019,11 @@
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /tables -->
 
 						<!-- Page kits -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1188,7 +1184,7 @@
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /page kits -->
 
 					</ul>
@@ -1209,7 +1205,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - CKEditor</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Location</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1226,8 +1222,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_ckeditor.html" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">CKEditor</span>
+							<a href="picker_location.html" class="breadcrumb-item">Pickers</a>
+							<span class="breadcrumb-item active">Location</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1257,331 +1253,272 @@
 						</div>
 					</div>
 				</div>
+				
 			</div>
 			<!-- /page header -->
 
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- CKEditor default -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Full featured CKEditor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>
-						<form action="#">
-							<div class="mb-3">
-								<textarea name="editor-full" id="editor-full" rows="4" cols="4">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<table class="table table-bordered" style="width: 100%">
-										<thead>
-											<tr>
-												<th>Position</th>
-												<th>Astronaut</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Commander</td>
-												<td>Neil A. Armstrong</td>
-											</tr>
-											<tr>
-												<td>Command Module Pilot</td>
-												<td>Michael Collins</td>
-											</tr>
-											<tr>
-												<td>Lunar Module Pilot</td>
-												<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-											</tr>
-										</tbody>
-									</table>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </textarea>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Submit form <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
-					</div>
-				</div>
-				<!-- /CKEditor default -->
-
-
-				<!-- CKEditor readonly API -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">CKEditor readonly API</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This sample shows how to use the <code>setReadOnly</code> API to put editor into the read-only state that makes it impossible for users to change the editor contents. In readonly mode all toolbar buttons are disabled, except <code>copy</code>, <code>full screen</code> and <code>source</code> buttons, they are still accessible. Content is selectable, but not editable.</p>
-
-						<p class="mb-3">
-				            <button type="button" class="btn btn-primary" id="readOnlyOn" style="display: none;"><i class="icon-eye2 mr-2"></i> Make editor readonly</button>
-				            <button type="button" class="btn btn-success" id="readOnlyOff" style="display: none;"><i class="icon-eye-blocked2 mr-2"></i> Make it editable</button>
-			            </p>
+	<div class="card-body">
+						<p class="mb-4"></p>
 
 						<form action="#">
-							<div class="mb-3">
-								<textarea name="editor-readonly" id="editor-readonly" rows="4" cols="4">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">VACACIONES</legend>
 
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<table class="table table-bordered" style="width: 100%">
-										<thead>
-											<tr>
-												<th>Position</th>
-												<th>Astronaut</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Commander</td>
-												<td>Neil A. Armstrong</td>
-											</tr>
-											<tr>
-												<td>Command Module Pilot</td>
-												<td>Michael Collins</td>
-											</tr>
-											<tr>
-												<td>Lunar Module Pilot</td>
-												<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-											</tr>
-										</tbody>
-									</table>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </textarea>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Submit form <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
-					</div>
-				</div>
-				<!-- /CKEditor readonly API -->
-
-
-				<!-- Enter key configuration -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">ENTER Key Configuration</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This sample shows how to configure the <code>Enter</code> and <code>Shift+Enter</code> keys to perform actions specified in the enterMode and <code>shiftEnterMode</code> parameters, respectively. You can choose from the following options: <span class="font-weight-semibold">ENTER_P</span> – new <code>&lt;p></code> paragraphs are created; <span class="font-weight-semibold">ENTER_BR</span> – lines are broken with <code>&lt;br></code> elements; <span class="font-weight-semibold">ENTER_DIV</span> – new <code>&lt;div></code> blocks are created.</p>
-
-						<form action="#">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="font-weight-semibold">When <kbd>Enter</kbd> is pressed:</label>
-										<select class="select" id="xEnter">
-											<option selected value="1">Create a new &lt;P&gt; (recommended)</option>
-											<option value="3">Create a new &lt;DIV&gt;</option>
-											<option value="2">Break the line with a &lt;BR&gt;</option>
-										</select>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE DEL EMPLEADO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
 									</div>
 								</div>
 
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="font-weight-semibold">When <kbd>Shift+Enter</kbd> is pressed:</label>
-										<select class="select" id="xShiftEnter">
-											<option value="1">Create a new &lt;P&gt;</option>
-											<option value="3">Create a new &lt;DIV&gt;</option>
-											<option selected value="2">Break the line with a &lt;BR&gt; (recommended)</option>
-										</select>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
 									</div>
 								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">COMIENZO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FINALIZAN</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+									
+							</div>
+				<!-- Basic location picker -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Location picker</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">This plug-in allows to easily find and select a location on the Google map. Along with a single point selection, it allows to choose an area by providing its center and the radius. All the data can be saved to any HTML input element automatically as well as be processed by Javascript (callback support).</p>
+						<div class="map-container locationpicker-default"></div>
+					</div>
+				</div>/-->
+				<!-- /basic location picker -->
+
+
+				<!-- Manipulating from callback -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Manipulating from callback</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">If you need direct access to the actual Google Maps widget you can use map method as follows. This example illustrates how to set zoom pragmatically each time when location has been changed.</p>
+						<div class="map-container locationpicker-manipulate"></div>
+					</div>
+				</div>/-->
+				<!-- /manipulating from callback -->
+
+
+				<!-- Location picker -->
+				<!--
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Binding UI with the widget</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="mb-3">
-								<textarea name="editor-enter" id="editor-enter" rows="4" cols="4">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+							<div class="card-body">
+								<div class="form-group">
+									<label>Location:</label>
+									<input type="text" class="form-control" id="us2-address">
+								</div>
 
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+								<div class="form-group">
+									<label>Radius:</label>
+									<input type="text" class="form-control" id="us2-radius">
+								</div>
 
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+								<div class="form-group">
+									<div id="us2" class="map-container"></div>
+								</div>
 
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+								<div class="form-group">
+									<label>Latitude:</label>
+									<input type="text" class="form-control" id="us2-lat">
+								</div>
 
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<table class="table table-bordered" style="width: 100%">
-										<thead>
-											<tr>
-												<th>Position</th>
-												<th>Astronaut</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Commander</td>
-												<td>Neil A. Armstrong</td>
-											</tr>
-											<tr>
-												<td>Command Module Pilot</td>
-												<td>Michael Collins</td>
-											</tr>
-											<tr>
-												<td>Lunar Module Pilot</td>
-												<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-											</tr>
-										</tbody>
-									</table>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </textarea>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Submit form <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
-					</div>
-				</div>
-				<!-- /enter key configuration -->
-
-
-				<!-- CKEditor inline -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Inline editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This sample shows how to create an inline editor instance of CKEditor. You can also create an inline editor from a textarea element. In this case the <code>textarea</code> will be replaced by a <code>div</code> element with inline editing enabled. To enter edit mode, click on any element inside div or textarea elements, toolbar will be sticked to the top of this element.</p>
-
-						<hr>
-
-						<div id="editor-inline">
-							<h1>Apollo 11</h1>
-							<img alt="Saturn V carrying Apollo 11" class="float-right" style="margin-left: 20px;" src="http://c.cksource.com/a/1/img/sample.jpg">
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<table class="table table-bordered mb-3" style="width: 100%">
-								<thead>
-									<tr>
-										<th>Position</th>
-										<th>Astronaut</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Commander</td>
-										<td>Neil A. Armstrong</td>
-									</tr>
-									<tr>
-										<td>Command Module Pilot</td>
-										<td>Michael Collins</td>
-									</tr>
-									<tr>
-										<td>Lunar Module Pilot</td>
-										<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-									</tr>
-								</tbody>
-							</table>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+								<div class="form-group">
+									<label>Longitude:</label>
+									<input type="text" class="form-control" id="us2-lon">
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /CKEditor inline -->
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Subscribing for events</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="form-group">
+									<label>Location:</label>
+									<input type="text" class="form-control" id="us3-address">
+								</div>
+
+								<div class="form-group">
+									<label>Radius:</label>
+									<input type="text" class="form-control" id="us3-radius">
+								</div>
+
+								<div class="form-group">
+									<div id="us3" class="map-container"></div>
+								</div>
+
+								<div class="form-group">		
+									<label>Latitude:</label>
+									<input type="text" class="form-control" id="us3-lat">
+								</div>
+
+								<div class="form-group">
+									<label>Longitude:</label>
+									<input type="text" class="form-control" id="us3-lon">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /location picker -->
+
+
+				<!-- Address pickers -->
+				<!--
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Typeahead address picker</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="form-group">
+									<label>Address input</label>
+									<input id="address" class="form-control typeahead" type="text" placeholder="Enter an address">
+								</div>
+
+								<div class="form-group">
+									<div id="map" class="map-container mb-2"></div>
+									<span class="form-text text-muted">You can drag and drop the marker to the correct location</span>
+								</div>
+
+								<div class="form-group">
+									<label>Response</label>
+									<pre class="language-javascript" id="response"><code>Address Output</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Autocomplete address picker</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Address:</label>
+											<input id="addresspicker_map" class="form-control" placeholder="Enter an address">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label id="geo_label" for="reverseGeocode">Reverse Geocode after Marker Drag?</label>
+											<select id="reverseGeocode" class="form-control">
+												<option value="false" selected>No</option>
+												<option value="true">Yes</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div id="map2" class="map-container mb-2"></div>
+									<span class="form-text text-muted">You can drag and drop the marker to the correct location</span>
+								</div>
+
+								<div class="form-group">
+									<label>Response:</label>
+									<pre class="language-javascript" id="response2"><code>Address Output</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /address pickers -->
 
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
+			<!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -1601,7 +1538,7 @@
 						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
 					</ul>
 				</div>
-			</div>
+			</div>/-->
 			<!-- /footer -->
 
 		</div>

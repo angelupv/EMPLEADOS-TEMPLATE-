@@ -23,11 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/color/spectrum.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/picker_color.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -477,25 +477,22 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>/-->
-						<!-- /main -->
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<!-- /main -->/-->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>SECCIONES</span></a>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link active">EDITAR</a></li>
-								
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTAR</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
-						
-						
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
 								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
@@ -508,23 +505,22 @@
 								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
-							
+								
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES
-							</span></a>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
 								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link active">REGISTRAR</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
 						
 							</ul>
-						</li></-->
+						</li>
 						<!-- /forms -->
-						
+
 						<!-- Components -->
 						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
@@ -633,15 +629,14 @@
 
 						<!-- Layout -->
 						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DEPARTAMENTOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
-								
+								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">Fixed navbar</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">Fixed sidebar - custom scroll</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">Fixed sidebar - native scroll</a></li>
 								<li class="nav-item"><a href="layout_fixed_hideable_navbar.html" class="nav-link">Hideable navbar</a></li>
 								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
 								<li class="nav-item-divider"></li>
@@ -949,7 +944,7 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
@@ -1202,10 +1197,11 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
+			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">EMPLEADOS</span></h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Color</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1222,8 +1218,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_select2.html" class="breadcrumb-item">Empleados</a>
-							<span class="breadcrumb-item active">Editar</span>
+							<a href="picker_color.html" class="breadcrumb-item">Pickers</a>
+							<span class="breadcrumb-item active">Color</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1259,1105 +1255,548 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- Select2 selects -->
-				<!--
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						EDITAR
-					</h6>
-					<span class="text-muted d-block"></span>
-				</div>/-->
-<!--
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Empleados</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>/-->
-							</div>
-							<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EDITAR</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
+<div class="card-body">
 						<p class="mb-4"></p>
 
 						<form action="#">
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Empleados</legend>
-								<p>Sexo:
-  <input type="radio" name="hm" value="h" required> Hombre
-  <input type="radio" name="hm" value="m" required> Mujer
-</p>
+								<legend class="text-uppercase font-size-sm font-weight-bold">VACACIONES</legend>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<label class="col-form-label col-lg-2">NOMBRE DEL EMPLEADO</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">APELLIDO</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">EDAD</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">DIRECCIÓN</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CELULAR</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE DE USUARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CORREO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="gabriela18@gmail.com" autocomplete="off">
 									</div>
 								</div>
 
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">MATRICULA</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="MAXIMO 7 CARACTERES">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">COMIENZO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FINALIZAN</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class="modal-footer">
 									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
-								</div>
-										<div class="card-body">
-						<p class="mb-4"></p>
-
-						
+								
 							</div>
-<!--
-							<div class="card-body">
-								<div class="form-group">
-									<label></label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Fixed select width</label>
-									<select class="form-control select-fixed-single" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with search</label>
-									<select class="form-control select-search" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with placeholder</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with icons</label>
-									<select data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox">Firefox</option>
-											<option value="safari" data-icon="safari">Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disable items</label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" disabled>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" disabled>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control select" disabled data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select background color</label>
-									<select class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select class="form-control select" data-dropdown-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom color</label>
-									<select class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom border and text color</label>
-									<select class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Multiple select</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Fixed width select</label>
-									<select multiple="multiple" class="form-control select-fixed-multiple" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>With placeholder</label>
-									<select data-placeholder="Select a State..." multiple="multiple" class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>With icons</label>
-									<select multiple="multiple" data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox" selected>Firefox</option>
-											<option value="safari" data-icon="safari" selected>Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Drag and drop sorting</label>
-									<select class="form-control select-multiple-drag" multiple="multiple" data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="IL" selected>Illinois</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disable menu items</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" selected>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select multiple="multiple" class="form-control select" disabled data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID" selected>Idaho</option>
-										<option value="WY" selected>Wyoming</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Results background color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select multiple="multiple" class="form-control select" data-dropdown-css-class="bg-slate-700" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom colors</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom border color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /select2 selects -->
-
-
-				<!-- Select2 sizing -->
+				<!-- Basic options -->
 				<!--
-				<div class="mb-3 pt-2">
+				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Select sizing
+						Basic options
 					</h6>
-					<span class="text-muted d-block">Single and multiple selects sizing</span>
+					<span class="text-muted d-block">Examples with basic picker options</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Single select sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Basic color picker</h6>
+							<p class="mb-3 text-muted">Color picker with default options</p>
 
-							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-basic" value="#20BF7E" data-fouc>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Custom button text</h6>
+							<p class="mb-3 text-muted">Specify custom text for each button</p>
 
-							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" selected>Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" selected>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-basic" data-cancel-text="No way" data-choose-text="Yes baby" value="#20BF7E" data-fouc>
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /select2 sizing -->
 
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Hide picker buttons</h6>
+							<p class="mb-3 text-muted">Display only color picker area</p>
 
-				<!-- Select2 advanced -->
-				<!--
-				<div class="mb-3 pt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Advanced usage
-					</h6>
-					<span class="text-muted d-block">More complex configurations</span>
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-basic" data-show-buttons="false" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced single selects</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Disable color picker</h6>
+							<div class="mb-3 text-muted form-check form-check-switchery form-check-switchery-double">
+								<label class="form-check-label">
+									Disable
+									<input type="checkbox" class="form-input-switchery">
+									Enable
+								</label>
 							</div>
 
-							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Minimum input</h6>
-									<p class="mb-2">Select2 supports a minimum input setting which is useful for large remote datasets where short search terms are not very useful. Simply specify a number of input characters using <code>minimumInputLength</code> option:</p>
-
-									<select data-placeholder="Enter 'as'" class="form-control select-minimum" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Customizing how results are matched</h6>
-									<p class="mb-2">Example of how matched results can be customized. Unlike other dropdowns on this page, this one matches options only if the term appears in the beginning of the string as opposed to anywhere.</p>
-
-									<select class="form-control select-matched-customize" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading array data</h6>
-									<p class="mb-2">Select2 provides a way to load the data from a local array. You can provide initial selections with array data by providing the option tag for the selected values, similar to how it would be done for a standard select.</p>
-
-									<div class="mb-3">
-										<p>1. Example below loads array:</p>
-										<select class="form-control select-data-array" data-fouc></select>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Example below loads array with selected option:</p>
-										<select class="form-control select-data-array" data-fouc>
-											<option value="2" selected>duplicate</option>
-										</select>
-									</div>	
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading remote data</h6>
-									<p class="mb-2">Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this example, we can search for repositories using GitHub's API. Example also includes infinite scrolling feature:</p>
-
-									<select class="form-control select-remote-data" data-fouc>
-										<option value="3620194" selected>select2/select2</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in single select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" class="form-control select-search" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Clearing results</h6>
-									<p class="mb-2">Whether or not a clear button is displayed when the select box has a selection. The button, when clicked, resets the value of the select box back to the placeholder.</p>
-
-									<select data-placeholder="Select a state" class="form-control select-clear" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Set and get value:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-value" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue access-set">Set to California</button>
-										<button type="button" class="btn bg-blue access-get">Alert selected value</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-enable" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-create" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-create">Create</button>
-									</div>
-
-									<div>
-										<p>4. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-open" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-close">Close</button>
-									</div>
-								</div>
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-disabled" value="#20BF7E" data-fouc>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced multiple selects</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Container color</h6>
+							<p class="mb-3 text-muted">Custom container color class</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-container-class" value="#20BF7E" data-fouc>
 							</div>
+						</div>
+					</div>
 
-							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Tagging support</h6>
-									<p class="mb-2">Select2 can be used to quickly set up fields used for tagging. When tagging is enabled the user can select from pre-existing tags or create a new tag by picking the first choice.</p>
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Replacer color</h6>
+							<p class="mb-3 text-muted">Custom replacer color class</p>
 
-									<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Maximum input length</h6>
-									<p class="mb-2">Select2 can be set a limit on the number of characters that can be entered per tag. You would not be able to enter any input of more than 5 characters long.</p>
-
-									<select class="form-control select-multiple-maximum-length" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Auto tokenization</h6>
-									<p class="mb-2">Select2 supports ability to add choices automatically as the user is typing into the search field. Try typing in the search field below and entering a space or a comma.</p>
-
-									<select class="form-control select-multiple-tokenization" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Limiting the number of selections</h6>
-									<p class="mb-2">Select2 multi-value select boxes can set restrictions regarding the maximum number of options selected. The select below is declared with <code>maximumSelectionLength</code> option.</p>
-
-									<select class="form-control select-multiple-limited" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL">Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY" selected>Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in multiple select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" multiple="multiple" class="form-control select" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Reacting to external value changes:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-value" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue change-to-ca">Select California</button>
-										<button type="button" class="btn bg-blue change-to-ak-co">Select Alaska and Colorado</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-enable" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-multiple-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-multiple-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-create" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-multiple-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-multiple-create">Create</button>
-									</div>
-
-									<div class="mb-3">
-										<p>4. Clear selection:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select states" multiple="multiple" class="form-control select-access-multiple-clear" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-brown-400 access-multiple-clear">Clear selection</button>
-									</div>
-
-									<div>
-										<p>5. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-open" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-multiple-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-multiple-close">Close</button>
-									</div>
-								</div>
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-replacer-class" value="#20BF7E" data-fouc>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /select2 advanced -->          
+				<!-- /basic options -->
+
+
+				<!-- Picker additions -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Picker additions
+					</h6>
+					<span class="text-muted d-block">Show additional picker elements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
+							<p class="mb-3 text-muted">Show color that was initially set</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-initial" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Show input field</h6>
+							<p class="mb-3 text-muted">Add input for free form typing</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Show alpha channel</h6>
+							<p class="mb-3 text-muted">Allow alpha transparency selection</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-alpha" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Clear selection</h6>
+							<p class="mb-3 text-muted">Reset current color selection</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-clear" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Input and initial</h6>
+							<p class="mb-3 text-muted">Combining different elements</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-input-initial" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Full leatured</h6>
+							<p class="mb-3 text-muted">Full featured picker example</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-full" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /picker additions -->
+
+
+				<!-- Color palettes -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Color palettes
+					</h6>
+					<span class="text-muted d-block">Add a color palette to the picker</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Show color palette</h6>
+							<p class="mb-3 text-muted">Display recently used colors</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Show palette only</h6>
+							<p class="mb-3 text-muted">Show palette and nothing else</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-only" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Toggle palette only</h6>
+							<p class="mb-3 text-muted">Toggle picker next to the palette</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-toggle" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Selection palette</h6>
+							<p class="mb-3 text-muted">Keep track of selected colors</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-selection" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Limit selections</h6>
+							<p class="mb-3 text-muted">Palette colors are limited to 3</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-limit" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Hide after select</h6>
+							<p class="mb-3 text-muted">Hide picker after color select</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-hide" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /color palettes -->
+
+
+				<!-- Color formats -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Color formats
+					</h6>
+					<span class="text-muted d-block">Display different color formats</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HEX color format</h6>
+							<p class="mb-3 text-muted">Display colors in HEX format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HEX3 color format</h6>
+							<p class="mb-3 text-muted">Display colors in HEX3 format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex3" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HSL color format</h6>
+							<p class="mb-3 text-muted">Display colors in HSL format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="HSL" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">RGB color format</h6>
+							<p class="mb-3 text-muted">Display colors in RGB format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="rgb" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HTML color names</h6>
+							<p class="mb-3 text-muted">HTML color names support</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="orangered" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">Mix color formats</h6>
+							<p class="mb-3 text-muted">Change formats in the input</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /color formats -->
+
+
+				<!-- Picker events -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Picker events
+					</h6>
+					<span class="text-muted d-block">Basic usage of the picker events</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Change event</h6>
+							<p class="mb-3 text-muted">Called as the input changes</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-change" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="change-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Move event</h6>
+							<p class="mb-3 text-muted">Called as the user moves around</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-move" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="move-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Hide event</h6>
+							<p class="mb-3 text-muted">Called after the picker is hidden</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-hide" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="hide-result"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Show event</h6>
+							<p class="mb-3 text-muted">Called after the picker is opened</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-show" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="show-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Dragstart event</h6>
+							<p class="mb-3 text-muted">Called as the drag event starts</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-dragstart" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="dragstart-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Dragstop event</h6>
+							<p class="mb-3 text-muted">Called as the drag event stops</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-dragstop" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="dragstop-result"></div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /picker events -->
+
+
+				<!-- Flat pickers -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Flat pickers
+					</h6>
+					<span class="text-muted d-block">Display a full size color picker</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Basic flat picker</h6>
+							<p class="mb-3 text-muted">Basic full size color picker</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Flat color palette</h6>
+							<p class="mb-3 text-muted">Display both palette and picker</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-palette" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Set picker color</h6>
+							<p class="mb-3 text-muted">Custom flat color picker color</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-custom" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Show input field</h6>
+							<p class="mb-3 text-muted">Add input for free form typing</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-input" data-preferred-format="hex" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Full featured</h6>
+							<p class="mb-3 text-muted">Full featured flat picker</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-full" data-preferred-format="hex" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
+							<p class="mb-3 text-muted">Show color that was initially set</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-initial" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /flat pickers -->
 
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
+			<!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -2365,8 +1804,7 @@
 						Footer
 					</button>
 				</div>
-				<BUTTON>GUARDAR</BUTTON>
-<!--
+
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
 						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
@@ -2378,7 +1816,7 @@
 						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
 					</ul>
 				</div>
-			</div>/-->
+			</div>
 			<!-- /footer -->
 
 		</div>

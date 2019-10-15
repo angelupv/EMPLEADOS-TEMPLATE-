@@ -23,17 +23,17 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="https://maps.google.com/maps/api/js?key=AIzaSyAPQXi7ZBZ73SPXi7JfHycSCi30thvQGCg&amp;libraries=places"></script>
-
-	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/location/typeahead_addresspicker.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/location/autocomplete_addresspicker.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/location/location.js"></script>
-	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script src="../../../../global_assets/js/plugins/notifications/jgrowl.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/picker_location.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/picker_date.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -417,6 +417,7 @@
 								</span>
 							</a>
 						</li>
+						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
@@ -482,67 +483,52 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>/-->
 						<!-- /main -->
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
-								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
-								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
-								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
-								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
-								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
-								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
-								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
+							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Basic inputs</a></li>
-								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Advanced inputs</a></li>
-								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Controls</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>Text editors</span></a>
+							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">Summernote editor</a></li>
-								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">CKEditor</a></li>
-								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">Trumbowyg editor</a></li>
-								<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRADO</a></li>
+								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>Pickers</span></a>
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">Date &amp; time pickers</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">Color pickers</a></li>
-								<li class="nav-item"><a href="picker_location.html" class="nav-link active">Location pickers</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link active">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
-								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
-								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+						
 							</ul>
 						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -644,10 +630,11 @@
 								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /components -->
 
 						<!-- Layout -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -809,10 +796,11 @@
 								</li>
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /layout -->
 
 						<!-- Data visualization -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -913,10 +901,11 @@
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -961,10 +950,11 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
@@ -1030,10 +1020,11 @@
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /tables -->
 
 						<!-- Page kits -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1194,7 +1185,7 @@
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /page kits -->
 
 					</ul>
@@ -1212,10 +1203,11 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
+			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Location</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Date &amp; Time</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1232,8 +1224,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="picker_location.html" class="breadcrumb-item">Pickers</a>
-							<span class="breadcrumb-item active">Location</span>
+							<a href="picker_date.html" class="breadcrumb-item">Pickers</a>
+							<span class="breadcrumb-item active">Date &amp; time</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1263,6 +1255,62 @@
 						</div>
 					</div>
 				</div>
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">VACACIONES</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						
+					</div>	
+<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>NOMBRE DEL EMPLEADO</th>
+									<th>MATRICULA</th>
+									<th>COMIENZO</th>
+									<th>FINALIZAN</th>
+																		
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Yulissa Daniela	Martinez Cidrian</td>
+									<td>1938462</td>
+									<td>23/10/19</td>
+									<td>23/11/19</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Emma Veronica Palacios Viera</td>
+									<td>1992195</td>
+									<td>18/12/19</td>
+									<td>01/01/20</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Angela Lizbeth Aguilar Martinez</td>
+									<td>2177018</td>
+									<td>16/01/20</td>
+									<td>31/01/20</td>
+								</tr>
+
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 			<!-- /page header -->
 
@@ -1270,10 +1318,11 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic location picker -->
+				<!-- Daterange picker -->
+				<!--
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Location picker</h5>
+						<h5 class="card-title">Daterange picker</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1284,17 +1333,129 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-3">This plug-in allows to easily find and select a location on the Google map. Along with a single point selection, it allows to choose an area by providing its center and the radius. All the data can be saved to any HTML input element automatically as well as be processed by Javascript (callback support).</p>
-						<div class="map-container locationpicker-default"></div>
+						<p class="mb-3">This date range picker component for <code>Bootstrap</code> creates a dropdown menu from which a user can select a range of dates. If invoked with no options, it will present two calendars to choose a start and end date from. Optionally, you can provide a list of date ranges the user can select from instead of choosing dates from the calendars.</p>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Basic date range picker:</label>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+										<input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015"> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Display week numbers:</label>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+										<input type="text" class="form-control daterange-weeknumbers" value="03/18/2013 - 03/23/2013"> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Display time picker:</label>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+										<input type="text" class="form-control daterange-time" value="03/18/2013 - 03/23/2013"> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Basic single date picker:</label>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+										<input type="text" class="form-control daterange-single" value="03/18/2013">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Simple text field attachment:</label>
+									<input type="text" class="form-control daterange-basic" value="03/18/2013 - 03/23/2013"> 
+								</div>
+
+								<div class="form-group">
+									<label>Button class options:</label>
+									<input type="text" class="form-control daterange-buttons" value="03/18/2013 - 03/23/2013"> 
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Show calendars on left:</label>
+									<div class="input-group">
+										<input type="text" class="form-control daterange-left" value="03/18/2013 - 03/23/2013"> 
+										<span class="input-group-append">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Display date dropdowns:</label>
+									<div class="input-group">
+										<input type="text" class="form-control daterange-datemenu" value="03/18/2013 - 03/23/2013"> 
+										<span class="input-group-append">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>10 minute increments:</label>
+									<div class="input-group">
+										<input type="text" class="form-control daterange-increments" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM">
+										<span class="input-group-append">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Localization (ru):</label>
+									<div class="input-group">
+										<input type="text" class="form-control daterange-locale" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM">
+										<span class="input-group-append">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block">Pre-defined ranges &amp; callback:</label>
+									<button type="button" class="btn btn-light daterange-predefined">
+										<i class="icon-calendar22 mr-2"></i>
+										<span></span>
+									</button>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block">Date picker inside button:</label>
+									<button type="button" class="btn btn-danger daterange-ranges">
+										<i class="icon-calendar22 mr-2"></i>
+										<span></span>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<!-- /basic location picker -->
+				</div>/-->
+				<!-- /daterange picker -->
 
 
-				<!-- Manipulating from callback -->
+				<!-- Pickadate picker -->
+				<!--
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Manipulating from callback</h5>
+						<h5 class="card-title">Pick-a-Date picker</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1305,187 +1466,467 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-3">If you need direct access to the actual Google Maps widget you can use map method as follows. This example illustrates how to set zoom pragmatically each time when location has been changed.</p>
-						<div class="map-container locationpicker-manipulate"></div>
-					</div>
-				</div>
-				<!-- /manipulating from callback -->
+						<p class="mb-3">Pickadate.js is a very powerful, mobile-friendly, responsive, and lightweight jQuery date &amp; time input picker. The basic setup requires targetting an input element and invoking the picker. Basically this plugin includes 2 main parts: date picker and time picker. Time picker examples demonstrated below.</p>
 
-
-				<!-- Location picker -->
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Binding UI with the widget</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Location:</label>
-									<input type="text" class="form-control" id="us2-address">
-								</div>
-
-								<div class="form-group">
-									<label>Radius:</label>
-									<input type="text" class="form-control" id="us2-radius">
-								</div>
-
-								<div class="form-group">
-									<div id="us2" class="map-container"></div>
-								</div>
-
-								<div class="form-group">
-									<label>Latitude:</label>
-									<input type="text" class="form-control" id="us2-lat">
-								</div>
-
-								<div class="form-group">
-									<label>Longitude:</label>
-									<input type="text" class="form-control" id="us2-lon">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Subscribing for events</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Location:</label>
-									<input type="text" class="form-control" id="us3-address">
-								</div>
-
-								<div class="form-group">
-									<label>Radius:</label>
-									<input type="text" class="form-control" id="us3-radius">
-								</div>
-
-								<div class="form-group">
-									<div id="us3" class="map-container"></div>
-								</div>
-
-								<div class="form-group">		
-									<label>Latitude:</label>
-									<input type="text" class="form-control" id="us3-lat">
-								</div>
-
-								<div class="form-group">
-									<label>Longitude:</label>
-									<input type="text" class="form-control" id="us3-lon">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /location picker -->
-
-
-				<!-- Address pickers -->
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Typeahead address picker</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Address input</label>
-									<input id="address" class="form-control typeahead" type="text" placeholder="Enter an address">
-								</div>
-
-								<div class="form-group">
-									<div id="map" class="map-container mb-2"></div>
-									<span class="form-text text-muted">You can drag and drop the marker to the correct location</span>
-								</div>
-
-								<div class="form-group">
-									<label>Response</label>
-									<pre class="language-javascript" id="response"><code>Address Output</code></pre>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Autocomplete address picker</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Address:</label>
-											<input id="addresspicker_map" class="form-control" placeholder="Enter an address">
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label id="geo_label" for="reverseGeocode">Reverse Geocode after Marker Drag?</label>
-											<select id="reverseGeocode" class="form-control">
-												<option value="false" selected>No</option>
-												<option value="true">Yes</option>
-											</select>
-										</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Basic options</h6>
+									<p>The basic setup requires targetting an input element and invoking the picker.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate" placeholder="Try me&hellip;">
 									</div>
 								</div>
 
-								<div class="form-group">
-									<div id="map2" class="map-container mb-2"></div>
-									<span class="form-text text-muted">You can drag and drop the marker to the correct location</span>
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Strings</h6>
+									<p>Change the month and weekday labels as you find suitable.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-strings" placeholder="Try me&hellip;">
+									</div>
 								</div>
 
-								<div class="form-group">
-									<label>Response:</label>
-									<pre class="language-javascript" id="response2"><code>Address Output</code></pre>
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Buttons</h6>
+									<p>Change the text or hide a button completely by passing a false-y value.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-buttons" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Formats</h6>
+									<p>Display a human-friendly format and use an alternate one to submit to the server.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-format" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Year selector</h6>
+									<p>You can also specify the number of years to show in the dropdown using an even integer.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-year" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">First weekday</h6>
+									<p>The first day of the week can be set to either Sunday or Monday.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-weekday" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Date limits</h6>
+									<p>Set the minimum and maximum selectable dates on the picker.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-limits" placeholder="Try me&hellip;">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Accessibility labels</h6>
+									<p>Change the <code>title</code> attributes to several elements within the picker</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-accessibility" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Editable input</h6>
+									<p>By default, typing into the input is disabled by giving it a <code>readOnly</code> attribute.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-editable" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Dropdown selectors</h6>
+									<p>Display <code>select</code> menus to pick the month and year.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-selectors" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Translations</h6>
+									<p>The picker supports translations for 39 languages, available out of the box.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-translated" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Disable ranges</h6>
+									<p>Enable dates that fall within a range of disabled dates by adding the <code>inverted</code> parameter.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-disable-range" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Events</h6>
+									<p>Fire off events as the user interacts with the picker.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-events" placeholder="Open your console and try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Disable dates</h6>
+									<p>Disable a specific or arbitrary set of dates selectable on the picker.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+										</span>
+										<input type="text" class="form-control pickadate-disable" placeholder="Try me&hellip;">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /address pickers -->
+				</div>/-->
+				<!-- /pickadate picker -->
+
+
+				<!-- Pickatime picker -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Pick-a-Time time picker</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Basic options</h6>
+									<p>The basic setup requires targetting an <code>input</code> element and invoking the picke.r</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Clear button</h6>
+									<p>Change the text or hide the button completely by passing a <code>false-y</code> value.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-clear" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Timepicker formats</h6>
+									<p>Display a human-friendly label and <code>input</code> format and use an alternate one to submit.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-format" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Send the hidden value only</h6>
+									<p>Sometimes the value that needs to be sent to the server is just the hidden value – and not the visible one.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-hidden" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Time limits</h6>
+									<p>Set the minimum and maximum selectable times on the picker.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-limits" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Using integers as hours</h6>
+									<p>Set the minimum and maximum selectable times on the picker using integers as hours.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-limits-integers" placeholder="Try me&hellip;">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Disable times</h6>
+									<p>Disable a specific or arbitrary set of times selectable on the picker</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-disabled" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Disabling ranges</h6>
+									<p>Enable times that fall within a range of disabled times by adding the <code>inverted</code> parameter.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-range" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Editable input</h6>
+									<p>By default, text input has a <code>readOnly</code> attribute to hide virtual keyboards on touch devices.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-editable" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Timepicker events</h6>
+									<p>Fire off events as the user interacts with the picker</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-events" placeholder="Open your console and try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Disabling all with exeptions</h6>
+									<p>Enable only a specific or arbitrary set of times by setting true as the first item in the collection.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-disableall" placeholder="Try me&hellip;">
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Timepicker intervals</h6>
+									<p>Choose the minutes interval between each time in the list.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-alarm"></i></span>
+										</span>
+										<input type="text" class="form-control pickatime-intervals" placeholder="Try me&hellip;">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /pickadate picker -->
+
+
+				<!-- Anytime picker -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Anytime pickers</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">The <code>Any+Time™</code> JavaScript Library includes a highly-customizable, jQuery-compatible datepicker/ timepicker (calendar/ clock widget) and a powerful Date/String parse/format utility. Anytime allows you to create a date/time picker with advanced features and options not found in other calendar/clock widgets, also to format dates and times in different ways.</p>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Basic usage</h6>
+									<p>Basic text field specifies that the week begins with Monday.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar3"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-date" value="Sunday, July 30th in the Year 1967 CE">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Month and day</h6>
+									<p>Month and day only picker format</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar3"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-month-day" value="4th of June">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Time picker</h6>
+									<p>Current example displays hours and minutes only. Seconds can be added via plugin <code>options</code>.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-watch2"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-time" value="12:34">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Display hours only</h6>
+									<p>Current example demonstrates simple time picker with hours only in <code>AM/PM</code> format.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-watch2"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-time-hours" value="9 PM">
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Date and time pickers</h6>
+									<p>The first field specifies that the week begins with Monday. The second field demonstrates a time picker.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar3"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-both" value="June 4th 08:47">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Custom display format</h6>
+									<p>Custom display format can be specified via plugin <code>options</code></p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar3"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-weekday" value="Wednesday, 4th of June, 2014">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Numeric date</h6>
+									<p>Current example demonstrates custom <code>DD/MM/YYYY</code> date format</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar3"></i></span>
+										</span>
+										<input type="text" class="form-control" id="anytime-month-numeric" value="04/06/2014">
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Date range</h6>
+									<p>In the following example, <code>AnyTime.Converter</code> and jQuery work together to provide date-range selection. The value for the second ("Finish") field must be at least one day after the date in the first ("Start") field, but no more than 90 days later.</p>
+									<div class="row">
+										<div class="col-md-6">
+											<p><input type="text" class="form-control" id="rangeDemoStart" placeholder="Start date"></p>
+										</div>
+
+										<div class="col-md-6">
+											<p><input type="text" class="form-control" id="rangeDemoFinish" placeholder="Finish date" disabled></p>
+										</div>
+									</div>
+
+									<input type="button" id="rangeDemoToday" class="btn btn-primary" value="today">
+									<input type="button" id="rangeDemoClear" class="btn btn-light" value="clear">
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">On-Demand Picker</h6>
+									<p>The following example shows how to create a field that initially does not have a picker, followed by a button that creates a picker for the field. This would be useful if you want to allow manual entry into the field, but it does not prevent the user from entering a value in the wrong format.</p>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<button type="button" class="btn btn-light btn-icon" id="ButtonCreationDemoButton"><i class="icon-calendar3"></i></button>
+										</span>
+										<input type="text" class="form-control" id="ButtonCreationDemoInput" placeholder="Select a date">
+									</div>
+									<span class="form-text text-muted">Format must be YYYY-MM-DD HH:MM:SS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /anytime picker -->
 
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
+			<!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -1505,7 +1946,7 @@
 						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
 					</ul>
 				</div>
-			</div>
+			</div>/-->
 			<!-- /footer -->
 
 		</div>

@@ -23,11 +23,16 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/price_format.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/editors/ckeditor/ckeditor.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/alpaca_advanced.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,24 +486,31 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>SECCIONES</span></a>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link active">EDITAR</a></li>
-								
-								
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
+								<!--
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
+								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
+								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
+								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
+								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
+								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
+								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
+								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
 							</ul>
 						</li>
-						
-						
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
 								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link active">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
@@ -508,25 +520,31 @@
 								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
-							
+								<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES
-							</span></a>
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
 								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						
-							</ul>
-						</li></-->
-						<!-- /forms -->
-						
-						<!-- Components -->
 						<!--
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
+								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>/-->
+							</ul>
+						</li>
+						<!-- /forms -->
+
+						<!-- Components --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -633,15 +651,14 @@
 
 						<!-- Layout -->
 						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DEPARTAMENTOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
-								
+								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">Fixed navbar</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">Fixed sidebar - custom scroll</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">Fixed sidebar - native scroll</a></li>
 								<li class="nav-item"><a href="layout_fixed_hideable_navbar.html" class="nav-link">Hideable navbar</a></li>
 								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
 								<li class="nav-item-divider"></li>
@@ -949,7 +966,7 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
@@ -1019,7 +1036,7 @@
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
-						</li>/-->
+						</li>
 						<!-- /tables -->
 
 						<!-- Page kits -->
@@ -1205,7 +1222,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">EMPLEADOS</span></h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alpaca</span> - Advanced Inputs</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1222,8 +1239,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_select2.html" class="breadcrumb-item">Empleados</a>
-							<span class="breadcrumb-item active">Editar</span>
+							<a href="alpaca_advanced.html" class="breadcrumb-item">Alpaca</a>
+							<span class="breadcrumb-item active">Advanced inputs</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1239,7 +1256,7 @@
 							<div class="breadcrumb-elements-item dropdown p-0">
 								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
 									<i class="icon-gear mr-2"></i>
-									Settings
+				1					Settings
 								</a>
 
 								<div class="dropdown-menu dropdown-menu-right">
@@ -1258,90 +1275,36 @@
 
 
 			<!-- Content area -->
-			<div class="content">
-
-				<!-- Select2 selects -->
-				<!--
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						EDITAR
-					</h6>
-					<span class="text-muted d-block"></span>
-				</div>/-->
-<!--
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Empleados</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>/-->
-							</div>
-							<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EDITAR</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
+			<div class="card-body">
 						<p class="mb-4"></p>
 
 						<form action="#">
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Empleados</legend>
-								<p>Sexo:
-  <input type="radio" name="hm" value="h" required> Hombre
-  <input type="radio" name="hm" value="m" required> Mujer
-</p>
+								<legend class="text-uppercase font-size-sm font-weight-bold">DEPARTAMENTOS</legend>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<label class="col-form-label col-lg-2">NOMBRE DEL DEPARTAMENTO</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">APELLIDO</label>
+									<label class="col-form-label col-lg-2">N° DE DEPARTAMENTO</label>
 									<div class="col-lg-10">
 										<input type="password" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">EDAD</label>
+									<label class="col-form-label col-lg-2">N° DE PISO</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">DIRECCIÓN</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CELULAR</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE DE USUARIO</label>
+									<label class="col-form-label col-lg-2">EDIFICIO</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
@@ -1350,223 +1313,123 @@
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">CORREO</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="gabriela18@gmail.com" autocomplete="off">
+										<input type="text" class="form-control">
 									</div>
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">MATRICULA</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="MAXIMO 7 CARACTERES">
-									</div>
-								</div>
-								<div class="modal-footer">
+		
+									<div class="modal-footer">
 									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
-								</div>
-										<div class="card-body">
-						<p class="mb-4"></p>
+								
+							</div>
+							</div>
+				<!-- Option trees -->
+				<!--
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Option trees
+					</h6>
+					<span class="text-muted d-block">Dependent option trees</span>
+				</div>
 
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Option tree field</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 						
-							</div>
-<!--
 							<div class="card-body">
-								<div class="form-group">
-									<label></label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Fixed select width</label>
-									<select class="form-control select-fixed-single" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with search</label>
-									<select class="form-control select-search" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with placeholder</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select with icons</label>
-									<select data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox">Firefox</option>
-											<option value="safari" data-icon="safari">Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disable items</label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" disabled>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" disabled>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control select" disabled data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Select background color</label>
-									<select class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select class="form-control select" data-dropdown-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom color</label>
-									<select class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom border and text color</label>
-									<select class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+								<p class="mb-3">This example asks a user what number they would like on the sports jersey. They're always able to just type in a value. Here, we provide a sequence of dropdowns to let them select a sport, team and athlete. The jersey number is then automatically filled in.</p>
+								<div id="alpaca-option-tree"></div>
+								<a href="#alpaca-option-tree-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-option-tree-source">
+									<pre class="language-javascript"><code>// Option tree field
+$('#alpaca-option-tree').alpaca({
+    schema: {
+        type: 'number',
+        title: 'What number would like for your sports jersey?'
+    },
+    options: {
+        type: 'optiontree',
+        tree: {
+            selectors: {
+                sport: {
+                    schema: {
+                        type: 'string'
+                    },
+                    options: {
+                        type: 'select',
+                        noneLabel: 'Pick a Sport...'
+                    }
+                },
+                team: {
+                    schema: {
+                        type: 'string'
+                    },
+                    options: {
+                        type: 'select',
+                        noneLabel: 'Pick a Team...'
+                    }
+                },
+                player: {
+                    schema: {
+                        type: 'string'
+                    },
+                    options: {
+                        type: 'select',
+                        noneLabel: 'Pick a Player...'
+                    }
+                }
+            },
+            order: ['sport', 'team', 'player'],
+            data: [{
+                value: 23,
+                attributes: {
+                    sport: 'Basketball',
+                    team: 'Chicago Bulls',
+                    player: 'Michael Jordan'
+                }
+            }, {
+                value: 33,
+                attributes: {
+                    sport: 'Basketball',
+                    team: 'Chicago Bulls',
+                    player: 'Scotty Pippen'
+                }
+            }, {
+                value: 4,
+                attributes: {
+                    sport: 'Football',
+                    team: 'Green Bay Packers',
+                    player: 'Brett Favre'
+                }
+            }, {
+                value: 19,
+                attributes: {
+                    sport: 'Baseball',
+                    team: 'Milwaukee Brewers',
+                    player: 'Robin Yount'
+                }
+            }, {
+                value: 99,
+                attributes: {
+                    sport: 'Hockey',
+                    player: 'Wayne Gretzky'
+                }
+            }],
+            horizontal: true
+        },
+        focus: false
+    }
+});
+</code></pre>
 								</div>
 							</div>
 						</div>
@@ -1575,7 +1438,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select</h5>
+								<h6 class="card-title">Using connector</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1584,223 +1447,72 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-								<div class="form-group">
-									<label>Multiple select</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Fixed width select</label>
-									<select multiple="multiple" class="form-control select-fixed-multiple" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>With placeholder</label>
-									<select data-placeholder="Select a State..." multiple="multiple" class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>With icons</label>
-									<select multiple="multiple" data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox" selected>Firefox</option>
-											<option value="safari" data-icon="safari" selected>Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Drag and drop sorting</label>
-									<select class="form-control select-multiple-drag" multiple="multiple" data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="IL" selected>Illinois</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disable menu items</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" selected>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select multiple="multiple" class="form-control select" disabled data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID" selected>Idaho</option>
-										<option value="WY" selected>Wyoming</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Results background color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select multiple="multiple" class="form-control select" data-dropdown-css-class="bg-slate-700" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom colors</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Custom border color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+								<p class="mb-3">The following example produces the same form, but uses a connector to load the schema and options. The options JSON is loaded and merged with some inline options that provide to override a submit click handler.</p>
+								<div id="alpaca-option-tree-connector"></div>
+								<a href="#alpaca-option-tree-connector-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-option-tree-connector-source">
+									<pre class="language-javascript"><code>// Using connector
+$('#alpaca-option-tree-connector').alpaca({
+    schemaSource: '../../../../global_assets/demo_data/alpaca/optiontree-custom-schema.json',
+    optionsSource: '../../../../global_assets/demo_data/alpaca/optiontree-custom-options.json',
+    options: {
+        focus: false
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /select2 selects -->
+				<!-- /opton trees -->
 
 
-				<!-- Select2 sizing -->
+				<!-- Full CKEditor -->
 				<!--
-				<div class="mb-3 pt-2">
+				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Select sizing
+						CKEditor field
 					</h6>
-					<span class="text-muted d-block">Single and multiple selects sizing</span>
+					<span class="text-muted d-block">Render CKEditor editor</span>
+				</div>
+
+				<div class="card mb-4">
+					<div class="card-header header-elements-inline">
+						<h6 class="card-title">Full featured editor</h6>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+				
+					<div class="card-body">
+						<p class="mb-3">The <code>ckeditor</code> field. The CK Editor field renders the CK editor control that allows users to visually work with HTML and save the results back into a text property. This is a full example of the CK Editor at work. The point here is to show how it looks in full. In the examples that follow, we'll trim this down. Note - CKeditor must be included in your page ahead of the control loading in order for this to work properly.</p>
+
+						<div id="alpaca-ckeditor-full"></div>
+					</div>
+				</div>/-->
+				<!-- /full CKEditor -->
+
+
+				<!-- Input types -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Input types
+					</h6>
+					<span class="text-muted d-block">Supported input types</span>
 				</div>
 
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Single select sizing</h5>
+								<h6 class="card-title">Lowercase</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1809,63 +1521,22 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+								<p class="mb-3">The following example demonstrates how Alpaca library can format text inside input field. To apply <code>lowercase</code> text style, set <code>format</code> option to <code>lowercase</code> inside <code>schema</code> parameter.</p>
+								<div id="alpaca-lowercase"></div>
+								<a href="#alpaca-lowercase-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-lowercase-source">
+									<pre class="language-javascript"><code>// Lowercase
+$('#alpaca-lowercase').alpaca({
+    data: 'Ice cream is wonderful.',
+    schema: {
+        format: 'lowercase'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
@@ -1874,7 +1545,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select sizing</h5>
+								<h6 class="card-title">Uppercase</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1883,85 +1554,325 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" selected>Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+								<p class="mb-3">The following example demonstrates how Alpaca library can format text inside input field. To apply <code>uppercase</code> text style, set <code>format</code> option to <code>uppercase</code> inside <code>schema</code> parameter.</p>
+								<div id="alpaca-uppercase"></div>
+								<a href="#alpaca-uppercase-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-uppercase-source">
+									<pre class="language-javascript"><code>// Uppercase
+$('#alpaca-uppercase').alpaca({
+    data: 'Ice cream is wonderful.',
+    schema: {
+        format: 'uppercase'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-								<div class="form-group">
-									<label>Default select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Search type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The <code>search</code> field implements a search box that provides a search-optimized control. It allows for the specification of search terms with an optimized user interface. It uses the HTML5 'search' input type, but not the actual search.</p>
+								<div id="alpaca-search"></div>
+								<a href="#alpaca-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-search-source">
+									<pre class="language-javascript"><code>// Search type
+$('#alpaca-search').alpaca({
+    data: 'Where for art thou Romeo?',
+    schema: {
+        type: 'string'
+    },
+    options: {
+        type: 'search',
+        focus: false,
+        label: 'Search'
+    }
+});</code></pre>
 								</div>
+							</div>
+						</div>
+					</div>
 
-								<div class="form-group">
-									<label>Small select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" selected>Kentucky</option>
-										</optgroup>
-									</select>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Integer type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>integer</code> field with data, options and schema parameters. Minimum value is set to 18, maximum to 25. Validation is also enabled, try to change input value to see it in action.</p>
+								<div id="alpaca-integer"></div>
+								<a href="#alpaca-integer-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-integer-source">
+									<pre class="language-javascript"><code>// Integer type
+$('#alpaca-integer').alpaca({
+    data: 20,
+    options: {
+        type: 'integer',
+        label: 'Age:',
+        focus: false
+    },
+    schema: {
+        minimum: 18,
+        maximum: 25,
+        exclusiveMinimum: true,
+        exclusiveMaximum: true,
+        divisibleBy: 2
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Password type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>password</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters.</p>
+								<div id="alpaca-password"></div>
+								<a href="#alpaca-password-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-password-source">
+									<pre class="language-javascript"><code>// Password type
+$('#alpaca-password').alpaca({
+    data: 'password',
+    schema: {
+        format: 'password'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Email type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>email</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-email"></div>
+								<a href="#alpaca-email-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-email-source">
+									<pre class="language-javascript"><code>// Email type
+$('#alpaca-email').alpaca({
+    data: 'support',
+    schema: {
+        format: 'email'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">IPv4 type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>ipv4</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-ipv4"></div>
+								<a href="#alpaca-ipv4-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-ipv4-source">
+									<pre class="language-javascript"><code>// IP address type
+$('#alpaca-ipv4').alpaca({
+    data: '100.60',
+    schema: {
+        format: 'ip-address'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">URL type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>url</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-url"></div>
+								<a href="#alpaca-url-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-url-source">
+									<pre class="language-javascript"><code>// URL type
+$('#alpaca-url').alpaca({
+    data: 'http://www.alpacajs.org',
+    options: {
+        type: 'url',
+        focus: false
+    },
+    schema: {
+        format: 'uri'
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Currency type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>currency</code> field type. Here input doesn't have any optional parameters, but a very basic setup. The currency field uses the JQuery Price Format plugin to render format the input as it's entered.</p>
+								<div id="alpaca-currency"></div>
+								<a href="#alpaca-currency-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-currency-source">
+									<pre class="language-javascript"><code>// Currency type
+$('#alpaca-currency').alpaca({
+    options: {
+        type: 'currency',
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Personal name type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates custom <code>personal name</code> field type. Every time you press space key, new word starts with capital letter. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-name"></div>
+								<a href="#alpaca-name-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-name-source">
+									<pre class="language-javascript"><code>// Personal name type
+$('#alpaca-name').alpaca({
+    data: 'Oscar Zoroaster Phadrig Isaac Norman Henkel Emmannuel Ambroise Diggs',
+    options: {
+        type: 'personalname',
+        focus: false
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /select2 sizing -->
+				<!-- /input types -->
 
 
-				<!-- Select2 advanced -->
+
+				<!-- File inputs -->
 				<!--
-				<div class="mb-3 pt-2">
+				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Advanced usage
+						File inputs
 					</h6>
-					<span class="text-muted d-block">More complex configurations</span>
+					<span class="text-muted d-block">Default and optional styling</span>
 				</div>
 
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced single selects</h5>
+								<h6 class="card-title">Basic file input</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1970,189 +1881,26 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Minimum input</h6>
-									<p class="mb-2">Select2 supports a minimum input setting which is useful for large remote datasets where short search terms are not very useful. Simply specify a number of input characters using <code>minimumInputLength</code> option:</p>
-
-									<select data-placeholder="Enter 'as'" class="form-control select-minimum" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Customizing how results are matched</h6>
-									<p class="mb-2">Example of how matched results can be customized. Unlike other dropdowns on this page, this one matches options only if the term appears in the beginning of the string as opposed to anywhere.</p>
-
-									<select class="form-control select-matched-customize" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading array data</h6>
-									<p class="mb-2">Select2 provides a way to load the data from a local array. You can provide initial selections with array data by providing the option tag for the selected values, similar to how it would be done for a standard select.</p>
-
-									<div class="mb-3">
-										<p>1. Example below loads array:</p>
-										<select class="form-control select-data-array" data-fouc></select>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Example below loads array with selected option:</p>
-										<select class="form-control select-data-array" data-fouc>
-											<option value="2" selected>duplicate</option>
-										</select>
-									</div>	
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading remote data</h6>
-									<p class="mb-2">Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this example, we can search for repositories using GitHub's API. Example also includes infinite scrolling feature:</p>
-
-									<select class="form-control select-remote-data" data-fouc>
-										<option value="3620194" selected>select2/select2</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in single select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" class="form-control select-search" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Clearing results</h6>
-									<p class="mb-2">Whether or not a clear button is displayed when the select box has a selection. The button, when clicked, resets the value of the select box back to the placeholder.</p>
-
-									<select data-placeholder="Select a state" class="form-control select-clear" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Set and get value:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-value" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue access-set">Set to California</button>
-										<button type="button" class="btn bg-blue access-get">Alert selected value</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-enable" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-create" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-create">Create</button>
-									</div>
-
-									<div>
-										<p>4. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-open" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-close">Close</button>
-									</div>
+								<p class="mb-3">The following example demonstrates a basic single file input. This input field type supports all available options and parameters. Additionally you can specify schema format. Validation is disabled by default.</p>
+								<div id="alpaca-file"></div>
+								<a href="#alpaca-file-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-source">
+									<pre class="language-javascript"><code>// Basic file input
+$('#alpaca-file').alpaca({
+    data: '',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
@@ -2161,7 +1909,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced multiple selects</h5>
+								<h6 class="card-title">Static mode</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2170,194 +1918,274 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Tagging support</h6>
-									<p class="mb-2">Select2 can be used to quickly set up fields used for tagging. When tagging is enabled the user can select from pre-existing tags or create a new tag by picking the first choice.</p>
-
-									<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
+								<p class="mb-3">The following example demonstrates a basic single file input in <code>read only</code> mode. This input field type supports all available options and parameters. Additionally you can specify schema format. Validation is disabled by default.</p>
+								<div id="alpaca-file-static"></div>
+								<a href="#alpaca-file-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-static-source">
+									<pre class="language-javascript"><code>// Static mode
+$('#alpaca-file-static').alpaca({
+    data: '/abc.html',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    },
+    view: 'bootstrap-display'
+});</code></pre>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Maximum input length</h6>
-									<p class="mb-2">Select2 can be set a limit on the number of characters that can be entered per tag. You would not be able to enter any input of more than 5 characters long.</p>
 
-									<select class="form-control select-multiple-maximum-length" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled file input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a single file input styled with <code>uniform</code> plugin. This is optional configuration, Alpaca doesn't support it by default and doesn't have custom field type. Also supports all available options.</p>
+								<div id="alpaca-file-styled"></div>
+								<a href="#alpaca-file-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-styled-source">
+									<pre class="language-javascript"><code>// Styled file input
+$('#alpaca-file-styled').alpaca({
+    data: '',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        id: 'file-styled',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    },
+    postRender: function() {
+        $('#file-styled').uniform({
+            fileButtonClass: 'action btn bg-blue'
+        });
+    }
+});</code></pre>
 								</div>
+							</div>
+						</div>
+					</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Auto tokenization</h6>
-									<p class="mb-2">Select2 supports ability to add choices automatically as the user is typing into the search field. Try typing in the search field below and entering a space or a comma.</p>
-
-									<select class="form-control select-multiple-tokenization" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Limiting the number of selections</h6>
-									<p class="mb-2">Select2 multi-value select boxes can set restrictions regarding the maximum number of options selected. The select below is declared with <code>maximumSelectionLength</code> option.</p>
-
-									<select class="form-control select-multiple-limited" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL">Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY" selected>Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in multiple select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" multiple="multiple" class="form-control select" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Reacting to external value changes:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-value" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue change-to-ca">Select California</button>
-										<button type="button" class="btn bg-blue change-to-ak-co">Select Alaska and Colorado</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-enable" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-multiple-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-multiple-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-create" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-multiple-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-multiple-create">Create</button>
-									</div>
-
-									<div class="mb-3">
-										<p>4. Clear selection:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select states" multiple="multiple" class="form-control select-access-multiple-clear" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-brown-400 access-multiple-clear">Clear selection</button>
-									</div>
-
-									<div>
-										<p>5. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-open" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-multiple-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-multiple-close">Close</button>
-									</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled file input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a single file input styled with <code>uniform</code> plugin in <code>disabled</code> mode. This is optional configuration, Alpaca doesn't support it by default and doesn't have custom field type. Also supports all available options.</p>
+								<div id="alpaca-file-disabled"></div>
+								<a href="#alpaca-file-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-disabled-source">
+									<pre class="language-javascript"><code>// Disabled file input
+$('#alpaca-file-disabled').alpaca({
+    data: '',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        disabled: true,
+        id: 'file-styled-disabled',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    },
+    postRender: function() {
+        $('#file-styled-disabled').uniform({
+            fileButtonClass: 'action btn bg-blue'
+        });
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /select2 advanced -->          
+				<!-- /file inputs -->
+
+
+
+				<!-- Select helpers -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Select helpers
+					</h6>
+					<span class="text-muted d-block">Country and state selects</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Country selector</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>country</code> field with default settings. To use this kind of select helper, just set <code>type</code> option to <code>country</code> in your configuration. Supports all available options.</p>
+								<div id="alpaca-country"></div>
+								<a href="#alpaca-country-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-country-source">
+									<pre class="language-javascript"><code>// Country selector
+$('#alpaca-country').alpaca({
+    options: {
+        type: 'country',
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">State selector</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>state</code> field with default settings. To use this kind of select helper, just set <code>type</code> option to <code>state</code> in your configuration. Supports all available options.</p>
+								<div id="alpaca-state"></div>
+								<a href="#alpaca-state-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-state-source">
+									<pre class="language-javascript"><code>// State selector
+$('#alpaca-state').alpaca({
+    options: {
+        type: 'state',
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Searchable select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>country</code> field with integrated Select2 plugin. To initialize Select2 on select, you need to add init code in <code>postRender</code> callback. Supports all available options.</p>
+								<div id="alpaca-country-search"></div>
+								<a href="#alpaca-country-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-country-search-source">
+									<pre class="language-javascript"><code>// Searchable country selector
+$('#alpaca-country-search').alpaca({
+    options: {
+        type: 'country',
+        id: 'country-search',
+        focus: false
+    },
+    postRender: function() {
+        $('#country-search').select2();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Searchable select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>state</code> field with integrated Select2 plugin. To initialize Select2 on select, you need to add init code in <code>postRender</code> callback. Supports all available options.</p>
+								<div id="alpaca-state-search"></div>
+								<a href="#alpaca-state-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-state-search-source">
+									<pre class="language-javascript"><code>// Searchable state selector
+$('#alpaca-state-search').alpaca({
+    options: {
+        type: 'state',
+        id: 'state-search',
+        focus: false
+    },
+    postRender: function() {
+        $('#state-search').select2();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /select helpers -->
 
 			</div>
 			<!-- /content area -->
 
 
-			<!-- Footer -->
+			<!-- Footer --><!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -2365,8 +2193,7 @@
 						Footer
 					</button>
 				</div>
-				<BUTTON>GUARDAR</BUTTON>
-<!--
+
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
 						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>

@@ -23,11 +23,15 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -331,7 +335,7 @@
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
 						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
-						<span>Victoria</span>
+						<span>ANGEL HERNANDEZ</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
@@ -356,6 +360,7 @@
 		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
 
 			<!-- Sidebar mobile toggler -->
+
 			<div class="sidebar-mobile-toggler text-center">
 				<a href="#" class="sidebar-mobile-main-toggle">
 					<i class="icon-arrow-left8"></i>
@@ -381,7 +386,7 @@
 							</div>
 
 							<div class="media-body">
-								<div class="media-title font-weight-semibold">Victoria Baker</div>
+								<div class="media-title font-weight-semibold">ANGEL HERNANDEZ</div>
 								<div class="font-size-xs opacity-50">
 									<i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
 								</div>
@@ -403,11 +408,10 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">
+							<a href="index.html" class="nav-link active">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
-									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
 						</li>
@@ -481,18 +485,16 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>SECCIONES</span></a>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link active">EDITAR</a></li>
-								
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
-						
 						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
@@ -508,23 +510,30 @@
 								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
-							
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES
-							</span></a>
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
 								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						
+						<!--
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>VACACIONES</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
+								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li></-->
+						</li>/-->
 						<!-- /forms -->
-						
+
 						<!-- Components -->
 						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
@@ -626,19 +635,20 @@
 							<ul class="nav nav-group-sub" data-submenu-title="Icons">
 								<li class="nav-item"><a href="icons_icomoon.html" class="nav-link">Icomoon</a></li>
 								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
-								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
+								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>/-->
 							</ul>
-						</li>/-->
+						</li>
 						<!-- /components -->
 
 						<!-- Layout -->
 						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Layout options"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DEPARTAMENTOS</span></a>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DDEPARTAMENTOS</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link active">LISTADO</a></li>
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">DEPARTAMENTO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
@@ -949,7 +959,7 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
@@ -1205,7 +1215,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">EMPLEADOS</span></h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Dashboard</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1222,8 +1232,7 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_select2.html" class="breadcrumb-item">Empleados</a>
-							<span class="breadcrumb-item active">Editar</span>
+							<span class="breadcrumb-item active">Dashboard</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1260,322 +1269,992 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Select2 selects -->
-				<!--
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						EDITAR
-					</h6>
-					<span class="text-muted d-block"></span>
-				</div>/-->
-<!--
+				<!-- Main charts -->
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Empleados</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>/-->
-							</div>
-							<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EDITAR</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+					<div class="col-xl-7">
 
-					<div class="card-body">
-						<p class="mb-4"></p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Empleados</legend>
-								<p>Sexo:
-  <input type="radio" name="hm" value="h" required> Hombre
-  <input type="radio" name="hm" value="m" required> Mujer
-</p>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">APELLIDO</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">EDAD</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">DIRECCIÓN</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CELULAR</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE DE USUARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CORREO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="gabriela18@gmail.com" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">MATRICULA</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="MAXIMO 7 CARACTERES">
-									</div>
-								</div>
-								<div class="modal-footer">
-									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
-								</div>
-										<div class="card-body">
-						<p class="mb-4"></p>
-
+						<!-- Traffic sources -->
 						
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Traffic sources</h6>
+								<div class="header-elements">
+									<div class="form-check form-check-right form-check-switchery form-check-switchery-sm">
+										<label class="form-check-label">
+											Live update:
+											<input type="checkbox" class="form-input-switchery" checked data-fouc>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body py-0">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="d-flex align-items-center justify-content-center mb-2">
+											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon mr-3">
+												<i class="icon-plus3"></i>
+											</a>
+											<div>
+												<div class="font-weight-semibold">New visitors</div>
+												<span class="text-muted">2,349 avg</span>
+											</div>
+										</div>
+										<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="d-flex align-items-center justify-content-center mb-2">
+											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3">
+												<i class="icon-watch2"></i>
+											</a>
+											<div>
+												<div class="font-weight-semibold">New sessions</div>
+												<span class="text-muted">08:20 avg</span>
+											</div>
+										</div>
+										<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="d-flex align-items-center justify-content-center mb-2">
+											<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon mr-3">
+												<i class="icon-people"></i>
+											</a>
+											<div>
+												<div class="font-weight-semibold">Total online</div>
+												<span class="text-muted"><span class="badge badge-mark border-success mr-2"></span> 5,378 avg</span>
+											</div>
+										</div>
+										<div class="w-75 mx-auto mb-3" id="total-online"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chart position-relative" id="traffic-sources"></div>
+						</div>
+						<!-- /traffic sources -->
+
+					</div>
+
+					<div class="col-xl-5">
+
+						<!-- Sales stats -->
+						
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Sales statistics</h6>
+								<div class="header-elements">
+									<select class="form-control" id="select_date" data-fouc>
+										<option value="val1">June, 29 - July, 5</option>
+										<option value="val2">June, 22 - June 28</option>
+										<option value="val3" selected>June, 15 - June, 21</option>
+										<option value="val4">June, 8 - June, 14</option>
+									</select>
+			                	</div>
+							</div>
+
+							<div class="card-body py-0">
+								<div class="row text-center">
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">5,689</h5>
+											<span class="text-muted font-size-sm">new orders</span>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">32,568</h5>
+											<span class="text-muted font-size-sm">this month</span>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">$23,464</h5>
+											<span class="text-muted font-size-sm">expected profit</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chart mb-2" id="app_sales"></div>
+							<div class="chart" id="monthly-sales-stats"></div>
+						</div>
+						<!-- /sales stats -->
+
+					</div>
+				</div>
+				<!-- /main charts -->
+
+
+				<!-- Dashboard content -->
+				<div class="row">
+					<div class="col-xl-8">
+
+						<!-- Marketing campaigns -->
+						
+						<div class="card">
+							<div class="card-header header-elements-sm-inline">
+								<h6 class="card-title">Marketing campaigns</h6>
+								<div class="header-elements">
+									<span class="badge bg-success badge-pill">28 active</span>
+									<div class="list-icons ml-3">
+				                		<div class="list-icons-item dropdown">
+				                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+												<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+												<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+											</div>
+				                		</div>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body d-sm-flex align-items-sm-center justify-content-sm-between flex-sm-wrap">
+								<div class="d-flex align-items-center mb-3 mb-sm-0">
+									<div id="campaigns-donut"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">38,289 <span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+16.2%)</span></h5>
+										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">May 12, 12:30 am</span>
+									</div>
+								</div>
+
+								<div class="d-flex align-items-center mb-3 mb-sm-0">
+									<div id="campaign-status-pie"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">2,458 <span class="text-danger font-size-sm font-weight-normal"><i class="icon-arrow-down12"></i> (-4.9%)</span></h5>
+										<span class="badge badge-mark border-danger mr-1"></span> <span class="text-muted">Jun 4, 4:00 am</span>
+									</div>
+								</div>
+
+								<div>
+									<a href="#" class="btn bg-indigo-300"><i class="icon-statistics mr-2"></i> View report</a>
+								</div>
 							</div>
 <!--
-							<div class="card-body">
-								<div class="form-group">
-									<label></label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+							<div class="table-responsive">
+								<table class="table text-nowrap">
+									<thead>
+										<tr>
+											<th>Campaign</th>
+											<th>Client</th>
+											<th>Changes</th>
+											<th>Budget</th>
+											<th>Status</th>
+											<th class="text-center" style="width: 20px;"><i class="icon-arrow-down12"></i></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-active table-border-double">
+											<td colspan="5">Today</td>
+											<td class="text-right">
+												<span class="progress-meter" id="today-progress" data-progress="30"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/facebook.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Facebook</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-blue mr-1"></span>
+															02:00 - 03:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Mintlime</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 2.43%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$5,489</h6></td>
+											<td><span class="badge bg-blue">Active</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/youtube.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Youtube videos</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-danger mr-1"></span>
+															13:00 - 14:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">CDsoft</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 3.12%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$2,592</h6></td>
+											<td><span class="badge bg-danger">Closed</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/spotify.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Spotify ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-grey-400 mr-1"></span>
+															10:00 - 11:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Diligence</span></td>
+											<td><span class="text-danger"><i class="icon-stats-decline2 mr-2"></i> - 8.02%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$1,268</h6></td>
+											<td><span class="badge bg-grey-400">On hold</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/twitter.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Twitter ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-grey-400 mr-1"></span>
+															04:00 - 05:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Deluxe</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 2.78%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$7,467</h6></td>
+											<td><span class="badge bg-grey-400">On hold</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
 
-								<div class="form-group">
-									<label class="d-block">Fixed select width</label>
-									<select class="form-control select-fixed-single" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR">Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+										<tr class="table-active table-border-double">
+											<td colspan="5">Yesterday</td>
+											<td class="text-right">
+												<span class="progress-meter" id="yesterday-progress" data-progress="65"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/bing.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Bing campaign</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-success mr-1"></span>
+															15:00 - 16:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Metrics</span></td>
+											<td><span class="text-danger"><i class="icon-stats-decline2 mr-2"></i> - 5.78%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$970</h6></td>
+											<td><span class="badge bg-success-400">Pending</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/amazon.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Amazon ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-danger mr-1"></span>
+															18:00 - 19:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Blueish</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 6.79%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$1,540</h6></td>
+											<td><span class="badge bg-blue">Active</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/dribbble.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Dribbble ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-blue mr-1"></span>
+															20:00 - 21:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Teamable</span></td>
+											<td><span class="text-danger"><i class="icon-stats-decline2 mr-2"></i> 9.83%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$8,350</h6></td>
+											<td><span class="badge bg-danger">Closed</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>/-->
+						<!-- /marketing campaigns -->
 
-								<div class="form-group">
-									<label>Select with search</label>
-									<select class="form-control select-search" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
 
-								<div class="form-group">
-									<label>Select with placeholder</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+						<!-- Quick stats boxes -->
+						<div class="row">
+							<div class="col-lg-4">
 
-								<div class="form-group">
-									<label>Select with icons</label>
-									<select data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox">Firefox</option>
-											<option value="safari" data-icon="safari">Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
+								<!-- Members online -->
+								
+								<div class="card bg-teal-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">3,450</h3>
+											<span class="badge bg-teal-800 badge-pill align-self-center ml-auto">+53,6%</span>
+					                	</div>
+					                	
+					                	<div>
+											Members online
+											<div class="font-size-sm opacity-75">489 avg</div>
+										</div>
+									</div>
 
-								<div class="form-group">
-									<label>Disable items</label>
-									<select class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" disabled>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" disabled>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
+									<div class="container-fluid">
+										<div id="members-online"></div>
+									</div>
 								</div>
+								<!-- /members online -->
 
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control select" disabled data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-									</select>
-								</div>
+							</div>
 
-								<div class="form-group">
-									<label>Select background color</label>
-									<select class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+							<div class="col-lg-4">
 
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select class="form-control select" data-dropdown-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+								<!-- Current server load -->
+								
+								<div class="card bg-pink-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">49.4%</h3>
+											<div class="list-icons ml-auto">
+						                		<div class="list-icons-item dropdown">
+						                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+														<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+														<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+														<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+													</div>
+						                		</div>
+					                		</div>
+					                	</div>
+					                	
+					                	<div>
+											Current server load
+											<div class="font-size-sm opacity-75">34.6% avg</div>
+										</div>
+									</div>
 
-								<div class="form-group">
-									<label>Custom color</label>
-									<select class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+									<div id="server-load"></div>
 								</div>
+								<!-- /current server load -->
 
-								<div class="form-group">
-									<label>Custom border and text color</label>
-									<select class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+							</div>
+
+							<div class="col-lg-4">
+
+								<!-- Today's revenue -->
+								
+								<div class="card bg-blue-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">$18,390</h3>
+											<div class="list-icons ml-auto">
+						                		<a class="list-icons-item" data-action="reload"></a>
+						                	</div>
+					                	</div>
+					                	
+					                	<div>
+											Today's revenue
+											<div class="font-size-sm opacity-75">$37,578 avg</div>
+										</div>
+									</div>
+
+									<div id="today-revenue"></div>
 								</div>
+								<!-- /today's revenue -->
+
 							</div>
 						</div>
-					</div>
+						<!-- /quick stats boxes -->
 
-					<div class="col-md-6">
+
+						<!-- Support tickets -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-sm-inline">
+								<h6 class="card-title">Support tickets</h6>
+								<div class="header-elements">
+									<a class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle">
+										<i class="icon-calendar3 mr-2"></i>
+										<span></span>
+									</a>
+			                	</div>
+							</div>
+
+							<div class="card-body d-md-flex align-items-md-center justify-content-md-between flex-md-wrap">
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<div id="tickets-status"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">14,327 <span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+2.9%)</span></h5>
+										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">Jun 16, 10:00 am</span>
+									</div>
+								</div>
+
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
+										<i class="icon-alarm-add"></i>
+									</a>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">1,132</h5>
+										<span class="text-muted">total tickets</span>
+									</div>
+								</div>
+
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
+										<i class="icon-spinner11"></i>
+									</a>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">06:25:00</h5>
+										<span class="text-muted">response time</span>
+									</div>
+								</div>
+
+								<div>
+									<a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i> Report</a>
+								</div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table text-nowrap">
+									<thead>
+										<tr>
+											<th style="width: 50px">Due</th>
+											<th style="width: 300px;">User</th>
+											<th>Description</th>
+											<th class="text-center" style="width: 20px;"><i class="icon-arrow-down12"></i></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-active table-border-double">
+											<td colspan="3">Active tickets</td>
+											<td class="text-right">
+												<span class="badge bg-blue badge-pill">24</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">12</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-teal-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Annabelle Doney</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1183] Workaround for OS X selects printing bug</div>
+													<span class="text-muted">Chrome fixed the bug several versions ago, thus rendering this...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">16</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Chris Macintyre</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1249] Vertically center carousel controls</div>
+													<span class="text-muted">Try any carousel control and reduce the screen width below...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">20</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-blue rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Robert Hauber</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1254] Inaccurate small pagination height</div>
+													<span class="text-muted">The height of pagination elements is not consistent with...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">40</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-warning-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Robert Hauber</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1184] Round grid column gutter operations</div>
+													<span class="text-muted">Left rounds up, right rounds down. should keep everything...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="table-active table-border-double">
+											<td colspan="3">Resolved tickets</td>
+											<td class="text-right">
+												<span class="badge bg-success badge-pill">42</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-success-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alan Macedo</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span> Resolved</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1046] Avoid some unnecessary HTML string</div>
+													<span class="text-muted">Rather than building a string of HTML and then parsing it...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-pink-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Brett Castellano</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span> Resolved</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1038] Update json configuration</div>
+													<span class="text-muted">The <code>files</code> property is necessary to override the files property...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Roxanne Forbes</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span> Resolved</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1034] Tooltip multiple event</div>
+													<span class="text-muted">Fix behavior when using tooltips and popovers that are...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="table-active table-border-double">
+											<td colspan="3">Closed tickets</td>
+											<td class="text-right">
+												<span class="badge bg-danger badge-pill">37</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-cross2 text-danger-400"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Mitchell Sitkin</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-danger mr-1"></span> Closed</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1040] Account for static form controls in form group</div>
+													<span class="text-muted">Resizes control label's font-size and account for the standard...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-spinner11 text-grey"></i> Reopen issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-cross2 text-danger"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-brown-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Katleen Jensen</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-danger mr-1"></span> Closed</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1038] Proper sizing of form control feedback</div>
+													<span class="text-muted">Feedback icon sizing inside a larger/smaller form-group...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-spinner11 text-grey"></i> Reopen issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>/-->
+						<!-- /support tickets -->
+
+
+						<!-- Latest posts -->
+						<!--
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select</h5>
+								<h6 class="card-title">Latest posts</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1583,781 +2262,730 @@
 				                		<a class="list-icons-item" data-action="remove"></a>
 				                	</div>
 			                	</div>
+		                	</div>
+
+							<div class="card-body pb-0">
+								<div class="row">
+									<div class="col-xl-6">
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
+
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">Up unpacked friendly</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    		</ul>
+												The him father parish looked has sooner. Attachment frequently terminated son hello...
+											</div>
+										</div>
+
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
+
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">It allowance prevailed</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    		</ul>
+												Alteration literature to or an sympathize mr imprudence. Of is ferrars subject enjoyed...
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-6">
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
+
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">Case read they must</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    		</ul>
+												On it differed repeated wandered required in. Then girl neat why yet knew rose spot...
+											</div>
+										</div>
+
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
+
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">Too carriage attended</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> FAQ section</li>
+					                    		</ul>
+												Marianne or husbands if at stronger ye. Considered is as middletons uncommonly...
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /latest posts -->
+
+					</div>
+
+					<div class="col-xl-4">
+
+						<!-- Progress counters -->
+						<!--
+						<div class="row">
+							<div class="col-sm-6">/-->
+
+								<!-- Available hours -->
+								<!--
+								<div class="card text-center">
+									<div class="card-body">/-->
+
+					                	<!-- Progress counter -->
+					                	<!--
+										<div class="svg-center position-relative" id="hours-available-progress"></div>/-->
+										<!-- /progress counter -->
+
+
+										<!-- Bars -->
+										<!--
+										<div id="hours-available-bars"></div>/-->
+										<!-- /bars -->
+
+									</div>
+								</div>
+								<!-- /available hours -->
+								<!--
+
+							</div>
+
+							<div class="col-sm-6">/-->
+
+								<!-- Productivity goal -->
+								<!--
+								<div class="card text-center">
+									<div class="card-body">/-->
+
+										<!-- Progress counter -->
+										<!--
+										<div class="svg-center position-relative" id="goal-progress"></div>/-->
+										<!-- /progress counter -->
+
+										<!-- Bars -->
+										<!--
+										<div id="goal-bars"></div>/-->
+										<!-- /bars -->
+
+									</div>
+								</div>
+								<!-- /productivity goal -->
+
+							</div>
+						</div>
+						<!-- /progress counters -->
+
+
+						<!-- Daily sales -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Daily sales stats</h6>
+								<div class="header-elements">
+									<span class="font-weight-bold text-danger-600 ml-2">$4,378</span>
+									<div class="list-icons ml-3">
+				                		<div class="list-icons-item dropdown">
+				                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+												<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+												<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+											</div>
+				                		</div>
+				                	</div>
+								</div>
 							</div>
 
 							<div class="card-body">
-								<div class="form-group">
-									<label>Multiple select</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+								<div class="chart" id="sales-heatmap"></div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table text-nowrap">
+									<thead>
+										<tr>
+											<th class="w-100">Application</th>
+											<th>Time</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-primary-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Sigma application</a>
+														<div class="text-muted font-size-sm"><i class="icon-checkmark3 font-size-sm mr-1"></i> New order</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">06:28 pm</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$49.90</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-danger-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alpha application</a>
+														<div class="text-muted font-size-sm"><i class="icon-spinner11 font-size-sm mr-1"></i> Renewal</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">04:52 pm</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$90.50</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-indigo-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Delta application</a>
+														<div class="text-muted font-size-sm"><i class="icon-lifebuoy font-size-sm mr-1"></i> Support</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">01:26 pm</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$60.00</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-success-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Omega application</a>
+														<div class="text-muted font-size-sm"><i class="icon-lifebuoy font-size-sm mr-1"></i> Support</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">11:46 am</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$55.00</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-danger-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alpha application</a>
+														<div class="text-muted font-size-sm"><i class="icon-spinner11 font-size-sm mr-2"></i> Renewal</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">10:29 am</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$90.50</h6>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>/-->
+						<!-- /daily sales -->
+
+
+						<!-- My messages -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">My messages</h6>
+								<div class="header-elements">
+									<span><i class="icon-history text-warning mr-2"></i> Jul 7, 10:30</span>
+									<span class="badge bg-success align-self-start ml-3">Online</span>
+								</div>
+							</div>/-->
+
+							<!-- Numbers -->
+							<!--
+							<div class="card-body py-0">
+								<div class="row text-center">
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">2,345</h5>
+											<span class="text-muted font-size-sm">this week</span>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">3,568</h5>
+											<span class="text-muted font-size-sm">this month</span>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">32,693</h5>
+											<span class="text-muted font-size-sm">all messages</span>
+										</div>
+									</div>
+								</div>
+							</div>/-->
+							<!-- /numbers -->
+
+
+							<!-- Area chart -->
+							<div id="messages-stats"></div>
+							<!-- /area chart -->
+
+
+							<!-- Tabs -->
+							<!--
+		                	<ul class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0">
+								<li class="nav-item">
+									<a href="#messages-tue" class="nav-link font-size-sm text-uppercase active" data-toggle="tab">
+										Tuesday
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a href="#messages-mon" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
+										Monday
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a href="#messages-fri" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
+										Friday
+									</a>
+								</li>
+							</ul>/-->
+							<!-- /tabs -->
+
+
+							<!-- Tabs content -->
+							<!--
+							<div class="tab-content card-body">
+								<div class="tab-pane active fade show" id="messages-tue">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3 position-relative">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">8</span>
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">James Alexander</a>
+													<span class="font-size-sm text-muted">14:58</span>
+												</div>
+
+												The constitutionally inventoried precariously...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3 position-relative">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">6</span>
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Margo Baker</a>
+													<span class="font-size-sm text-muted">12:16</span>
+												</div>
+
+												Pinched a well more moral chose goodness...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Jeremy Victorino</a>
+													<span class="font-size-sm text-muted">09:48</span>
+												</div>
+
+												Pert thickly mischievous clung frowned well...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Beatrix Diaz</a>
+													<span class="font-size-sm text-muted">05:54</span>
+												</div>
+
+												Nightingale taped hello bucolic fussily cardinal...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">												
+												<div class="d-flex justify-content-between">
+													<a href="#">Richard Vango</a>
+													<span class="font-size-sm text-muted">01:43</span>
+												</div>
+
+												Amidst roadrunner distantly pompously where...
+											</div>
+										</li>
+									</ul>
 								</div>
 
-								<div class="form-group">
-									<label class="d-block">Fixed width select</label>
-									<select multiple="multiple" class="form-control select-fixed-multiple" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+								<div class="tab-pane fade" id="messages-mon">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Isak Temes</a>
+													<span class="font-size-sm text-muted">Tue, 19:58</span>
+												</div>
+
+												Reasonable palpably rankly expressly grimy...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Vittorio Cosgrove</a>
+													<span class="font-size-sm text-muted">Tue, 16:35</span>
+												</div>
+
+												Arguably therefore more unexplainable fumed...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Hilary Talaugon</a>
+													<span class="font-size-sm text-muted">Tue, 12:16</span>
+												</div>
+
+												Nicely unlike porpoise a kookaburra past more...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Bobbie Seber</a>
+													<span class="font-size-sm text-muted">Tue, 09:20</span>
+												</div>
+
+												Before visual vigilantly fortuitous tortoise...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Walther Laws</a>
+													<span class="font-size-sm text-muted">Tue, 03:29</span>
+												</div>
+
+												Far affecting more leered unerringly dishonest...
+											</div>
+										</li>
+									</ul>
 								</div>
 
-								<div class="form-group">
-									<label>With placeholder</label>
-									<select data-placeholder="Select a State..." multiple="multiple" class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+								<div class="tab-pane fade" id="messages-fri">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
 
-								<div class="form-group">
-									<label>With icons</label>
-									<select multiple="multiple" data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
-										<optgroup label="Services">
-											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-										</optgroup>
-										<optgroup label="File types">
-											<option value="pdf" data-icon="file-pdf">PDF</option>
-											<option value="word" data-icon="file-word">Word</option>
-											<option value="excel" data-icon="file-excel">Excel</option>
-											<option value="openoffice" data-icon="file-openoffice">Open office</option>
-										</optgroup>
-										<optgroup label="Browsers">
-											<option value="chrome" data-icon="chrome" selected>Chrome</option>
-											<option value="firefox" data-icon="firefox" selected>Firefox</option>
-											<option value="safari" data-icon="safari" selected>Safari</option>
-											<option value="opera" data-icon="opera">Opera</option>
-											<option value="IE" data-icon="IE">IE</option>
-										</optgroup>
-									</select>
-								</div>
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Owen Stretch</a>
+													<span class="font-size-sm text-muted">Mon, 18:12</span>
+												</div>
 
-								<div class="form-group">
-									<label>Drag and drop sorting</label>
-									<select class="form-control select-multiple-drag" multiple="multiple" data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="IL" selected>Illinois</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
+												Tardy rattlesnake seal raptly earthworm...
+											</div>
+										</li>
 
-								<div class="form-group">
-									<label>Disable menu items</label>
-									<select multiple="multiple" class="form-control select" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" disabled>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" disabled>Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="AR" selected>Arkansas</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" disabled>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
 
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select multiple="multiple" class="form-control select" disabled data-fouc>
-										<option value="AZ" selected>Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID" selected>Idaho</option>
-										<option value="WY" selected>Wyoming</option>
-									</select>
-								</div>
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Jenilee Mcnair</a>
+													<span class="font-size-sm text-muted">Mon, 14:03</span>
+												</div>
 
-								<div class="form-group">
-									<label>Results background color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+												Since hello dear pushed amid darn trite...
+											</div>
+										</li>
 
-								<div class="form-group">
-									<label>Menu background color</label>
-									<select multiple="multiple" class="form-control select" data-dropdown-css-class="bg-slate-700" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
 
-								<div class="form-group">
-									<label>Custom colors</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Alaster Jain</a>
+													<span class="font-size-sm text-muted">Mon, 13:59</span>
+												</div>
 
-								<div class="form-group">
-									<label>Custom border color</label>
-									<select multiple="multiple" class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="IL" selected>Illinois</option>
-											<option value="IA">Iowa</option>
-											<option value="KS" selected>Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
+												Dachshund cardinal dear next jeepers well...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Sigfrid Thisted</a>
+													<span class="font-size-sm text-muted">Mon, 09:26</span>
+												</div>
+
+												Lighted wolf yikes less lemur crud grunted...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Sherilyn Mckee</a>
+													<span class="font-size-sm text-muted">Mon, 06:38</span>
+												</div>
+
+												Less unicorn a however careless husky...
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>/-->
+							<!-- /tabs content -->
+
+						</div>
+						<!-- /my messages -->
+
+
+						<!-- Daily financials -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Daily financials</h6>
+								<div class="header-elements">
+									<div class="form-check form-check-inline form-check-right form-check-switchery form-check-switchery-sm">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-input-switchery" id="realtime" checked data-fouc>
+											Realtime
+										</label>
+									</div>
+									<span class="badge bg-danger-400 badge-pill">+86</span>
 								</div>
 							</div>
-						</div>
+
+							<div class="card-body">
+								<div class="chart mb-3" id="bullets"></div>
+
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-pink text-pink rounded-round border-2 btn-icon"><i class="icon-statistics"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Stats for July, 6: <span class="font-weight-semibold">1938</span> orders, <span class="font-weight-semibold text-danger">$4220</span> revenue
+											<div class="text-muted">2 hours ago</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-checkmark3"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Invoices <a href="#">#4732</a> and <a href="#">#4734</a> have been paid
+											<div class="text-muted">Dec 18, 18:36</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-alignment-unalign"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Affiliate commission for June has been paid
+											<div class="text-muted">36 minutes ago</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon"><i class="icon-spinner11"></i></a>
+										</div>
+
+										<div class="media-body">
+											Order <a href="#">#37745</a> from July, 1st has been refunded
+											<div class="text-muted">4 minutes ago</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon"><i class="icon-redo2"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Invoice <a href="#">#4769</a> has been sent to <a href="#">Robert Smith</a>
+											<div class="text-muted">Dec 12, 05:46</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /daily financials -->
+
 					</div>
-				</div>/-->
-				<!-- /select2 selects -->
-
-
-				<!-- Select2 sizing -->
-				<!--
-				<div class="mb-3 pt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Select sizing
-					</h6>
-					<span class="text-muted d-block">Single and multiple selects sizing</span>
 				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Single select sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiple select sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Large select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID" selected>Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA" selected>Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Default select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control select" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ" selected>Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label>Small select</label>
-									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY" selected>Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY" selected>Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /select2 sizing -->
-
-
-				<!-- Select2 advanced -->
-				<!--
-				<div class="mb-3 pt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Advanced usage
-					</h6>
-					<span class="text-muted d-block">More complex configurations</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced single selects</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Minimum input</h6>
-									<p class="mb-2">Select2 supports a minimum input setting which is useful for large remote datasets where short search terms are not very useful. Simply specify a number of input characters using <code>minimumInputLength</code> option:</p>
-
-									<select data-placeholder="Enter 'as'" class="form-control select-minimum" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Customizing how results are matched</h6>
-									<p class="mb-2">Example of how matched results can be customized. Unlike other dropdowns on this page, this one matches options only if the term appears in the beginning of the string as opposed to anywhere.</p>
-
-									<select class="form-control select-matched-customize" data-fouc>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL">Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading array data</h6>
-									<p class="mb-2">Select2 provides a way to load the data from a local array. You can provide initial selections with array data by providing the option tag for the selected values, similar to how it would be done for a standard select.</p>
-
-									<div class="mb-3">
-										<p>1. Example below loads array:</p>
-										<select class="form-control select-data-array" data-fouc></select>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Example below loads array with selected option:</p>
-										<select class="form-control select-data-array" data-fouc>
-											<option value="2" selected>duplicate</option>
-										</select>
-									</div>	
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Loading remote data</h6>
-									<p class="mb-2">Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this example, we can search for repositories using GitHub's API. Example also includes infinite scrolling feature:</p>
-
-									<select class="form-control select-remote-data" data-fouc>
-										<option value="3620194" selected>select2/select2</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in single select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" class="form-control select-search" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Clearing results</h6>
-									<p class="mb-2">Whether or not a clear button is displayed when the select box has a selection. The button, when clicked, resets the value of the select box back to the placeholder.</p>
-
-									<select data-placeholder="Select a state" class="form-control select-clear" data-fouc>
-										<option></option>
-										<optgroup label="Mountain Time Zone">
-											<option value="AZ">Arizona</option>
-											<option value="CO">Colorado</option>
-											<option value="ID">Idaho</option>
-											<option value="WY">Wyoming</option>
-										</optgroup>
-										<optgroup label="Central Time Zone">
-											<option value="AL" selected>Alabama</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-										</optgroup>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Set and get value:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-value" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue access-set">Set to California</button>
-										<button type="button" class="btn bg-blue access-get">Alert selected value</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-enable" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-create" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-create">Create</button>
-									</div>
-
-									<div>
-										<p>4. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" class="form-control select-access-open" data-fouc>
-												<option></option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY">Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-close">Close</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced multiple selects</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Tagging support</h6>
-									<p class="mb-2">Select2 can be used to quickly set up fields used for tagging. When tagging is enabled the user can select from pre-existing tags or create a new tag by picking the first choice.</p>
-
-									<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Maximum input length</h6>
-									<p class="mb-2">Select2 can be set a limit on the number of characters that can be entered per tag. You would not be able to enter any input of more than 5 characters long.</p>
-
-									<select class="form-control select-multiple-maximum-length" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO" selected>Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Auto tokenization</h6>
-									<p class="mb-2">Select2 supports ability to add choices automatically as the user is typing into the search field. Try typing in the search field below and entering a space or a comma.</p>
-
-									<select class="form-control select-multiple-tokenization" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL" selected>Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Limiting the number of selections</h6>
-									<p class="mb-2">Select2 multi-value select boxes can set restrictions regarding the maximum number of options selected. The select below is declared with <code>maximumSelectionLength</code> option.</p>
-
-									<select class="form-control select-multiple-limited" multiple="multiple" data-fouc>
-										<option value="AZ">Arizona</option>
-										<option value="CO">Colorado</option>
-										<option value="ID">Idaho</option>
-										<option value="WY">Wyoming</option>
-										<option value="AL">Alabama</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY" selected>Kentucky</option>
-									</select>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Diacritics support in multiple select</h6>
-									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
-
-									<select data-placeholder="Type 'aero'" multiple="multiple" class="form-control select" data-fouc>
-										<option>Aeróbics</option>
-										<option>Aeróbics en Agua</option>
-										<option>Aerografía</option>
-										<option>Aeromodelaje</option>
-										<option>Águilas</option>
-										<option>Ajedrez</option>
-										<option>Ala Delta</option>
-										<option>Álbumes de Música</option>
-										<option>Alusivos</option>
-										<option>Análisis de Escritura a Mano</option>
-									</select>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Programmatic access</h6>
-									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
-
-									<div class="mb-3">
-										<p>1. Reacting to external value changes:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-value" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-blue change-to-ca">Select California</button>
-										<button type="button" class="btn bg-blue change-to-ak-co">Select Alaska and Colorado</button>
-									</div>
-
-									<div class="mb-3">
-										<p>2. Enable and disable menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-enable" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-danger-400 access-multiple-disable">Disable</button>
-										<button type="button" class="btn bg-danger-400 access-multiple-enable">Enable</button>
-									</div>
-
-									<div class="mb-3">
-										<p>3. Destroy and create menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-create" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-indigo-300 access-multiple-destroy">Destroy</button>
-										<button type="button" class="btn bg-indigo-300 access-multiple-create">Create</button>
-									</div>
-
-									<div class="mb-3">
-										<p>4. Clear selection:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select states" multiple="multiple" class="form-control select-access-multiple-clear" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-brown-400 access-multiple-clear">Clear selection</button>
-									</div>
-
-									<div>
-										<p>5. Open and close menu:</p>
-										<p class="mb-2">
-											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-open" data-fouc>
-												<option value="AK">Alaska</option>
-												<option value="CA">California</option>
-												<option value="AZ" selected>Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="ID">Idaho</option>
-												<option value="WY" selected>Wyoming</option>
-												<option value="CT">Connecticut</option>
-											</select>
-										</p>
-
-										<button type="button" class="btn bg-teal-400 access-multiple-open">Open</button>
-										<button type="button" class="btn bg-teal-400 access-multiple-close">Close</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /select2 advanced -->          
+				<!-- /dashboard content -->
 
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
+			<!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -2365,8 +2993,7 @@
 						Footer
 					</button>
 				</div>
-				<BUTTON>GUARDAR</BUTTON>
-<!--
+
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
 						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
