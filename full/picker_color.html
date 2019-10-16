@@ -23,11 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/editors/ckeditor/ckeditor.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/color/spectrum.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/editor_ckeditor.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/picker_color.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -478,7 +478,7 @@
 							</a>
 						</li>
 						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
-						<!-- /main -->
+						<!-- /main -->/-->
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
@@ -486,37 +486,43 @@
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTAR</a></li>
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTAR</a></li>
-								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link active">REGISTRAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTAR</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link active">REGISTRAR</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">PAGO DE TRANSPORTE</a></li>
+								
+							</ul>
+						</li>
 							</ul>
 						</li>
 						<!-- /forms -->
@@ -1197,10 +1203,11 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
+			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - CKEditor</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Color</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1217,8 +1224,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_ckeditor.html" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">CKEditor</span>
+							<a href="picker_color.html" class="breadcrumb-item">Pickers</a>
+							<span class="breadcrumb-item active">Color</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1254,395 +1261,36 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- CKEditor default -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Full featured CKEditor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>
-						<form action="#">
-							<div class="mb-3">
-								<textarea name="editor-full" id="editor-full" rows="4" cols="4">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<table class="table table-bordered" style="width: 100%">
-										<thead>
-											<tr>
-												<th>Position</th>
-												<th>Astronaut</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Commander</td>
-												<td>Neil A. Armstrong</td>
-											</tr>
-											<tr>
-												<td>Command Module Pilot</td>
-												<td>Michael Collins</td>
-											</tr>
-											<tr>
-												<td>Lunar Module Pilot</td>
-												<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-											</tr>
-										</tbody>
-									</table>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </textarea>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Submit form <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
-					</div>
-				</div>/-->
-				<!-- /CKEditor default -->
-
-
-				<!-- CKEditor readonly API -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">CKEditor readonly API</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This sample shows how to use the <code>setReadOnly</code> API to put editor into the read-only state that makes it impossible for users to change the editor contents. In readonly mode all toolbar buttons are disabled, except <code>copy</code>, <code>full screen</code> and <code>source</code> buttons, they are still accessible. Content is selectable, but not editable.</p>
-
-						<p class="mb-3">
-				            <button type="button" class="btn btn-primary" id="readOnlyOn" style="display: none;"><i class="icon-eye2 mr-2"></i> Make editor readonly</button>
-				            <button type="button" class="btn btn-success" id="readOnlyOff" style="display: none;"><i class="icon-eye-blocked2 mr-2"></i> Make it editable</button>
-			            </p>
-
-						<form action="#">
-							<div class="mb-3">
-								<textarea name="editor-readonly" id="editor-readonly" rows="4" cols="4">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<table class="table table-bordered" style="width: 100%">
-										<thead>
-											<tr>
-												<th>Position</th>
-												<th>Astronaut</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Commander</td>
-												<td>Neil A. Armstrong</td>
-											</tr>
-											<tr>
-												<td>Command Module Pilot</td>
-												<td>Michael Collins</td>
-											</tr>
-											<tr>
-												<td>Lunar Module Pilot</td>
-												<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-											</tr>
-										</tbody>
-									</table>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </textarea>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Submit form <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
-					</div>
-				</div>/-->
-				<!-- /CKEditor readonly API -->
-
-
-				<!-- Enter key configuration -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">ENTER Key Configuration</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This sample shows how to configure the <code>Enter</code> and <code>Shift+Enter</code> keys to perform actions specified in the enterMode and <code>shiftEnterMode</code> parameters, respectively. You can choose from the following options: <span class="font-weight-semibold">ENTER_P</span> – new <code>&lt;p></code> paragraphs are created; <span class="font-weight-semibold">ENTER_BR</span> – lines are broken with <code>&lt;br></code> elements; <span class="font-weight-semibold">ENTER_DIV</span> – new <code>&lt;div></code> blocks are created.</p>
-
-						<form action="#">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="font-weight-semibold">When <kbd>Enter</kbd> is pressed:</label>
-										<select class="select" id="xEnter">
-											<option selected value="1">Create a new &lt;P&gt; (recommended)</option>
-											<option value="3">Create a new &lt;DIV&gt;</option>
-											<option value="2">Break the line with a &lt;BR&gt;</option>
-										</select>
-									</div>
-								</div>
-
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="font-weight-semibold">When <kbd>Shift+Enter</kbd> is pressed:</label>
-										<select class="select" id="xShiftEnter">
-											<option value="1">Create a new &lt;P&gt;</option>
-											<option value="3">Create a new &lt;DIV&gt;</option>
-											<option selected value="2">Break the line with a &lt;BR&gt; (recommended)</option>
-										</select>
-									</div>
-								</div>
-							</div>
-
-							<div class="mb-3">
-								<textarea name="editor-enter" id="editor-enter" rows="4" cols="4">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<table class="table table-bordered" style="width: 100%">
-										<thead>
-											<tr>
-												<th>Position</th>
-												<th>Astronaut</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Commander</td>
-												<td>Neil A. Armstrong</td>
-											</tr>
-											<tr>
-												<td>Command Module Pilot</td>
-												<td>Michael Collins</td>
-											</tr>
-											<tr>
-												<td>Lunar Module Pilot</td>
-												<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-											</tr>
-										</tbody>
-									</table>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </textarea>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Submit form <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
-					</div>
-				</div>/-->
-				<!-- /enter key configuration -->
-
-
-				<!-- CKEditor inline -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Inline editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This sample shows how to create an inline editor instance of CKEditor. You can also create an inline editor from a textarea element. In this case the <code>textarea</code> will be replaced by a <code>div</code> element with inline editing enabled. To enter edit mode, click on any element inside div or textarea elements, toolbar will be sticked to the top of this element.</p>
-
-						<hr>
-
-						<div id="editor-inline">
-							<h1>Apollo 11</h1>
-							<img alt="Saturn V carrying Apollo 11" class="float-right" style="margin-left: 20px;" src="http://c.cksource.com/a/1/img/sample.jpg">
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<table class="table table-bordered mb-3" style="width: 100%">
-								<thead>
-									<tr>
-										<th>Position</th>
-										<th>Astronaut</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Commander</td>
-										<td>Neil A. Armstrong</td>
-									</tr>
-									<tr>
-										<td>Command Module Pilot</td>
-										<td>Michael Collins</td>
-									</tr>
-									<tr>
-										<td>Lunar Module Pilot</td>
-										<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-									</tr>
-								</tbody>
-							</table>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /CKEditor inline -->
 <div class="card-body">
 						<p class="mb-4"></p>
 
 						<form action="#">
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">EMPREZAS</legend>
+								<legend class="text-uppercase font-size-sm font-weight-bold">VACACIONES</legend>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE DE LA EMPRESA</label>
+									<label class="col-form-label col-lg-2">NOMBRE DEL EMPLEADO</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">UBICACIÓN</label>
+									<label class="col-form-label col-lg-2">MATRICULA</label>
 									<div class="col-lg-10">
 										<input type="password" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">RFC</label>
+									<label class="col-form-label col-lg-2">COMIENZO</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">PAIS</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">PROPIETARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">PROPIETARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CORREO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">REPRESENTANTE LEGAL</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">TELEFONO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">FRANQUISIA</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">IGNAGURACION</label>
+									<label class="col-form-label col-lg-2">FINALIZAN</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
@@ -1651,6 +1299,504 @@
 									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
 								
 							</div>
+							</div>
+				<!-- Basic options -->
+				<!--
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Basic options
+					</h6>
+					<span class="text-muted d-block">Examples with basic picker options</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Basic color picker</h6>
+							<p class="mb-3 text-muted">Color picker with default options</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-basic" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Custom button text</h6>
+							<p class="mb-3 text-muted">Specify custom text for each button</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-basic" data-cancel-text="No way" data-choose-text="Yes baby" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Hide picker buttons</h6>
+							<p class="mb-3 text-muted">Display only color picker area</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-basic" data-show-buttons="false" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Disable color picker</h6>
+							<div class="mb-3 text-muted form-check form-check-switchery form-check-switchery-double">
+								<label class="form-check-label">
+									Disable
+									<input type="checkbox" class="form-input-switchery">
+									Enable
+								</label>
+							</div>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-disabled" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Container color</h6>
+							<p class="mb-3 text-muted">Custom container color class</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-container-class" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="m-0 font-weight-semibold">Replacer color</h6>
+							<p class="mb-3 text-muted">Custom replacer color class</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-replacer-class" value="#20BF7E" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /basic options -->
+
+
+				<!-- Picker additions -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Picker additions
+					</h6>
+					<span class="text-muted d-block">Show additional picker elements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
+							<p class="mb-3 text-muted">Show color that was initially set</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-initial" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Show input field</h6>
+							<p class="mb-3 text-muted">Add input for free form typing</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Show alpha channel</h6>
+							<p class="mb-3 text-muted">Allow alpha transparency selection</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-alpha" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Clear selection</h6>
+							<p class="mb-3 text-muted">Reset current color selection</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-clear" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Input and initial</h6>
+							<p class="mb-3 text-muted">Combining different elements</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-input-initial" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-danger text-center">
+							<h6 class="m-0 font-weight-semibold">Full leatured</h6>
+							<p class="mb-3 text-muted">Full featured picker example</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-full" value="#E63E3E" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /picker additions -->
+
+
+				<!-- Color palettes -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Color palettes
+					</h6>
+					<span class="text-muted d-block">Add a color palette to the picker</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Show color palette</h6>
+							<p class="mb-3 text-muted">Display recently used colors</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Show palette only</h6>
+							<p class="mb-3 text-muted">Show palette and nothing else</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-only" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Toggle palette only</h6>
+							<p class="mb-3 text-muted">Toggle picker next to the palette</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-toggle" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Selection palette</h6>
+							<p class="mb-3 text-muted">Keep track of selected colors</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-selection" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Limit selections</h6>
+							<p class="mb-3 text-muted">Palette colors are limited to 3</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-limit" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-success text-center">
+							<h6 class="m-0 font-weight-semibold">Hide after select</h6>
+							<p class="mb-3 text-muted">Hide picker after color select</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-palette-hide" value="#27ADCA" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /color palettes -->
+
+
+				<!-- Color formats -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Color formats
+					</h6>
+					<span class="text-muted d-block">Display different color formats</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HEX color format</h6>
+							<p class="mb-3 text-muted">Display colors in HEX format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HEX3 color format</h6>
+							<p class="mb-3 text-muted">Display colors in HEX3 format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex3" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HSL color format</h6>
+							<p class="mb-3 text-muted">Display colors in HSL format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="HSL" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">RGB color format</h6>
+							<p class="mb-3 text-muted">Display colors in RGB format</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="rgb" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">HTML color names</h6>
+							<p class="mb-3 text-muted">HTML color names support</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="orangered" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-warning text-center">
+							<h6 class="m-0 font-weight-semibold">Mix color formats</h6>
+							<p class="mb-3 text-muted">Change formats in the input</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="#f75d1c" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /color formats -->
+
+
+				<!-- Picker events -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Picker events
+					</h6>
+					<span class="text-muted d-block">Basic usage of the picker events</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Change event</h6>
+							<p class="mb-3 text-muted">Called as the input changes</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-change" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="change-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Move event</h6>
+							<p class="mb-3 text-muted">Called as the user moves around</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-move" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="move-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Hide event</h6>
+							<p class="mb-3 text-muted">Called after the picker is hidden</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-hide" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="hide-result"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Show event</h6>
+							<p class="mb-3 text-muted">Called after the picker is opened</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-show" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="show-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Dragstart event</h6>
+							<p class="mb-3 text-muted">Called as the drag event starts</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-dragstart" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="dragstart-result"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-info text-center">
+							<h6 class="m-0 font-weight-semibold">Dragstop event</h6>
+							<p class="mb-3 text-muted">Called as the drag event stops</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-event-dragstop" value="#45818e" data-fouc>
+								<div class="mt-3 hidden" id="dragstop-result"></div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /picker events -->
+
+
+				<!-- Flat pickers -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Flat pickers
+					</h6>
+					<span class="text-muted d-block">Display a full size color picker</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Basic flat picker</h6>
+							<p class="mb-3 text-muted">Basic full size color picker</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Flat color palette</h6>
+							<p class="mb-3 text-muted">Display both palette and picker</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-palette" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Set picker color</h6>
+							<p class="mb-3 text-muted">Custom flat color picker color</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-custom" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Show input field</h6>
+							<p class="mb-3 text-muted">Add input for free form typing</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-input" data-preferred-format="hex" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Full featured</h6>
+							<p class="mb-3 text-muted">Full featured flat picker</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-full" data-preferred-format="hex" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-teal text-center">
+							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
+							<p class="mb-3 text-muted">Show color that was initially set</p>
+
+							<div class="d-inline-block">
+								<input type="text" class="form-control colorpicker-flat-initial" value="#45818e" data-fouc>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /flat pickers -->
+
 			</div>
 			<!-- /content area -->
 
@@ -1676,7 +1822,7 @@
 						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
 					</ul>
 				</div>
-			</div>/-->
+			</div>
 			<!-- /footer -->
 
 		</div>

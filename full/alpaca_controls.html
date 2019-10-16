@@ -23,19 +23,17 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/trumbowyg.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/base64/trumbowyg.base64.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/cleanpaste/trumbowyg.cleanpaste.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/colors/trumbowyg.colors.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/insertaudio/trumbowyg.insertaudio.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/noembed/trumbowyg.noembed.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/preformatted/trumbowyg.preformatted.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/template/trumbowyg.template.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/upload/trumbowyg.upload.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/pasteimage/trumbowyg.pasteimage.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/tags/tokenfield.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/editor_trumbowyg.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/alpaca_controls.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -493,43 +491,57 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADOS</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
 								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link active">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
 								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link active">EDITAR</a></li>
+								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTAR</a></li>
 								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
+							<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">PAGO DE TRANSPORTE</a></li>
+								
+							</ul>
 						</li>
-						
+						<!--
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
+								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>/-->
+							</ul>
 						</li>
 						<!-- /forms -->
 
-						<!-- Components -->
-						<!--
+						<!-- Components --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -1186,7 +1198,7 @@
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>--/>
+						</li>/-->
 						<!-- /page kits -->
 
 					</ul>
@@ -1207,7 +1219,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Trumbowyg</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alpaca</span> - Controls</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1224,8 +1236,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_trumbowyg.html" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Trumbowyg</span>
+							<a href="alpaca_controls.html" class="breadcrumb-item">Alpaca</a>
+							<span class="breadcrumb-item active">Controls</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1255,86 +1267,85 @@
 						</div>
 					</div>
 				</div>
-				<div class="card-body">
-						<p class="mb-4"></p>
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">DEPARTAMENTOS</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">EMPREZAS</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">NOMBRE DE LA EMPRESA</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">UBICACIÓN</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">RFC</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">PAIS</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">PROPIETARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">PROPIETARIO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">CORREO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">REPRESENTANTE LEGAL</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">TELEFONO</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">FRANQUISIA</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">IGNAGURACION</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="modal-footer">
-									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
-								
-							</div>
+					<div class="card-body">
+						
+					</div>	
+<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>NOMBRE DEL DEPARTAMENTO</th>
+									<th>N° DE DEPARTAMENTO</th>
+									<th>N° DE PISO</th>
+									<th>EDIFICIO</th>
+									<th>CORREO</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>LAIGE</td>
+									<td>211</td>
+									<td>17</td>
+									<td>B</td>
+									<td>laigeb@gmail.com</td>
+									
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>ITI</td>
+									<td>A208</td>
+									<td>18</td>
+									<td>A</td>
+									<td>iti18@gmail.com</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>PIMES</td>
+									<td>B203</td>
+									<td>16</td>
+									<td>D</td>
+									<td>pimes16@gmail.com</td>
+									
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>MECATRONICA</td>
+									<td>C455</td>
+									<td>15</td>
+									<td>F</td>
+									<td>meca15@gmail.com</td>
+									
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>ESCOLARES</td>
+									<td>001</td>
+									<td>01</td>
+									<td>B</td>
+									<td>escolares@gmail.com</td>
+									
+								</tr>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 			<!-- /page header -->
 
@@ -1342,229 +1353,673 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic initialization -->
+				<!-- Checkboxes -->
 				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Default initialization</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Checkbox inputs
+					</h6>
+					<span class="text-muted d-block">Checkbox inputs variations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic checkbox</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type with both field label and right label. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-label"></div>
+								<a href="#alpaca-checkbox-label-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-label-source">
+									<pre class="language-javascript"><code>// Checkbox with label
+$('#alpaca-checkbox-label').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?'
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<p class="mb-3">Trumbowyg is a light, translatable and customisable jQuery plugin. Options and design are entirely configurable to suit your needs. However, the default design is compatible with Retina display and optimized for a great and simple user experience. No useless features, just the necessary ones to generate clean, semantic code.</p>
-						<form action="#">
-							<div class="mb-3">
-								<div id="trumbowyg_default">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Display only mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type in display-only mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-static"></div>
+								<a href="#alpaca-checkbox-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-static-source">
+									<pre class="language-javascript"><code>// Display only mode
+$('#alpaca-checkbox-static').alpaca({
+    data: false,
+    view: 'bootstrap-display',
+    options: {
+        label: 'Registered?'
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
 
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled checkbox</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type with custom style added by Uniform plugin. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-styled"></div>
+								<a href="#alpaca-checkbox-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-styled-source">
+									<pre class="language-javascript"><code>// Styled checkbox
+$('#alpaca-checkbox-styled').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'checkbox-styled'
+    },
+    postRender: function(control) {
+        $('.checkbox-styled').find('input[type=checkbox]').uniform();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
 
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates styled checkbox input in disabled mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-styled-disabled"></div>
+								<a href="#alpaca-checkbox-styled-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-styled-disabled-source">
+									<pre class="language-javascript"><code>// Disabled checkbox
+$('#alpaca-checkbox-styled-disabled').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'checkbox-styled-disabled',
+        disabled: true
+    },
+    postRender: function(control) {
+        $('.checkbox-styled-disabled').find('input[type=checkbox]').uniform();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-									<h5 class="font-weight-semibold">Mission crew</h5>
 
-									<div class="card card-table table-responsive shadow-0">
-										<table class="table table-bordered" style="width: 100%">
-											<thead>
-												<tr>
-													<th>Position</th>
-													<th>Astronaut</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Commander</td>
-													<td>Neil A. Armstrong</td>
-												</tr>
-												<tr>
-													<td>Command Module Pilot</td>
-													<td>Michael Collins</td>
-												</tr>
-												<tr>
-													<td>Lunar Module Pilot</td>
-													<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Switchery toggles</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type displayed as a toggle. Both Uniform and Switchery are custom additions, Alpaca doesn't support these components by default and requires custom configuraiton.</p>
+								<div id="alpaca-switchery"></div>
+								<a href="#alpaca-switchery-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-switchery-source">
+									<pre class="language-javascript"><code>// Switchery toggle
+$('#alpaca-switchery').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'switchery-demo'
+    },
+    postRender: function() {
 
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </div>
-				            </div>
+        // Init Switchery
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.switchery-demo input[type=checkbox]'));
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
 
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Save changes <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
+        // Add proper spacing
+        $('.switchery-demo').find('.form-check').addClass('form-check-switchery');
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type displayed as a toggle, in disabled mode. Both Uniform and Switchery are custom additions, Alpaca doesn't support these components by default and requires custom configuraiton.</p>
+								<div id="alpaca-switchery-disabled"></div>
+								<a href="#alpaca-switchery-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-switchery-disabled-source">
+									<pre class="language-javascript"><code>// Switchery toggle
+$('#alpaca-switchery-disabled').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'switchery-disabled-demo',
+        disabled: true
+    },
+    postRender: function(control) {
+
+        // Init Switchery
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.switchery-disabled-demo input[type=checkbox]'));
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
+
+        // Add proper spacing
+        $('.switchery-disabled-demo').find('.form-check').addClass('form-check-switchery');
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic checkbox list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox list used for multiple values provided as an array. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-list"></div>
+								<a href="#alpaca-checkbox-list-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-list-source">
+									<pre class="language-javascript"><code>// Basic checkbox list
+$('#alpaca-checkbox-list').alpaca({
+    data: ['sandwich', 'cookie', 'drink'],
+    schema: {
+        type: 'array',
+        enum: ['sandwich', 'chips', 'cookie', 'drink']
+    },
+    options: {
+        type: 'checkbox',
+        label: 'What would you like with your order?',
+        optionLabels: ['A Sandwich', 'Potato Chips', 'A Cookie', 'Soft Drink']
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled checkbox list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates multiple checkbox list with custom style added by Uniform plugin. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-list-styled"></div>
+								<a href="#alpaca-checkbox-list-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-list-styled-source">
+									<pre class="language-javascript"><code>// Styled checkbox list
+$('#alpaca-checkbox-list-styled').alpaca({
+    data: ['sandwich', 'cookie', 'drink'],
+    schema: {
+        type: 'array',
+        enum: ['sandwich', 'chips', 'cookie', 'drink']
+    },
+    options: {
+        type: 'checkbox',
+        label: 'What would you like with your order?',
+        optionLabels: ['A Sandwich', 'Potato Chips', 'A Cookie', 'Soft Drink'],
+        fieldClass: 'checkbox-styled-list'
+    },
+    postRender: function(control) {
+        $('.checkbox-styled-list').find('input[type=checkbox]').uniform();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>/-->
-				<!-- /basic initialization -->
+				<!-- /checkboxes -->
 
 
-				<!-- Custom toolbar -->
+				<!-- Radio -->
 				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom toolbar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Radio buttons
+					</h6>
+					<span class="text-muted d-block">Radio button variations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>radio</code> button field with more than 3 options and custom option labels. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-basic"></div>
+								<a href="#alpaca-radio-basic-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-basic-source">
+									<pre class="language-javascript"><code>// Basic radios
+$('#alpaca-radio-basic').alpaca({
+    data: 'green',
+    options: {
+        type: 'radio',
+        label: 'Favorite Color',
+        helper: 'Pick your favorite color',
+        optionLabels: {
+            red: 'Red',
+            green: 'Green',
+            blue: 'Blue',
+            white: 'White',
+            black: 'Black'
+        }
+    },
+    schema: {
+        required: true,
+        enum: ['red', 'green', 'blue', 'white', 'black']
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<p class="mb-3">Trumbowyg allows you to choose the buttons that appears in the button pane. The <code>btns</code> option is an array containing string values representing the buttons or vertical separators (using the pipe character). To create your own custom button pane, define an array and pass it to the <code>btns</code> option.</p>
-						<form action="#">
-							<div class="mb-3">
-								<div id="trumbowyg_custom">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>radio</code> button field with set of options in disabled mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-basic-disabled"></div>
+								<a href="#alpaca-radio-basic-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-basic-disabled-source">
+									<pre class="language-javascript"><code>// Disabled mode
+$('#alpaca-radio-basic-disabled').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        vertical: true,
+        disabled: true
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
 
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates radio button field with custom style added by Uniform plugin. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-styled"></div>
+								<a href="#alpaca-radio-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-styled-source">
+									<pre class="language-javascript"><code>// Styled radios
+$('#alpaca-radio-styled').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        fieldClass: 'radio-styled-demo',
+        vertical: true
+    },
+    postRender: function(control) {
+        $('.radio-styled-demo').find('input[type=radio]').uniform({
+            radioClass: 'choice'
+        });
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
 
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates styled radio button in disabled mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-styled-disabled"></div>
+								<a href="#alpaca-radio-styled-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-styled-disabled-source">
+									<pre class="language-javascript"><code>// Disabled mode
+$('#alpaca-radio-styled-disabled').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        vertical: true,
+        fieldClass: 'radio-styled-disabled-demo',
+        disabled: true
+    },
+    postRender: function(control) {
+        $('.radio-styled-disabled-demo').find('input[type=radio]').uniform({
+            radioClass: 'choice'
+        });
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-									<h5 class="font-weight-semibold">Mission crew</h5>
 
-									<div class="card card-table table-responsive shadow-0">
-										<table class="table table-bordered" style="width: 100%">
-											<thead>
-												<tr>
-													<th>Position</th>
-													<th>Astronaut</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Commander</td>
-													<td>Neil A. Armstrong</td>
-												</tr>
-												<tr>
-													<td>Command Module Pilot</td>
-													<td>Michael Collins</td>
-												</tr>
-												<tr>
-													<td>Lunar Module Pilot</td>
-													<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Required radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates radio button with validation options and requirements. Validation engine automatically displays multiple notifications. To use, simply set <code>required</code> option to <code>true</code> in configuration.</p>
+								<div id="alpaca-radio-required"></div>
+								<a href="#alpaca-radio-required-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-required-source">
+									<pre class="language-javascript"><code>// Required radios
+$('#alpaca-radio-required').alpaca({
+    data: 'Coffee2',
+    options: {
+        label: 'Ice cream',
+        helper: 'Guess my favorite ice cream?',
+        optionLabels: ['Vanilla Flavor', 'Chocolate Flavor', 'Coffee Flavor']
+    },
+    schema: {
+        required: true,
+        enum: ['Vanilla', 'Chocolate', 'Coffee']
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
 
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </div>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Save changes <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Options</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A radio field that uses the <code>removeDefaultNone</code> option to remove the option for the end user to select <code>None</code> from the list of available options. In addition, the <code>vertical</code> option is specified to inform the field to render vertically.</p>
+								<div id="alpaca-radio-options"></div>
+								<a href="#alpaca-radio-options-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-options-source">
+									<pre class="language-javascript"><code>// Options
+$('#alpaca-radio-options').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        removeDefaultNone: true,
+        vertical: true
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>/-->
-				<!-- /custom toolbar -->
+				<!-- /radios -->
 
 
-				<!-- Additional plugins -->
+				<!-- Tokenfield -->
 				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Additional plugins</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Bootstrap Tokenfield
+					</h6>
+					<span class="text-muted d-block">Display tagged elements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Tokenfield</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The <code>token</code> field. This provides an implementation of the Bootstrap TokenField plugin on top of a text field to allow for autocomplete and typeahead tokens in a comma (or alternative separator) delimited string.</p>
+								<div id="alpaca-tokenfield"></div>
+								<a href="#alpaca-tokenfield-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-tokenfield-source">
+									<pre class="language-javascript"><code>// Basic setup
+$('#alpaca-tokenfield').alpaca({
+    schema: {
+        title: 'Character Names',
+        type: 'string'
+    },
+    options: {
+        type: 'token',
+        focus: false,
+        tokenfield: {
+            autocomplete: {
+                source: ['marty', 'doc', 'george', 'biff', 'lorraine', 'mr. strickland'],
+                delay: 100
+            },
+            showAutocompleteOnFocus: true
+        }
+    },
+    data: 'marty,doc,george,biff'
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<p class="mb-3">Trumbowyg editor comes with 10 optional plugins: <strong>base64</strong> - allows you to insert images inline as base64; <strong>clean paste</strong> - cleans up the HTML code before insert content into the editor; <strong>colors</strong> - adds foreground and background color selectors; <strong>emoji</strong> - allows you to insert some emojis in your editor; <strong>insert audio</strong> - inserts audio files; <strong>noembed</strong> - embed any content from a link; <strong>paste image</strong> - handles paste events; <strong>preformatted</strong> - wraps selected content in pre tag; <strong>template</strong> - manages custom HTML templates; <strong>upload</strong> - adds an upload front-end allowing users to upload an image with progress bar.</p>
-						<form action="#">
-							<div class="mb-3">
-								<div id="trumbowyg_plugins">
-									<h2>Apollo 11</h2>
-									<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-									<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-									<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-									<h5 class="font-weight-semibold">Technical details</h5>
-									<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-									<ol>
-										<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-										<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-										<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-									</ol>
-									<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-									<h5 class="font-weight-semibold">Mission crew</h5>
-
-									<div class="card card-table table-responsive shadow-0">
-										<table class="table table-bordered" style="width: 100%">
-											<thead>
-												<tr>
-													<th>Position</th>
-													<th>Astronaut</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Commander</td>
-													<td>Neil A. Armstrong</td>
-												</tr>
-												<tr>
-													<td>Command Module Pilot</td>
-													<td>Michael Collins</td>
-												</tr>
-												<tr>
-													<td>Lunar Module Pilot</td>
-													<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-
-									Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-					            </div>
-				            </div>
-
-				            <div class="text-right">
-					            <button type="submit" class="btn bg-teal-400">Save changes <i class="icon-paperplane ml-2"></i></button>
-				            </div>
-			            </form>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Display only mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">Here is a token field that lets you pick character first names from the movie Back to the Future, displayed in display-only mode. Tokenfield also supports jQuery UI's <code>autocomplete</code> extension as seen in previous demo.</p>
+								<div id="alpaca-tokenfield-static"></div>
+								<a href="#alpaca-tokenfield-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-tokenfield-static-source">
+									<pre class="language-javascript"><code>// Display only mode
+$('#alpaca-tokenfield-static').alpaca({
+    schema: {
+        title: 'Character Names',
+        type: 'string'
+    },
+    options: {
+        type: 'token',
+        focus: false,
+        tokenfield: {
+            autocomplete: {
+                source: ['marty', 'doc', 'george', 'biff', 'lorraine', 'mr. strickland'],
+                delay: 100
+            },
+            showAutocompleteOnFocus: true
+        }
+    },
+    data: 'marty,doc,george,biff',
+    view: 'bootstrap-display'
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>/-->
-				<!-- /additional plugins -->
+				<!-- /tokenfield -->
 
 			</div>
 			<!-- /content area -->
