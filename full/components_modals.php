@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
 	<!-- Global stylesheets -->
@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
-	<script src="global_assets/js/plugins/pickers/anytime.min.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/picker.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
-	<script src="global_assets/js/plugins/notifications/jgrowl.min.js"></script>
-
+	<script src="global_assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="global_assets/js/demo_pages/components_modals.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,13 +481,14 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="form_select2.php" class="nav-link">EDITAR</a></li>
+								
 								
 							</ul>
 						</li>
@@ -509,52 +504,32 @@
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
 								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRADO</a></li>
-								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								
+								<li class="nav-item"><a href="editor_code.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.php" class="nav-link active">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_date.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="picker_color.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="components_modals.php" class="nav-link active">PAGO DE TRANSPORTE</a></li>
-							</ul>
-						</li>
 							</ul>
 						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
+						
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
-								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
-								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
-								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
-								<li class="nav-item"><a href="components_collapsible.html" class="nav-link">Collapsible</a></li>
-								<li class="nav-item"><a href="components_navs.html" class="nav-link">Navs</a></li>
-								<li class="nav-item"><a href="components_buttons.html" class="nav-link">Buttons</a></li>
-								<li class="nav-item"><a href="components_popups.html" class="nav-link">Tooltips and popovers</a></li>
-								<li class="nav-item"><a href="components_alerts.html" class="nav-link">Alerts</a></li>
-								<li class="nav-item"><a href="components_pagination.html" class="nav-link">Pagination</a></li>
-								<li class="nav-item"><a href="components_badges.html" class="nav-link">Badges</a></li>
-								<li class="nav-item"><a href="components_progress.html" class="nav-link">Progress</a></li>
-								<li class="nav-item"><a href="components_breadcrumbs.html" class="nav-link">Breadcrumbs</a></li>
-								<li class="nav-item"><a href="components_media.html" class="nav-link">Media objects</a></li>
-								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
+								<li class="nav-item"><a href="components_modals.php" class="nav-link active">PAGO DE TRANSPORTE</a></li>
+								
 							</ul>
 						</li>
+						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
@@ -640,14 +615,15 @@
 
 						<!-- Layout -->
 						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">EMPLEADOS</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>DEPARTAMENTOS</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
-								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">Fixed navbar</a></li>
-								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">Fixed sidebar - custom scroll</a></li>
-								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">Fixed sidebar - native scroll</a></li>
+								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">EDITAR</a></li>
+								
 								<li class="nav-item"><a href="layout_fixed_hideable_navbar.html" class="nav-link">Hideable navbar</a></li>
 								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
 								<li class="nav-item-divider"></li>
@@ -1208,11 +1184,10 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Date &amp; Time</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">PAGOS</span></h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1229,8 +1204,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="picker_date.php" class="breadcrumb-item">Pickers</a>
-							<span class="breadcrumb-item active">Date &amp; time</span>
+							<a href="components_modals.php" class="breadcrumb-item">Components</a>
+							<span class="breadcrumb-item active">Modal dialogs</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1260,9 +1235,64 @@
 						</div>
 					</div>
 				</div>
+				<div class="card-body">
+						<p class="mb-4"></p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">PAGO</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CARRERA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FECHA DE PAGO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">RUTA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">HORARIO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								
+								
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+
+				<!-- Basic modals -->
+				<!--
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">VACACIONES</h5>
+						<h5 class="card-title">DEPARTAMENTO</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1274,664 +1304,1330 @@
 
 					<div class="card-body">
 						
-					</div>	
-<div class="table-responsive">
+					</div>
+
+					<div class="table-responsive">
 						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>NOMBRE DEL EMPLEADO</th>
-									<th>MATRICULA</th>
-									<th>COMIENZO</th>
-									<th>FINALIZAN</th>
-																		
-								</tr>
-							</thead>
 							<tbody>
 								<tr>
-									<td>1</td>
-									<td>Yulissa Daniela	Martinez Cidrian</td>
-									<td>1938462</td>
-									<td>23/10/19</td>
-									<td>23/11/19</td>
+									<th colspan="3" class="table-active">CAMPOS</th>
 								</tr>
 								<tr>
-									<td>2</td>
-									<td>Emma Veronica Palacios Viera</td>
-									<td>1992195</td>
-									<td>18/12/19</td>
-									<td>01/01/20</td>
+									<td style="width: 20%;">NOMBRE DEL DEPARTAMENTO</td>
+									<td style="width: 20%;"><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">FILING<i class="icon-play3 ml-2"></i></button></td>
+									<td></td>
 								</tr>
 								<tr>
-									<td>3</td>
-									<td>Angela Lizbeth Aguilar Martinez</td>
-									<td>2177018</td>
-									<td>16/01/20</td>
-									<td>31/01/20</td>
+									<td>N° DE DEPARTAMENTO</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_iconified">FILING<i class="icon-play3 ml-2"></i></button></td>
+									<td></td>
 								</tr>
+								<tr>
+									<td>N° DE PISO</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_backdrop">FILING <i class="icon-play3 ml-2"></i></button></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>EDIFICIO</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_keyboard">FILING<i class="icon-play3 ml-2"></i></button></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>CORREO</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+									<td></td>
+								</tr>
+								
+								<tr>
+									<td>Scrollable modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_scrollable">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Scrollable modal that allows scroll the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code></td>
+								</tr>
+								<tr>
+									<td>Remote source</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Default Bootstrap's remote source option replacement using jquery <code>.load()</code>. As suggested by Bootstrap dev team</td>
+								</tr>/-->
+							<!--
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Modal sizing</th>
+								</tr>
+								<tr>
+									<td>Mini size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_mini">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in mini size. Mini modal width is <code>300px</code>. To use, add <code>modal-xs</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr>
+									<td>Small size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_small">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in small size. Small modal width is <code>400px</code>. To use, add <code>modal-sm</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr>
+									<td>Default size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in default size. Default modal width is <code>600px</code>. Since this is a default size, modal markup doesn't require any additional sizing classes</td>
+								</tr>
+								<tr>
+									<td>Large size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_large">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in large size. Large modal width is <code>900px</code>. To use, add <code>modal-lg</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr>
+									<td>Full size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_full">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in full width size. This modal has <code>94%</code> width of the window. To use, add <code>modal-full</code> class to <code>.modal-dialog</code> container</td>
+								</tr>/-->
+								<!--
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Optional modal colors</th>
+								</tr>
+								<tr>
+									<td>Default modal theme</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Default color theme. All areas of this modal dialog have <code>white</code> background color. Doesn't require any additional contextual classes</td>
+								</tr>
+								<tr>
+									<td>Primary modal header</td>
+									<td><button type="button" class="btn bg-primary" data-toggle="modal" data-target="#modal_theme_primary">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Primary modal. To use, add <code>.bg-primary</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Danger modal header</td>
+									<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Danger modal. To use, add <code>.bg-danger</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Success modal header</td>
+									<td><button type="button" class="btn bg-success" data-toggle="modal" data-target="#modal_theme_success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success modal. To use, add <code>.bg-success</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Warning modal header</td>
+									<td><button type="button" class="btn bg-warning" data-toggle="modal" data-target="#modal_theme_warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning modal. To use, add <code>.bg-warning</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Info modal header</td>
+									<td><button type="button" class="btn bg-info" data-toggle="modal" data-target="#modal_theme_info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info modal. To use, add <code>.bg-info</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Custom modal header color</td>
+									<td><button type="button" class="btn bg-brown" data-toggle="modal" data-target="#modal_theme_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with <code>custom</code> color added to the modal header. To use, add any <a href="colors_primary.html">color class</a> from the color system to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Custom modal background color</td>
+									<td><button type="button" class="btn bg-teal-300" data-toggle="modal" data-target="#modal_theme_bg_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal dialog with <code>solid</code> custom background color. To use, add any <a href="colors_primary.html">color class</a> from the color system to the <code>.modal-content</code> container. Additionaly, you can also add a custom background color to the modal header</td>
+								</tr>/-->
 
-									
+								<!--
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Form components</th>
 								</tr>
+								<tr>
+									<td>Vertical form</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_vertical">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with default vertical form layout and responsive grid. Forms must be placed outside of <code>.modal-body</code> container to prevent extra horizontal padding</td>
+								</tr>
+								<tr>
+									<td>Horizontal form</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with horizontal form layout. It does also support responsive grid, but in this case it will look best in wider modals</td>
+								</tr>
+								<tr>
+									<td>Inline form</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_inline">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with with a simple <code>inline</code> form layout</td>
+								</tr>/-->
+
+								<!--
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Heading options</th>
+								</tr>
+								<tr>
+									<td>Modal with H1 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h1">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H1</code> size. In all heading sizes, vertical position of a <code>close</code> button will be automatically adjusted to the middle of the modal header</td>
+								</tr>
+								<tr>
+									<td>Modal with H2 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h2">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H2</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H3 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h3">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H3</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H4 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h4">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H4</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H5 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h5">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H5</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H6 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h6">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H6</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with basic title</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_title_basic">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title could be either a standard heading or any other component, but make sure you have included <code>.modal-title</code> class to it</td>
+								</tr>
+								<tr>
+									<td>Modal with subtitle</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_subtitle">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title <code>subtitle</code>. This can be either inline or block. To display a subtitle in one line with the title, remove <code>.d-block</code> class from it</td>
+								</tr>/-->
+
+								<!--
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Modal events</th>
+								</tr>
+								<tr>
+									<td>onShow event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onshow">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event</td>
+								</tr>
+								<tr>
+									<td>onShown event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onshown">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event</td>
+								</tr>
+								<tr>
+									<td>onHide event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onhide">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event is fired immediately when the <code>hide</code> instance method has been called</td>
+								</tr>
+								<tr>
+									<td>onHidden event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onhidden">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete)</td>
+								</tr>/-->
+
+								<!--
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Programmatic dialog boxes</th>
+								</tr>
+								<tr>
+									<td>Alert dialog</td>
+									<td><button type="button" class="btn bg-primary" id="alert">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of an <code>alert</code> dialog replacement with default Bootstrap modals</td>
+								</tr>
+								<tr>
+									<td>Confirm dialog</td>
+									<td><button type="button" class="btn bg-primary" id="confirm">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <code>confirmation</code> dialog replacement with default Bootstrap modals including callback</td>
+								</tr>
+								<tr>
+									<td>Prompt dialog</td>
+									<td><button type="button" class="btn bg-primary" id="prompt">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <code>prompt</code> dialog replacement with default Bootstrap modals including callback</td>
+								</tr>
+								<tr>
+									<td>Prompt with default value</td>
+									<td><button type="button" class="btn bg-primary" id="prompt_value">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <code>prompt</code> dialog replacement with default value</td>
+								</tr>
+								<tr>
+									<td>Custom bootbox dialog</td>
+									<td><button type="button" class="btn bg-primary" id="bootbox_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a custom bootbox dialog with multiple buttons and callbacks</td>
+								</tr>
+								<tr>
+									<td>Dialog with form</td>
+									<td><button type="button" class="btn bg-primary" id="bootbox_form">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a custom bootbox dialog with simple form and callbacks</td>
+								</tr>/-->
 							</tbody>
 						</table>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
+				<!-- /basic modals -->
 
 
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Daterange picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Daterange picker</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">This date range picker component for <code>Bootstrap</code> creates a dropdown menu from which a user can select a range of dates. If invoked with no options, it will present two calendars to choose a start and end date from. Optionally, you can provide a list of date ranges the user can select from instead of choosing dates from the calendars.</p>
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Basic date range picker:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015"> 
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label>Display week numbers:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-weeknumbers" value="03/18/2013 - 03/23/2013"> 
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label>Display time picker:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-time" value="03/18/2013 - 03/23/2013"> 
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label>Basic single date picker:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-single" value="03/18/2013">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label>Simple text field attachment:</label>
-									<input type="text" class="form-control daterange-basic" value="03/18/2013 - 03/23/2013"> 
-								</div>
-
-								<div class="form-group">
-									<label>Button class options:</label>
-									<input type="text" class="form-control daterange-buttons" value="03/18/2013 - 03/23/2013"> 
-								</div>
+	            <!-- Basic modal -->
+				<div id="modal_default" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">NOMBRE DEL DEPARTAMENTO</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Show calendars on left:</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-left" value="03/18/2013 - 03/23/2013"> 
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
+							<div class="modal-body">
+								<h6 class="font-weight-semibold"></h6>
+								<p></p>
 
-								<div class="form-group">
-									<label>Display date dropdowns:</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-datemenu" value="03/18/2013 - 03/23/2013"> 
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
+								<hr>
 
-								<div class="form-group">
-									<label>10 minute increments:</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-increments" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM">
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
+								<h6 class="font-weight-semibold"></h6>
+								<p></p>
+							</div>
 
-								<div class="form-group">
-									<label>Localization (ru):</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-locale" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM">
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Pre-defined ranges &amp; callback:</label>
-									<button type="button" class="btn btn-light daterange-predefined">
-										<i class="icon-calendar22 mr-2"></i>
-										<span></span>
-									</button>
-								</div>
-
-								<div class="form-group">
-									<label class="d-block">Date picker inside button:</label>
-									<button type="button" class="btn btn-danger daterange-ranges">
-										<i class="icon-calendar22 mr-2"></i>
-										<span></span>
-									</button>
-								</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /daterange picker -->
+				</div>
+				<!-- /basic modal -->
 
 
-				<!-- Pickadate picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Pick-a-Date picker</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">Pickadate.js is a very powerful, mobile-friendly, responsive, and lightweight jQuery date &amp; time input picker. The basic setup requires targetting an input element and invoking the picker. Basically this plugin includes 2 main parts: date picker and time picker. Time picker examples demonstrated below.</p>
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic options</h6>
-									<p>The basic setup requires targetting an input element and invoking the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Strings</h6>
-									<p>Change the month and weekday labels as you find suitable.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-strings" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Buttons</h6>
-									<p>Change the text or hide a button completely by passing a false-y value.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-buttons" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Formats</h6>
-									<p>Display a human-friendly format and use an alternate one to submit to the server.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-format" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Year selector</h6>
-									<p>You can also specify the number of years to show in the dropdown using an even integer.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-year" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">First weekday</h6>
-									<p>The first day of the week can be set to either Sunday or Monday.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-weekday" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Date limits</h6>
-									<p>Set the minimum and maximum selectable dates on the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-limits" placeholder="Try me&hellip;">
-									</div>
-								</div>
+	            <!-- Iconified modal -->
+				<div id="modal_iconified" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title"><i class="icon-menu7 mr-2"></i> &nbsp; N° DE DEPARTAMENTO</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Accessibility labels</h6>
-									<p>Change the <code>title</code> attributes to several elements within the picker</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-accessibility" placeholder="Try me&hellip;">
-									</div>
-								</div>
+							<div class="modal-body">
+								<div class="alert alert-info alert-dismissible alert-styled-left border-top-0 border-bottom-0 border-right-0">
+					                <span class="font-weight-semibold"></span> 
+					                <button type="button" class="close" data-dismiss="alert">×</button>
+					            </div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Editable input</h6>
-									<p>By default, typing into the input is disabled by giving it a <code>readOnly</code> attribute.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-editable" placeholder="Try me&hellip;">
-									</div>
-								</div>
+								<h6 class="font-weight-semibold"><i class="icon-law mr-2"></i> </h6>
+								<p></p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown selectors</h6>
-									<p>Display <code>select</code> menus to pick the month and year.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-selectors" placeholder="Try me&hellip;">
-									</div>
-								</div>
+								<hr>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Translations</h6>
-									<p>The picker supports translations for 39 languages, available out of the box.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-translated" placeholder="Try me&hellip;">
-									</div>
-								</div>
+								<!--<p><i class="icon-mention mr-2"></i> Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>/-->
+							</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable ranges</h6>
-									<p>Enable dates that fall within a range of disabled dates by adding the <code>inverted</code> parameter.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-disable-range" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Events</h6>
-									<p>Fire off events as the user interacts with the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-events" placeholder="Open your console and try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Disable dates</h6>
-									<p>Disable a specific or arbitrary set of dates selectable on the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-disable" placeholder="Try me&hellip;">
-									</div>
-								</div>
+							<div class="modal-footer">
+								<button class="btn btn-link" data-dismiss="modal"><i class="icon-cross2 font-size-base mr-1"></i> Close</button>
+								<button class="btn bg-primary"><i class="icon-checkmark3 font-size-base mr-1"></i> Save</button>
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /pickadate picker -->
+				</div>
+				<!-- /iconified modal -->
 
 
-				<!-- Pickatime picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Pick-a-Time time picker</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic options</h6>
-									<p>The basic setup requires targetting an <code>input</code> element and invoking the picke.r</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Clear button</h6>
-									<p>Change the text or hide the button completely by passing a <code>false-y</code> value.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-clear" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Timepicker formats</h6>
-									<p>Display a human-friendly label and <code>input</code> format and use an alternate one to submit.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-format" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Send the hidden value only</h6>
-									<p>Sometimes the value that needs to be sent to the server is just the hidden value – and not the visible one.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-hidden" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Time limits</h6>
-									<p>Set the minimum and maximum selectable times on the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-limits" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Using integers as hours</h6>
-									<p>Set the minimum and maximum selectable times on the picker using integers as hours.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-limits-integers" placeholder="Try me&hellip;">
-									</div>
-								</div>
+	            <!-- Disabled backdrop -->
+				<div id="modal_backdrop" class="modal fade" data-backdrop="false" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">N° DE PISO</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable times</h6>
-									<p>Disable a specific or arbitrary set of times selectable on the picker</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-disabled" placeholder="Try me&hellip;">
-									</div>
-								</div>
+							<div class="modal-body">
+								<h6 class="font-weight-semibold"></h6>
+								<p></p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disabling ranges</h6>
-									<p>Enable times that fall within a range of disabled times by adding the <code>inverted</code> parameter.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-range" placeholder="Try me&hellip;">
-									</div>
-								</div>
+								<hr>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Editable input</h6>
-									<p>By default, text input has a <code>readOnly</code> attribute to hide virtual keyboards on touch devices.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-editable" placeholder="Try me&hellip;">
-									</div>
-								</div>
+								<!--<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>/-->
+							</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Timepicker events</h6>
-									<p>Fire off events as the user interacts with the picker</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-events" placeholder="Open your console and try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disabling all with exeptions</h6>
-									<p>Enable only a specific or arbitrary set of times by setting true as the first item in the collection.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-disableall" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Timepicker intervals</h6>
-									<p>Choose the minutes interval between each time in the list.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-intervals" placeholder="Try me&hellip;">
-									</div>
-								</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /pickadate picker -->
+				</div>
+				<!-- /disabled backdrop -->
 
 
-				<!-- Anytime picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Anytime pickers</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">The <code>Any+Time™</code> JavaScript Library includes a highly-customizable, jQuery-compatible datepicker/ timepicker (calendar/ clock widget) and a powerful Date/String parse/format utility. Anytime allows you to create a date/time picker with advanced features and options not found in other calendar/clock widgets, also to format dates and times in different ways.</p>
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p>Basic text field specifies that the week begins with Monday.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-date" value="Sunday, July 30th in the Year 1967 CE">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Month and day</h6>
-									<p>Month and day only picker format</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-month-day" value="4th of June">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Time picker</h6>
-									<p>Current example displays hours and minutes only. Seconds can be added via plugin <code>options</code>.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-watch2"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-time" value="12:34">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Display hours only</h6>
-									<p>Current example demonstrates simple time picker with hours only in <code>AM/PM</code> format.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-watch2"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-time-hours" value="9 PM">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Date and time pickers</h6>
-									<p>The first field specifies that the week begins with Monday. The second field demonstrates a time picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-both" value="June 4th 08:47">
-									</div>
-								</div>
+	            <!-- Disabled keyboard interaction -->
+				<div id="modal_keyboard" class="modal fade" data-keyboard="false" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">EDIFICIO</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom display format</h6>
-									<p>Custom display format can be specified via plugin <code>options</code></p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-weekday" value="Wednesday, 4th of June, 2014">
-									</div>
-								</div>
+							<div class="modal-body">
+								<h6 class="font-weight-semibold"></h6>
+								<p></p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Numeric date</h6>
-									<p>Current example demonstrates custom <code>DD/MM/YYYY</code> date format</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-month-numeric" value="04/06/2014">
-									</div>
-								</div>
+								<hr>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Date range</h6>
-									<p>In the following example, <code>AnyTime.Converter</code> and jQuery work together to provide date-range selection. The value for the second ("Finish") field must be at least one day after the date in the first ("Start") field, but no more than 90 days later.</p>
-									<div class="row">
-										<div class="col-md-6">
-											<p><input type="text" class="form-control" id="rangeDemoStart" placeholder="Start date"></p>
-										</div>
+								<!--<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>/-->
+							</div>
 
-										<div class="col-md-6">
-											<p><input type="text" class="form-control" id="rangeDemoFinish" placeholder="Finish date" disabled></p>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /disabled keyboard interaction -->
+
+
+	            <!-- Disabled animation -->
+				<div id="modal_animation" class="modal" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">CORREO</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold"></h6>
+								<p></p>
+
+								<hr>
+
+								<!--<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>/-->
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /disabled animation -->
+
+
+	            <!-- Scrollable modal -->
+				<div id="modal_scrollable" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-dialog-scrollable">
+						<div class="modal-content">
+							<div class="modal-header pb-3">
+								<h5 class="modal-title">Scrollable modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body py-0">
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+							</div>
+
+							<div class="modal-footer pt-3">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /scrollable modal -->
+
+
+	            <!-- Remote source -->
+				<div id="modal_remote" class="modal" tabindex="-1">
+					<div class="modal-dialog modal-full">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Remote source</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body"></div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /remote source -->
+
+
+
+	            <!-- Mini modal -->
+				<div id="modal_mini" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-xs">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Mini modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /mini modal -->
+
+
+	            <!-- Small modal -->
+				<div id="modal_small" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Small modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /small modal -->
+
+
+	            <!-- Large modal -->
+				<div id="modal_large" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Large modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /large modal -->
+
+
+	            <!-- Full width modal -->
+				<div id="modal_full" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-full">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Full width modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /full width modal -->
+
+
+
+	            <!-- Primary modal -->
+				<div id="modal_theme_primary" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-primary">
+								<h6 class="modal-title">Primary header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /primary modal -->
+
+
+	            <!-- Danger modal -->
+				<div id="modal_theme_danger" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-danger">
+								<h6 class="modal-title">Danger header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-danger">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /default modal -->
+
+
+	            <!-- Success modal -->
+				<div id="modal_theme_success" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-success">
+								<h6 class="modal-title">Success header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-success">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /success modal -->
+
+
+	            <!-- Warning modal -->
+				<div id="modal_theme_warning" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-warning">
+								<h6 class="modal-title">Warning header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-warning">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /warning modal -->
+
+
+	            <!-- Info modal -->
+				<div id="modal_theme_info" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-info">
+								<h6 class="modal-title">Info header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-info">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /info modal -->
+
+
+	            <!-- Custom header color -->
+				<div id="modal_theme_custom" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-brown">
+								<h6 class="modal-title">Custom header color</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-brown">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /custom header color -->
+
+
+	            <!-- Custom background color -->
+				<div id="modal_theme_bg_custom" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content bg-teal-300">
+							<div class="modal-header">
+								<h5 class="modal-title">Custom background color</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link text-white" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-teal-600">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /custom background color -->
+
+
+
+	            <!-- Vertical form modal -->
+				<div id="modal_form_vertical" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Vertical form</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#">
+								<div class="modal-body">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6">
+												<label>First name</label>
+												<input type="text" placeholder="Eugene" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Last name</label>
+												<input type="text" placeholder="Kopyov" class="form-control">
+											</div>
 										</div>
 									</div>
 
-									<input type="button" id="rangeDemoToday" class="btn btn-primary" value="today">
-									<input type="button" id="rangeDemoClear" class="btn btn-light" value="clear">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Address line 1</label>
+												<input type="text" placeholder="Ring street 12" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Address line 2</label>
+												<input type="text" placeholder="building D, flat #67" class="form-control">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-4">
+												<label>City</label>
+												<input type="text" placeholder="Munich" class="form-control">
+											</div>
+
+											<div class="col-sm-4">
+												<label>State/Province</label>
+												<input type="text" placeholder="Bayern" class="form-control">
+											</div>
+
+											<div class="col-sm-4">
+												<label>ZIP code</label>
+												<input type="text" placeholder="1031" class="form-control">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Email</label>
+												<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+												<span class="form-text text-muted">name@domain.com</span>
+											</div>
+
+											<div class="col-sm-6">
+												<label>Phone #</label>
+												<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+												<span class="form-text text-muted">+99-99-9999-9999</span>
+											</div>
+										</div>
+									</div>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">On-Demand Picker</h6>
-									<p>The following example shows how to create a field that initially does not have a picker, followed by a button that creates a picker for the field. This would be useful if you want to allow manual entry into the field, but it does not prevent the user from entering a value in the wrong format.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button type="button" class="btn btn-light btn-icon" id="ButtonCreationDemoButton"><i class="icon-calendar3"></i></button>
-										</span>
-										<input type="text" class="form-control" id="ButtonCreationDemoInput" placeholder="Select a date">
-									</div>
-									<span class="form-text text-muted">Format must be YYYY-MM-DD HH:MM:SS</span>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn bg-primary">Submit form</button>
 								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /vertical form modal -->
+
+
+	            <!-- Horizontal form modal -->
+				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Horizontal form</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="form-horizontal">
+								<div class="modal-body">
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">First name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Eugene" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Last name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Kopyov" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Email</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+											<span class="form-text text-muted">name@domain.com</span>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Phone #</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+											<span class="form-text text-muted">+99-99-9999-9999</span>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Address line 1</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">City</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Munich" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">State/Province</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Bayern" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">ZIP code</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="1031" class="form-control">
+										</div>
+									</div>
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn bg-primary">Submit form</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /horizontal form modal -->
+
+
+	            <!-- Inline form modal -->
+				<div id="modal_form_inline" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Inline form</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="modal-body form-inline justify-content-center">
+								<label>Username:</label>
+								<input type="text" placeholder="Your username" class="form-control mb-2 mr-sm-2 ml-sm-2 mb-sm-0">
+
+								<label class="ml-sm-2">Password:</label>
+								<input type="password" placeholder="Your password" class="form-control mb-2 mr-sm-2 ml-sm-2 mb-sm-0">
+
+								<button type="submit" class="btn bg-primary ml-sm-2 mb-sm-0">Sign me in <i class="icon-plus22"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /inline form modal -->
+
+
+
+	            <!-- Modal with h1 -->
+				<div id="modal_h1" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title">H1 heading title</h1>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /anytime picker -->
+				</div>
+				<!-- /modal with h1 -->
+
+
+	            <!-- Modal with h2 -->
+				<div id="modal_h2" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h2 class="modal-title">H2 heading title</h2>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h2 -->
+
+
+	            <!-- Modal with h3 -->
+				<div id="modal_h3" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title">H3 heading title</h3>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h3 -->
+
+
+	            <!-- Modal with h4 -->
+				<div id="modal_h4" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">H4 heading title</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h4 -->
+
+
+	            <!-- Modal with h5 -->
+				<div id="modal_h5" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">H5 heading title</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h5 -->
+
+
+	            <!-- Modal with h6 -->
+				<div id="modal_h6" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h6 class="modal-title">H6 heading title</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h6 -->
+
+
+	            <!-- Modal with basic title -->
+				<div id="modal_title_basic" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="font-weight-semibold modal-title">Basic heading title</span>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with basic title -->
+
+
+	            <!-- Modal with subtitle -->
+				<div id="modal_subtitle" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">This is a modal title <small class="d-block text-muted">And this is a subtitle</small></h5>
+								
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with subtitle -->
+
+
+
+	            <!-- onShow callback modal -->
+				<div id="modal_onshow" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onShow event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onShow event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onShow callback modal -->
+
+
+	            <!-- onShown callback modal -->
+				<div id="modal_onshown" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onShown event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onShown event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onShown callback modal -->
+
+
+	            <!-- onHide callback modal -->
+				<div id="modal_onhide" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onHide event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onHide event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onHide callback modal -->
+
+
+	            <!-- onHidden callback modal -->
+				<div id="modal_onhidden" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onHidden event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onHidden event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onHidden callback modal -->
 
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
-			<!--
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
@@ -1939,7 +2635,7 @@
 						Footer
 					</button>
 				</div>
-
+<!--
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
 						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>

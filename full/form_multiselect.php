@@ -8,7 +8,7 @@
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
@@ -17,23 +17,18 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<script src="global_assets/js/main/jquery.min.js"></script>
-	<script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
-	<script src="global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
-	<script src="global_assets/js/plugins/pickers/anytime.min.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/picker.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
-	<script src="global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
-	<script src="global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -43,8 +38,8 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-			<a href="index.php" class="d-inline-block">
-				<img src="global_assets/images/logo_light.png" alt="">
+			<a href="index.html" class="d-inline-block">
+				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
 
@@ -167,7 +162,7 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
@@ -178,7 +173,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Will Brason</a>
@@ -189,7 +184,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
@@ -200,7 +195,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
@@ -211,7 +206,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
@@ -246,7 +241,7 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
@@ -263,7 +258,7 @@
 
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
@@ -280,7 +275,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -296,7 +291,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -312,7 +307,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -336,7 +331,7 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-						<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
+						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
 						<span>Victoria</span>
 					</a>
 
@@ -383,7 +378,7 @@
 					<div class="card-body">
 						<div class="media">
 							<div class="mr-3">
-								<a href="#"><img src="global_assets/images/placeholders/placeholder.jpg" width="38" height="38" class="rounded-circle" alt=""></a>
+								<a href="#"><img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="38" height="38" class="rounded-circle" alt=""></a>
 							</div>
 
 							<div class="media-body">
@@ -409,7 +404,7 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.php" class="nav-link">
+							<a href="index.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
@@ -423,11 +418,11 @@
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>
-								<li class="nav-item"><a href="layout_2/LTR/default/full/index.html" class="nav-link">Layout 2</a></li>
-								<li class="nav-item"><a href="layout_3/LTR/default/full/index.html" class="nav-link">Layout 3</a></li>
-								<li class="nav-item"><a href="layout_4/LTR/default/full/index.html" class="nav-link">Layout 4</a></li>
-								<li class="nav-item"><a href="layout_5/LTR/default/full/index.html" class="nav-link">Layout 5</a></li>
-								<li class="nav-item"><a href="layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item"><a href="../../../../layout_2/LTR/default/full/index.html" class="nav-link">Layout 2</a></li>
+								<li class="nav-item"><a href="../../../../layout_3/LTR/default/full/index.html" class="nav-link">Layout 3</a></li>
+								<li class="nav-item"><a href="../../../../layout_4/LTR/default/full/index.html" class="nav-link">Layout 4</a></li>
+								<li class="nav-item"><a href="../../../../layout_5/LTR/default/full/index.html" class="nav-link">Layout 5</a></li>
+								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -487,47 +482,49 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="form_select2.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRADO</a></li>
-								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
 								
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.php" class="nav-link active">LISTADO</a></li>
-								<li class="nav-item"><a href="picker_color.php" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="components_modals.php" class="nav-link active">PAGO DE TRANSPORTE</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">PAGO DE TRANSPORTE</a></li>
+								
 							</ul>
 						</li>
+						
 							</ul>
 						</li>
 						<!-- /forms -->
@@ -1188,9 +1185,9 @@
 								<li class="nav-item"><a href="widgets_content.html" class="nav-link">Content widgets</a></li>
 								<li class="nav-item"><a href="widgets_stats.html" class="nav-link">Statistics widgets</a></li>
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>/-->
 							</ul>
-						</li>/-->
+						</li>
 						<!-- /page kits -->
 
 					</ul>
@@ -1208,11 +1205,10 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Date &amp; Time</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Multiselect</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1228,9 +1224,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="picker_date.php" class="breadcrumb-item">Pickers</a>
-							<span class="breadcrumb-item active">Date &amp; time</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
+							<span class="breadcrumb-item active">Multiselect</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1260,671 +1256,1335 @@
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">VACACIONES</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						
-					</div>	
-<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>NOMBRE DEL EMPLEADO</th>
-									<th>MATRICULA</th>
-									<th>COMIENZO</th>
-									<th>FINALIZAN</th>
-																		
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Yulissa Daniela	Martinez Cidrian</td>
-									<td>1938462</td>
-									<td>23/10/19</td>
-									<td>23/11/19</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Emma Veronica Palacios Viera</td>
-									<td>1992195</td>
-									<td>18/12/19</td>
-									<td>01/01/20</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>Angela Lizbeth Aguilar Martinez</td>
-									<td>2177018</td>
-									<td>16/01/20</td>
-									<td>31/01/20</td>
-								</tr>
-
-									
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
 			</div>
 			<!-- /page header -->
 
 
 			<!-- Content area -->
 			<div class="content">
+			<div class="card-body">
+						<p class="mb-4"></p>
 
-				<!-- Daterange picker -->
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">PAGO</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CARRERA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FECHA DE PAGO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">RUTA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">HORARIO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								
+								
+			</div>
+				<!-- Multiselect examples -->
 				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Daterange picker</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Basic examples
+					</h6>
+					<span class="text-muted d-block">Different multiselect options</span>
+				</div>
 
-					<div class="card-body">
-						<p class="mb-3">This date range picker component for <code>Bootstrap</code> creates a dropdown menu from which a user can select a range of dates. If invoked with no options, it will present two calendars to choose a start and end date from. Optionally, you can provide a list of date ranges the user can select from instead of choosing dates from the calendars.</p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Basic examples</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>/-->
+<!--
+							<div class="card-body">
 
-						<div class="row">
-							<div class="col-md-6">
+								<!-- Default multiselect -->
+								<!--
 								<div class="form-group">
-									<label>Basic date range picker:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015"> 
-									</div>
-								</div>
+									<label>Default select</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /default multiselect -->
 
-								<div class="form-group">
-									<label>Display week numbers:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-weeknumbers" value="03/18/2013 - 03/23/2013"> 
-									</div>
-								</div>
 
+								<!-- Default multiselect with selected options -->
+								<!--
 								<div class="form-group">
-									<label>Display time picker:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-time" value="03/18/2013 - 03/23/2013"> 
-									</div>
-								</div>
+									<label>Default selected options</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes" selected>Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms" selected>Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /default multiselect with selected options -->
 
-								<div class="form-group">
-									<label>Basic single date picker:</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-										<input type="text" class="form-control daterange-single" value="03/18/2013">
-									</div>
-								</div>
 
+								<!-- Options with divider -->
+								<!--
 								<div class="form-group">
-									<label>Simple text field attachment:</label>
-									<input type="text" class="form-control daterange-basic" value="03/18/2013 - 03/23/2013"> 
-								</div>
+									<label>Options with divider</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option data-role="divider"></option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /options with divider -->
 
-								<div class="form-group">
-									<label>Button class options:</label>
-									<input type="text" class="form-control daterange-buttons" value="03/18/2013 - 03/23/2013"> 
-								</div>
-							</div>
 
-							<div class="col-md-6">
+								<!-- Option groups support -->
+								<!--
 								<div class="form-group">
-									<label>Show calendars on left:</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-left" value="03/18/2013 - 03/23/2013"> 
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
+									<label>Option groups support</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<optgroup label="Mathematics">
+											<option value="analysis">Analysis</option>
+											<option value="algebra">Linear Algebra</option>
+											<option value="discrete">Discrete Mathematics</option>
+										</optgroup>
+										<optgroup label="Computer Science">
+											<option value="programming">Introduction to Programming</option>
+											<option value="complexity">Complexity Theory</option>
+											<option value="software">Software Engineering</option>
+										</optgroup>
+									</select>
+								</div>/-->
+								<!-- /option groups support -->
 
-								<div class="form-group">
-									<label>Display date dropdowns:</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-datemenu" value="03/18/2013 - 03/23/2013"> 
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
 
+								<!-- Options with and without groups -->
+								<!--
 								<div class="form-group">
-									<label>10 minute increments:</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-increments" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM">
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
+									<label>Options with and without groups</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="lab">Lab Course</option>
+										<option value="proseminar">Proseminar</option>
+										<optgroup label="Mathematics">
+											<option value="analysis">Analysis</option>
+											<option value="algebra">Linear Algebra</option>
+											<option value="probability">Probability Theory</option>
+										</optgroup>
+										<optgroup label="Computer Science">
+											<option value="programming">Introduction to Programming</option>
+											<option value="automata">Automata Theory</option>
+											<option value="software">Software Engineering</option>
+										</optgroup>
+									</select>
+								</div>/-->
+								<!-- /options with and without groups -->
 
-								<div class="form-group">
-									<label>Localization (ru):</label>
-									<div class="input-group">
-										<input type="text" class="form-control daterange-locale" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM">
-										<span class="input-group-append">
-											<span class="input-group-text"><i class="icon-calendar22"></i></span>
-										</span>
-									</div>
-								</div>
 
+								<!-- Dropdown with max height -->
+								<!--
 								<div class="form-group">
-									<label class="d-block">Pre-defined ranges &amp; callback:</label>
-									<button type="button" class="btn btn-light daterange-predefined">
-										<i class="icon-calendar22 mr-2"></i>
-										<span></span>
-									</button>
-								</div>
+									<label>Dropdown with max height</label>
+									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
+										<optgroup label="Mathematics">
+											<option value="analysis">Analysis</option>
+											<option value="algebra">Linear Algebra</option>
+											<option value="discrete">Discrete Mathematics</option>
+										</optgroup>
+										<optgroup label="Computer Science">
+											<option value="programming">Introduction to Programming</option>
+											<option value="complexity">Complexity Theory</option>
+											<option value="software">Software Engineering</option>
+										</optgroup>
+									</select>
+								</div>/-->
+								<!-- /dropdown with max height -->
 
+
+								<!-- Select All option -->
+								<!--
 								<div class="form-group">
-									<label class="d-block">Date picker inside button:</label>
-									<button type="button" class="btn btn-danger daterange-ranges">
-										<i class="icon-calendar22 mr-2"></i>
-										<span></span>
-									</button>
-								</div>
+									<label>With <span class="font-weight-semibold">Select all</span> option</label>
+									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /select All option -->
+
+
+								<!-- Select All option selected -->
+								<!--
+								<div class="form-group">
+									<label>Select all option response</label>
+									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
+										<option value="cheese" selected>Cheese</option>
+										<option value="tomatoes" selected>Tomatoes</option>
+										<option value="mozarella" selected>Mozzarella</option>
+										<option value="mushrooms" selected>Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /select All option selected -->
+
+
+								<!-- Filtering options -->
+								<!--
+								<div class="form-group">
+									<label><span class="font-weight-semibold">Filtering</span> option</label>
+									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /filtering options -->
+
+
+								<!-- Select All and filtering options -->
+								<!--
+								<div class="form-group">
+									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
+									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /select All and filtering options -->
+
+
+								<!-- Optgroups, filtering and select all -->
+								<!--
+								<div class="form-group">
+									<label>Full featured example</label>
+									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
+										<option value="lab">Lab Course</option>
+										<option value="proseminar">Proseminar</option>
+										<optgroup label="Mathematics">
+											<option value="analysis">Analysis</option>
+											<option value="algebra">Linear Algebra</option>
+											<option value="probability">Probability Theory</option>
+										</optgroup>
+										<optgroup label="Computer Science">
+											<option value="programming">Introduction to Programming</option>
+											<option value="complexity">Complexity Theory</option>
+											<option value="software">Software Engineering</option>
+										</optgroup>
+									</select>
+								</div>/-->
+								<!-- /optgroups, filtering and select all -->
+
+
+								<!-- Disabled select -->
+								<!--
+								<div class="form-group">
+									<label>Disabled select</label>
+									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /disabled select -->
+
+
+								<!-- Disabled options -->
+								<!--
+								<div class="form-group">
+									<label>Disabled options</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes" disabled selected>Tomatoes</option>
+										<option value="mozarella" disabled>Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /disabled options -->
+
+
+								<!-- Disabled optgroups -->
+								<!--<div class="form-group">
+									<label>Disabled optgroups</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<optgroup label="Mathematics" disabled>
+											<option value="analysis">Analysis</option>
+											<option value="algebra">Linear Algebra</option>
+											<option value="probability">Probability Theory</option>
+										</optgroup>
+										<optgroup label="Computer Science">
+											<option value="programming">Introduction to Programming</option>
+											<option value="complexity">Complexity Theory</option>
+											<option value="software">Software Engineering</option>
+										</optgroup>
+									</select>
+								</div>/-->
+								<!-- /disabled optgroups -->
+
+
+								<!-- Prevent deselect -->
+								<!--<div class="form-group">
+									<label>Prevent deselect</label>
+									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /prevent deselect -->
+<!--
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /daterange picker -->
 
-
-				<!-- Pickadate picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Pick-a-Date picker</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">Pickadate.js is a very powerful, mobile-friendly, responsive, and lightweight jQuery date &amp; time input picker. The basic setup requires targetting an input element and invoking the picker. Basically this plugin includes 2 main parts: date picker and time picker. Time picker examples demonstrated below.</p>
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic options</h6>
-									<p>The basic setup requires targetting an input element and invoking the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Strings</h6>
-									<p>Change the month and weekday labels as you find suitable.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-strings" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Buttons</h6>
-									<p>Change the text or hide a button completely by passing a false-y value.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-buttons" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Formats</h6>
-									<p>Display a human-friendly format and use an alternate one to submit to the server.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-format" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Year selector</h6>
-									<p>You can also specify the number of years to show in the dropdown using an even integer.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-year" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">First weekday</h6>
-									<p>The first day of the week can be set to either Sunday or Monday.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-weekday" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Date limits</h6>
-									<p>Set the minimum and maximum selectable dates on the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-limits" placeholder="Try me&hellip;">
-									</div>
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced usage</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Accessibility labels</h6>
-									<p>Change the <code>title</code> attributes to several elements within the picker</p>
+							<div class="card-body">
+/-->
+								<!-- Within a group with addon -->
+								<!--
+								<div class="form-group">
+									<label>Within a group with addon</label>
 									<div class="input-group">
 										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+											<span class="input-group-text">
+												<i class="icon-android"></i>
+											</span>
 										</span>
-										<input type="text" class="form-control pickadate-accessibility" placeholder="Try me&hellip;">
-									</div>
-								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Editable input</h6>
-									<p>By default, typing into the input is disabled by giving it a <code>readOnly</code> attribute.</p>
+										<select class="form-control multiselect" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+										</select>
+									</div>									
+								</div>/-->
+								<!-- /within a group with addon -->
+
+
+								<!-- Within a group with button -->
+								<!--
+								<div class="form-group">
+									<label>Within a group with button</label>
 									<div class="input-group">
 										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
+											<button class="btn btn-light" type="button">Action</button>
 										</span>
-										<input type="text" class="form-control pickadate-editable" placeholder="Try me&hellip;">
-									</div>
-								</div>
+										<select class="form-control multiselect" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+										</select>
+									</div>									
+								</div>/-->
+								<!-- /within a group with button -->
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown selectors</h6>
-									<p>Display <code>select</code> menus to pick the month and year.</p>
+
+								<!-- Within a group with button dropdown -->
+								<!--<div class="form-group">
+									<label>Within a group with button dropdown</label>
 									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-selectors" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Translations</h6>
-									<p>The picker supports translations for 39 languages, available out of the box.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-translated" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable ranges</h6>
-									<p>Enable dates that fall within a range of disabled dates by adding the <code>inverted</code> parameter.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-disable-range" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Events</h6>
-									<p>Fire off events as the user interacts with the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-events" placeholder="Open your console and try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Disable dates</h6>
-									<p>Disable a specific or arbitrary set of dates selectable on the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar5"></i></span>
-										</span>
-										<input type="text" class="form-control pickadate-disable" placeholder="Try me&hellip;">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /pickadate picker -->
-
-
-				<!-- Pickatime picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Pick-a-Time time picker</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic options</h6>
-									<p>The basic setup requires targetting an <code>input</code> element and invoking the picke.r</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Clear button</h6>
-									<p>Change the text or hide the button completely by passing a <code>false-y</code> value.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-clear" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Timepicker formats</h6>
-									<p>Display a human-friendly label and <code>input</code> format and use an alternate one to submit.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-format" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Send the hidden value only</h6>
-									<p>Sometimes the value that needs to be sent to the server is just the hidden value – and not the visible one.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-hidden" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Time limits</h6>
-									<p>Set the minimum and maximum selectable times on the picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-limits" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Using integers as hours</h6>
-									<p>Set the minimum and maximum selectable times on the picker using integers as hours.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-limits-integers" placeholder="Try me&hellip;">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable times</h6>
-									<p>Disable a specific or arbitrary set of times selectable on the picker</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-disabled" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disabling ranges</h6>
-									<p>Enable times that fall within a range of disabled times by adding the <code>inverted</code> parameter.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-range" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Editable input</h6>
-									<p>By default, text input has a <code>readOnly</code> attribute to hide virtual keyboards on touch devices.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-editable" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Timepicker events</h6>
-									<p>Fire off events as the user interacts with the picker</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-events" placeholder="Open your console and try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disabling all with exeptions</h6>
-									<p>Enable only a specific or arbitrary set of times by setting true as the first item in the collection.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-disableall" placeholder="Try me&hellip;">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Timepicker intervals</h6>
-									<p>Choose the minutes interval between each time in the list.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-alarm"></i></span>
-										</span>
-										<input type="text" class="form-control pickatime-intervals" placeholder="Try me&hellip;">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /pickadate picker -->
-
-
-				<!-- Anytime picker -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Anytime pickers</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">The <code>Any+Time™</code> JavaScript Library includes a highly-customizable, jQuery-compatible datepicker/ timepicker (calendar/ clock widget) and a powerful Date/String parse/format utility. Anytime allows you to create a date/time picker with advanced features and options not found in other calendar/clock widgets, also to format dates and times in different ways.</p>
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p>Basic text field specifies that the week begins with Monday.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-date" value="Sunday, July 30th in the Year 1967 CE">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Month and day</h6>
-									<p>Month and day only picker format</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-month-day" value="4th of June">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Time picker</h6>
-									<p>Current example displays hours and minutes only. Seconds can be added via plugin <code>options</code>.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-watch2"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-time" value="12:34">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Display hours only</h6>
-									<p>Current example demonstrates simple time picker with hours only in <code>AM/PM</code> format.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-watch2"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-time-hours" value="9 PM">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Date and time pickers</h6>
-									<p>The first field specifies that the week begins with Monday. The second field demonstrates a time picker.</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-both" value="June 4th 08:47">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom display format</h6>
-									<p>Custom display format can be specified via plugin <code>options</code></p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-weekday" value="Wednesday, 4th of June, 2014">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Numeric date</h6>
-									<p>Current example demonstrates custom <code>DD/MM/YYYY</code> date format</p>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text"><i class="icon-calendar3"></i></span>
-										</span>
-										<input type="text" class="form-control" id="anytime-month-numeric" value="04/06/2014">
-									</div>
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Date range</h6>
-									<p>In the following example, <code>AnyTime.Converter</code> and jQuery work together to provide date-range selection. The value for the second ("Finish") field must be at least one day after the date in the first ("Start") field, but no more than 90 days later.</p>
-									<div class="row">
-										<div class="col-md-6">
-											<p><input type="text" class="form-control" id="rangeDemoStart" placeholder="Start date"></p>
+										<div class="input-group-prepend">
+											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
+	                                        <div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Action</a>
+												<a href="#" class="dropdown-item">Another action</a>
+												<a href="#" class="dropdown-item">Something else here</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item">One more separated line</a>
+											</div>
 										</div>
 
-										<div class="col-md-6">
-											<p><input type="text" class="form-control" id="rangeDemoFinish" placeholder="Finish date" disabled></p>
+										<select class="form-control multiselect" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+										</select>
+									</div>									
+								</div>/-->
+								<!-- /within a group with button dropdown -->
+
+
+								<!-- Within a group with segmented button dropdown -->
+								<!--<div class="form-group">
+									<label>Within a group with segmented button dropdown</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<button type="button" class="btn btn-light">Action</button>
+											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
+	                                        <div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Action</a>
+												<a href="#" class="dropdown-item">Another action</a>
+												<a href="#" class="dropdown-item">Something else here</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item">One more separated line</a>
+											</div>
 										</div>
-									</div>
 
-									<input type="button" id="rangeDemoToday" class="btn btn-primary" value="today">
-									<input type="button" id="rangeDemoClear" class="btn btn-light" value="clear">
-								</div>
+										<select class="form-control multiselect" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+										</select>
+									</div>									
+								</div>/-->
+								<!-- /within a group with segmented button dropdown -->
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">On-Demand Picker</h6>
-									<p>The following example shows how to create a field that initially does not have a picker, followed by a button that creates a picker for the field. This would be useful if you want to allow manual entry into the field, but it does not prevent the user from entering a value in the wrong format.</p>
+
+								<!-- Within a group with checkbox -->
+								<!--
+								<div class="form-group">
+									<label>Within a group with checkbox</label>
 									<div class="input-group">
 										<span class="input-group-prepend">
-											<button type="button" class="btn btn-light btn-icon" id="ButtonCreationDemoButton"><i class="icon-calendar3"></i></button>
+											<div class="input-group-text">
+												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
+											</div>
 										</span>
-										<input type="text" class="form-control" id="ButtonCreationDemoInput" placeholder="Select a date">
-									</div>
-									<span class="form-text text-muted">Format must be YYYY-MM-DD HH:MM:SS</span>
-								</div>
+
+										<select class="form-control multiselect" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+										</select>
+									</div>									
+								</div>/-->
+								<!-- /within a group with checkbox -->
+
+
+								<!-- Within a group with radio -->
+								<!--
+								<div class="form-group">
+									<label>Within a group with radio</label>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<div class="input-group-text">
+												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
+											</div>
+										</span>
+
+										<select class="form-control multiselect" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+										</select>
+									</div>									
+								</div>/-->
+								<!-- /within a group with radio -->
+
+
+								<!-- Remove active option class -->
+								<!--
+								<div class="form-group">
+									<label>Remove active option class</label>
+									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes" selected>Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /remove active option class -->
+
+
+								<!-- Alternative labels for options -->
+								<!--
+								<div class="form-group">
+									<label>Alternative labels for options</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="analysis" label="An (Analysis)">Analysis</option>
+										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
+										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
+									</select>
+								</div>/-->
+								<!-- /alternative labels for options -->
+
+
+								<!-- Limit options number -->
+								<!--
+								<div class="form-group">
+									<label>Limit options number</label>
+									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /limit options number -->
+
+
+								<!-- Custom empty text -->
+								<!--
+								<div class="form-group">
+									<label>Custom empty text</label>
+									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /custom empty -->
+
+
+								<!-- As a link -->
+								<!--
+								<div class="form-group">
+									<label>As a link</label>
+									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /as a link -->
+
+
+								<!-- onChange notice -->
+								<!--
+								<div class="form-group">
+									<label>onChange notice</label>
+									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /onChange notice -->
+
+
+								<!-- onChange desktop notification -->
+								<!--
+								<div class="form-group">
+									<label>onChange desktop notification</label>
+									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /onChange desktop notification -->
+
+
+								<!-- onDropdownShow event -->
+								<!--
+								<div class="form-group">
+									<label>onDropdownShow event</label>
+									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /onDropdownShow event -->
+
+
+								<!-- onDropdownHide event -->
+								<!--
+								<div class="form-group">
+									<label>onDropdownHide event</label>
+									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /onDropdownHide event -->									
+
 							</div>
 						</div>
 					</div>
-				</div>/-->
-				<!-- /anytime picker -->
+				</div>
+				<!-- /multiselect examples -->
+
+
+				<!-- Sizing options -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Sizing options
+					</h6>
+					<span class="text-muted d-block">Width and height sizing</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Width sizing</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+/-->
+								<!-- Full width -->
+								<!--
+								<div class="form-group">
+									<label>Full width button (default)</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /full width -->
+
+
+								<!-- Fixed width -->
+								<!--
+								<div class="form-group">
+									<label>Fixed width</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /fixed width -->
+
+
+								<!-- Auto width -->
+								<!--
+								<div class="form-group">
+									<label>Auto width button (default)</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /auto width -->
+<!--
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Height sizing</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+/-->
+								<!-- Large button -->
+								<!--
+								<div class="form-group">
+									<label>Large select</label>
+									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /large button -->
+
+
+								<!-- Default button -->
+								<!--
+								<div class="form-group">
+									<label>Default select</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /default button -->
+
+
+								<!-- Small button -->
+								<!--
+								<div class="form-group">
+									<label>Small select</label>
+									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /small button -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /sizing options -->
+
+
+				<!-- Color options -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Other options
+					</h6>
+					<span class="text-muted d-block">Contextual alternatives and other options</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Contextual alternatives</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+/-->
+								<!-- Default -->
+								<!--
+								<div class="form-group">
+									<label>Default class</label>
+									<select class="form-control multiselect" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /default -->
+
+
+								<!-- Primary -->
+								<!--
+								<div class="form-group">
+									<label>Primary class</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /primary -->
+
+
+								<!-- Danger -->
+								<!--
+								<div class="form-group">
+									<label>Danger class</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /danger -->
+
+
+								<!-- Success -->
+								<!--
+								<div class="form-group">
+									<label>Success class</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /success -->
+
+
+								<!-- Warning -->
+								<!--
+								<div class="form-group">
+									<label>Warning class</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /warning -->
+
+
+								<!-- Info -->
+								<!--
+								<div class="form-group">
+									<label>Info class</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+									</select>
+								</div>/-->
+								<!-- /info -->
+<!--
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Other options</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+/-->
+								<!-- Single select -->
+	<!--							<div class="form-group">
+									<label>Single select</label>
+									<select class="form-control multiselect" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+		/-->						</div>
+								<!-- /single select -->
+
+
+								<!-- Clickable optgroups -->
+								<!--
+								<div class="form-group">
+									<label>Clickable optgroups</label>
+									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
+										<optgroup label="Mathematics">
+											<option value="analysis">Analysis</option>
+											<option value="algebra">Linear Algebra</option>
+											<option value="discrete">Discrete Mathematics</option>
+										</optgroup>
+										<optgroup label="Computer Science">
+											<option value="programming">Introduction to Programming</option>
+											<option value="complexity">Complexity Theory</option>
+											<option value="software">Software Engineering</option>
+										</optgroup>
+										<optgroup label="Physics">
+											<option value="mechanics">Classical Mechanics</option>
+											<option value="magnetism">Electromagnetism</option>
+											<option value="quantum">Quantum Mechanics</option>
+										</optgroup>
+									</select>
+								</div>/-->
+								<!-- /clickable optgroups -->
+
+
+								<!-- Disable if empty -->
+								<!--
+								<div class="form-group">
+									<label>Disable if no options are given</label>
+									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
+								</div>/-->
+								<!-- /disable if empty -->
+
+
+								<!-- Custom button color -->
+								<!--
+								<div class="form-group">
+									<label>Custom button color</label>
+									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /custom button color -->
+
+
+								<!-- Custom menu color -->
+								<!--
+								<div class="form-group">
+									<label>Custom menu color</label>
+									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /custom menu color -->
+
+
+								<!-- Custom colors -->
+								<!--
+								<div class="form-group">
+									<label>Custom colors combination</label>
+									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+									</select>
+								</div>/-->
+								<!-- /custom colors -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /color options -->
+
+
+				<!-- More complex examples -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Advanced examples
+					</h6>
+					<span class="text-muted d-block">More complex multiselect examples</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Further examples</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+/-->
+								<!-- Showing values -->
+	<!--							<div class="mb-4">
+									<h6 class="font-weight-semibold">Showing values</h6>
+									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
+											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
+										</div>
+									</div>
+
+									<div class="values-area mt-2"></div>
+								</div>/-->
+								<!-- /showing values -->
+
+
+								<!-- Toggle selection -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Toggle selection</h6>
+									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
+									<div class="input-group">
+										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /toggle selection -->
+
+
+								<!-- Order options -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Order options</h6>
+									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /order options -->
+
+
+								<!-- Simulate selections -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Simulate selections</h6>
+									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
+
+									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+										<option value="pepperoni">Pepperoni</option>
+										<option value="onions">Onions</option>
+									</select>
+								</div>/-->
+								<!-- /simulate selections -->
+
+
+								<!-- Close dropdown automatically -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
+									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
+
+									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+										<option value="pepperoni">Pepperoni</option>
+										<option value="onions">Onions</option>
+									</select>
+								</div>/-->
+								<!-- /close dropdown automatically -->
+
+
+								<!-- Reset button -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Reset button</h6>
+									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
+
+									<form class="input-group" id="multiselect-reset-form">
+										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="reset" class="btn bg-blue">Reset</button>
+										</div>
+									</form>
+								</div>/-->
+								<!-- /reset button -->
+
+
+								<!-- Templates -->
+								<!--
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Multiselect templates</h6>
+									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
+
+									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
+										<option value="cheese">Cheese</option>
+										<option value="tomatoes">Tomatoes</option>
+										<option data-role="divider"></option>
+										<option value="mozarella">Mozzarella</option>
+										<option value="mushrooms">Mushrooms</option>
+										<option data-role="divider"></option>
+										<option value="pepperoni">Pepperoni</option>
+										<option value="onions">Onions</option>
+									</select>
+								</div>/-->
+								<!-- /templates -->
+<!--
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Multiselect methods</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">/-->
+
+								<!-- Destroy method -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Destroy method</h6>
+									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
+											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /destroy method -->
+
+
+								<!-- Refresh method -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Refresh method</h6>
+									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
+											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
+											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /refresh method -->
+
+
+								<!-- Rebuild method -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Rebuild method</h6>
+									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
+											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
+											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /rebuild method -->
+
+
+								<!-- Select method -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Select method</h6>
+									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
+											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /select method -->
+
+
+								<!-- Deselect method -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Deselect method</h6>
+									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
+											<option value="cheese" selected>Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions" selected>Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
+											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /deselect method -->
+
+
+								<!-- Disable method -->
+								<!--
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Disable method</h6>
+									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
+											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /disable method -->
+
+
+								<!-- Enable method -->
+								<!--
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Enable method</h6>
+									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
+
+									<div class="input-group">
+										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
+											<option value="cheese">Cheese</option>
+											<option value="tomatoes">Tomatoes</option>
+											<option value="mozarella">Mozzarella</option>
+											<option value="mushrooms">Mushrooms</option>
+											<option value="pepperoni">Pepperoni</option>
+											<option value="onions">Onions</option>
+										</select>
+
+										<div class="input-group-append">
+											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
+											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
+										</div>
+									</div>
+								</div>/-->
+								<!-- /enable method -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /more complex examples -->
 
 			</div>
 			<!-- /content area -->
