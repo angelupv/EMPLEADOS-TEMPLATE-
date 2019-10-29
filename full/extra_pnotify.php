@@ -23,11 +23,10 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="global_assets/js/plugins/notifications/pnotify.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/editor_summernote.js"></script>
+	<script src="global_assets/js/demo_pages/extra_pnotify.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,9 +480,9 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
@@ -491,20 +490,22 @@
 								
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link active">LISTAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -515,13 +516,19 @@
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
+						<!-- /forms -->
+
+						<!-- Components -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
-							<li class="nav-item nav-item-submenu">
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								
@@ -539,10 +546,6 @@
 								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
-						</li>
-						
-							</ul>
-						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -589,10 +592,10 @@
 								<li class="nav-item"><a href="content_grid.php" class="nav-link">Grid system</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
-								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">PNotify notifications</a></li>
+								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link active">PNotify notifications</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">jGrowl and Noty notifications</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">SweetAlert notifications</a></li>
 								<li class="nav-item-divider"></li>
@@ -1224,7 +1227,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Extra</span> - PNotify</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1241,8 +1244,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_summernote.php" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Summernote</span>
+							<a href="extra_pnotify.php" class="breadcrumb-item">Extra</a>
+							<span class="breadcrumb-item active">PNotify</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1278,376 +1281,440 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
-
-
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
-
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
-
-
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
-
-
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
-	<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EMPRESAS</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-
-					<div class="card-body">
-						
-					</div>	
-<div class="table-responsive">
+				<div class="table-responsive">
 						<table class="table">
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>NOMBRE DE LA EMPRESA</th>
-									<th>UBICACIÓN</th>
-									<th>RFC</th>
-									<th>PAIS</th>
-									<th>PROPIETARIO</th>
-									<th>CORREO</th>
-									<th>REPRESENTANTE LEGAL</th>
-									<th>TELEFONO</th>
-									<th>FRANQUISIA</th>
-									<th>IGNAGURACION</th>
-																		
+									<th>Nombre y Apellido</th>
+									<th>Matricula</th>
+									<th>Carrera</th>
+									<th>Fecha de sesion</th>
+									<th>Tema atendito</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td>A&E COSMETICS</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>EMMA VERONICA PALACIOS VIERA</td>
-									<td>A&ECOSMETICS@GMAIL.COM</td>
-									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
-									<td>831 102 4044</td>
-									<td>COSMETICOS</td>
-									<td>23/10/18</td>
+									<td>Angel Uriel Hernandez Cepeda</td>
+									<td>1930236</td>
+									<td>ITI</td>
+									<td>12-10-19</td>
+									<td>Programacion</td>
 								</tr>
 								<tr>
 									<td>2</td>
-									<td>PAPELERIA "3 HERMANOS"</td>
-									<td>CIUDAD MANTE, TAMPS.</td>
-									<td>PAC3191017RC9</td>
-									<td>MEXICO</td>
-									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
-									<td>3HERMANOS@HOTMAIL.COM</td>
-									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
-									<td>832 167 5638</td>
-									<td>MATERIAL ESCOLAR</td>
-									<td>12/05/19</td>
+									<td>Yulissa Daniela Martinez Cidrian</td>
+									<td>1938462</td>
+									<td>ITI</td>
+									<td>01-09-19</td>
+									<td>Comandos</td>
 								</tr>
 								<tr>
 									<td>3</td>
-									<td>"R Y H"</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>ROHA191012292</td>
-									<td>MEXICO</td>
-									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
-									<td>RYH@GMAIL.COM</td>
-									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
-									<td>832 456 7890</td>
-									<td>ABARROTES</td>
-									<td>31/08/15</td>
+									<td>America Patricia</td>
+									<td>1945622</td>
+									<td>LAIGE</td>
+									<td>30-09-19</td>
+									<td>Algebra</td>
 								</tr>
-									<tr>
+								<tr>
 									<td>4</td>
-									<td>CUIDADO CON EL PERRO</td>
-									<td>CIUDAD VICTORIA, TAMPS</td>
-									<td>CUCP191011839</td>
-									<td>MEXICO</td>
-									<td>SUGEY SALAZAR MALDONADO</td>
-									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
-									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
-									<td>832 487 1023</td>
-									<td>ROPA</td>
-									<td>23/12/16</td>
+									<td>Emma Veronica Palacios Viera</td>
+									<td>1992195</td>
+									<td>BIOMEDICA</td>
+									<td>05-10-19</td>
+									<td>Modulos-Programacion</td>
 								</tr>
 								<tr>
 									<td>5</td>
-									<td>LA COMERCIAL</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>BRYAN ISRAEL LEAL ALONSO</td>
-									<td>LACOMERCIAL@GMAIL.COM</td>
-									<td>HANNIA MELISSA PADRON SERNA</td>
-									<td>832 123 5647</td>
-									<td>ABARROTES</td>
-									<td>23/11/19</td>
+									<td>Sugey Salazar</td>
+									<td>2601200</td>
+									<td>DOCENCIA</td>
+									<td>15-10-19</td>
+									<td>Programacion</td>
 								</tr>
-									
+								<tr>
+									<td>6</td>
+									<td>Citlali Dayanira Castillo Careon</td>
+									<td>1901280</td>
+									<td>ITI</td>
+									<td>12-09-19</td>
+									<td>Programacion</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Citlali Dayanira Castillo Careon</td>
+									<td>1901280</td>
+									<td>ITI</td>
+									<td>12-10-19</td>
+									<td>Programacion</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Emma Veronica Palacios Viera</td>
+									<td>1992195</td>
+									<td>BIOMEDICA</td>
+									<td>10-10-19</td>
+									<td>Modulos-Programacion</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Yulissa Daniela Martinez Cidrian</td>
+									<td>1938462</td>
+									<td>ITI</td>
+									<td>01-10-19</td>
+									<td>Comandos</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Sugey Salazar</td>
+									<td>2601200</td>
+									<td>DOCENCIA</td>
+									<td>20-10-19</td>
+									<td>Programacion</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Angel Uriel Hernandez Cepeda</td>
+									<td>1930236</td>
+									<td>ITI</td>
+									<td>24-10-19</td>
+									<td>Programacion</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>America Patricia</td>
+									<td>1945622</td>
+									<td>LAIGE</td>
+									<td>30-10-19</td>
+									<td>Algebra</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>America Patricia</td>
+									<td>1945622</td>
+									<td>LAIGE</td>
+									<td>31-10-19</td>
+									<td>Algebra</td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>Emma Veronica Palacios Viera</td>
+									<td>1992195</td>
+									<td>BIOMEDICA</td>
+									<td>20-10-19</td>
+									<td>Modulos-Programacion</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>America Patricia</td>
+									<td>1945622</td>
+									<td>LAIGE</td>
+									<td>01-11-19</td>
+									<td>Algebra</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
+
+				<!-- PNotify notifications -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">PNotify notifications</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						PNotify is a JavaScript <code>notification</code> library, formerly known as Pines Notify. It is designed to provide an unparalleled level of flexibility, while still being very easy to implement and use. PNotify supports desktop notifications, modulues, stacks and flexible theming. Desktop notifications are based on the <code>web notifications</code> draft. If desktop notifications are not available or not allowed, PNotify will fall back to displaying the notice as a regular, in-browser notice.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-active">
+									<th colspan="3">Solid color notifications</th>
+								</tr>
+								<tr>
+									<td>Primary notice</td>
+									<td><button type="button" class="btn btn-primary" id="pnotify-solid-primary">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Primary notice. To use, add <code>.bg-primary</code> color class to the plugin configuration options</td>
+								</tr>
+								<tr>
+									<td>Danger notice</td>
+									<td><button type="button" class="btn btn-danger" id="pnotify-solid-danger">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Danger notice. To use, add <code>.bg-danger</code> color class to the plugin configuration options</td>
+								</tr>
+								<tr>
+									<td>Success notice</td>
+									<td><button type="button" class="btn btn-success" id="pnotify-solid-success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success notice. To use, add <code>.bg-success</code> color class to the plugin configuration options</td>
+								</tr>
+								<tr>
+									<td>Warning notice</td>
+									<td><button type="button" class="btn btn-warning" id="pnotify-solid-warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning notice. To use, add <code>.bg-warning</code> color class to the plugin configuration options</td>
+								</tr>
+								<tr>
+									<td>Info notice</td>
+									<td><button type="button" class="btn btn-info" id="pnotify-solid-info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info notice. To use, add <code>.bg-info</code> color class to the plugin configuration options</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td>Custom color notice</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-solid-custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notice with custom background color. To use, add custom <code>.bg-*</code> color class to the plugin configuration options</td>
+								</tr>
+								<tr>
+									<td>Left icon</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-solid-styled-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Solid color notification with left icon. To use, add <code>'bg-* alert-styled-left'</code> to the <code>addclass: '...'</code> option</td>
+								</tr>
+								<tr>
+									<td>Right icon</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-solid-styled-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Solid color notification with right icon. To use, add <code>'bg-* alert-styled-right'</code> to the <code>addclass: '...'</code> option</td>
+								</tr>
+
+								<tr class="table-active">
+									<th colspan="3">Basic notifications</th>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Default notice</td>
+									<td style="width: 20%;"><button type="button" class="btn btn-warning" id="pnotify-default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Basic pnotify notification. All notification color styles correspond to the Boostrap's <code>alert</code> component</td>
+								</tr>
+								<tr>
+									<td>Success notice</td>
+									<td><button type="button" class="btn btn-success" id="pnotify-success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success notice. To use, add <code>type: 'success'</code> to the plugin configuration</td>
+								</tr>
+								<tr>
+									<td>Danger notice</td>
+									<td><button type="button" class="btn btn-danger" id="pnotify-danger">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Danger notice. To use, add <code>type: 'error'</code> to the plugin configuration</td>
+								</tr>
+								<tr>
+									<td>Info notice</td>
+									<td><button type="button" class="btn btn-primary" id="pnotify-info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info notice. To use, add <code>type: 'info'</code> to the plugin configuration</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td>Left positioned icon</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-styled-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with left positioned icon. To use, add <code>'alert-styled-left'</code> to the <code>addclass: '...'</code> option</td>
+								</tr>
+								<tr>
+									<td>Right positioned icon</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-styled-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with right positioned icon. To use, add <code>'alert-styled-right'</code> to the <code>addclass: '...'</code> option</td>
+								</tr>
+								<tr>
+									<td>Display arrow</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-styled-arrow">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Display arrow in styled notifications. To use, add <code>'alert-arrow-left'</code> or <code>'*-right'</code> to the <code>addclass: '...'</code> option</td>
+								</tr>
+								<tr>
+									<td>Notice with custom color</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-custom-styled">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with custom background/border/text color. Text, background and border color can be changed by adding proper classes to the plugin configuration</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Desktop notifications</th>
+								</tr>
+								<tr>
+									<td>Default notice</td>
+									<td><button type="button" class="btn btn-primary" id="pnotify-desktop-default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>The first time you click one of these buttons, you will be asked to grant permission for this site to show notices. Then you can click them again to see the desktop notification</td>
+								</tr>
+								<tr>
+									<td>Danger notice</td>
+									<td><button type="button" class="btn btn-danger" id="pnotify-desktop-danger">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Danger desktop notification using a custom contextual icon. If permission denied, this icon will be hidden</td>
+								</tr>
+								<tr>
+									<td>Success notice</td>
+									<td><button type="button" class="btn btn-success" id="pnotify-desktop-success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success desktop notification using a custom contextual icon. If permission denied, this icon will be hidden</td>
+								</tr>
+								<tr>
+									<td>Warning notice</td>
+									<td><button type="button" class="btn btn-warning" id="pnotify-desktop-warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning desktop notification using a custom contextual icon. If permission denied, this icon will be hidden</td>
+								</tr>
+								<tr>
+									<td>Info notice</td>
+									<td><button type="button" class="btn btn-info" id="pnotify-desktop-info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info desktop notification using a custom contextual icon. If permission denied, this icon will be hidden</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Notification options</th>
+								</tr>
+								<tr>
+									<td>No title</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-no-title">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification without <code>title</code>. This is a default option, the title won't be shown if it isn't specified in notification configuration</td>
+								</tr>
+								<tr>
+									<td>Rich notice</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-rich">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>By default notification supports <code>rich</code> content, including typography components, links, icons, buttons etc</td>
+								</tr>
+								<tr>
+									<td>Click to close</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-click">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification can be closed on a <code>closer</code> button click or on a notification itself via <code>click()</code> event</td>
+								</tr>
+								<tr>
+									<td>Form notice</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-form">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with <code>form</code> components. Form is inserted as a DOM object</td>
+								</tr>
+								<tr>
+									<td>Sticky notice</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-sticky">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Sticky notification. To use, add <code>hide: false</code> to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>No sticky button</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-sticky-buttons">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with hidden <code>sticky</code> button. To use, add <code>button.sticker: false</code> to the notification config</td>
+								</tr>
+								<tr>
+									<td>Permanent buttons</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-permanent-buttons">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>By default, notification control buttons appear on hover. To make them always visible, add <code>buttons.closer_hover: false</code></td>
+								</tr>
+								<tr>
+									<td>Permanotice</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-permanotice">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>To show <code>permanent</code> notification, make it sticky and hide control buttons</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">PNotify modules</th>
+								</tr>
+								<tr>
+									<td>Confirmation</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-confirm">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Confirmation dialog with callbacks. To use, add <code>confirm.confirm: true</code> to the notice config</td>
+								</tr>
+								<tr>
+									<td>Prompt</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-prompt">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Prompt dialog with callbacks. To use, add <code>confirm.prompt: true</code> to the notice config</td>
+								</tr>
+								<tr>
+									<td>Multi line</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-multiline">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Multi line prompt dialog with textarea. To use, add <code>prompt_multi_line: true</code> to the notice config</td>
+								</tr>
+								<tr>
+									<td>Custom buttons</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-buttons">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with <code>custom</code> buttons and callbacks</td>
+								</tr>
+								<tr>
+									<td>With callbacks</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-callbacks">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification <code>callbacks</code>. Available callbacks: before and after <code>init</code>, before and after <code>open</code>, before and after <code>close</code></td>
+								</tr>
+								<tr>
+									<td>Switching notices</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-switching">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>PNotify supports dynamic notification change. Here notifications are switching using <code>before_close</code> callback</td>
+								</tr>
+								<tr>
+									<td>Progress loader</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-progress">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with dynamic <code>progress</code>bar. Here <code>before_open</code> callback is used</td>
+								</tr>
+								<tr>
+									<td>Dynamic loader</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-dynamic">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with <code>dynamic</code> content. The content changes in a given time interval using <code>update()</code> function</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">PNotify stacks</th>
+								</tr>
+								<tr>
+									<td>Top left</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-top-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top left stack. Moves down, then right. Pushes to stack top</td>
+								</tr>
+								<tr>
+									<td>Bottom left</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-bottom-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom left stack. Moves right, then up. Pushes to stack top</td>
+								</tr>
+								<tr>
+									<td>Bottom right</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-bottom-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom right stack. Moves up, then left. Pushes to stack bottom</td>
+								</tr>
+								<tr>
+									<td>Custom left</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-custom-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Left stack with custom position. Moves right, then down. Pushes to stack bottom</td>
+								</tr>
+								<tr>
+									<td>Custom right</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-custom-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Right stack with custom position. Moves left, then up. Pushes to stack top</td>
+								</tr>
+								<tr>
+									<td>Top bar</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-custom-top">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top bar stack style. Moves down, then right. Pushes to stack top</td>
+								</tr>
+								<tr>
+									<td>Bottom bar</td>
+									<td><button type="button" class="btn btn-light" id="pnotify-stack-custom-bottom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom bar> stack style. Moves up, then right. Pushes to stack bottom</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>/-->
+				<!-- /PNotify notifications -->
+
+
+				<!-- Sample form -->
+				<!--
+				<div id="form_notice" class="d-none">
+					<form action="#">
+						<h6 class="mb-3">Login to Continue</h6>
+						<div class="form-group">
+							<label>Username</label>
+							<input type="text" class="form-control border-transparent" name="username" placeholder="Your username...">
+						</div>
+						<div class="form-group">
+							<label>Password</label>
+							<input type="password" class="form-control border-transparent" name="password" placeholder="Your password...">
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<button type="submit" name="submit" class="btn btn-info btn-block">Submit</button>
+							</div>
+
+							<div class="col-md-6">
+								<button type="button" name="cancel" class="btn btn-danger btn-block mt-2 mt-md-0">Cancel</button>
+							</div>
+						</div>
+					</form>
+				</div>/-->
+				<!-- /sample form -->
+
 			</div>
 			<!-- /content area -->
 

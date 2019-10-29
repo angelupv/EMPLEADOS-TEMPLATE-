@@ -41,7 +41,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-			<a href="index.html" class="d-inline-block">
+			<a href="index.php" class="d-inline-block">
 				<img src="global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -545,6 +545,25 @@
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
+
+							<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
+								
+								<li class="nav-item"><a href="content_cards.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">EDITAR</a></li>
+								
+							</ul>
+
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-people"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
+								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
 						</li>
 						<!--
 						<li class="nav-item nav-item-submenu">

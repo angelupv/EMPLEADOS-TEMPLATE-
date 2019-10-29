@@ -23,11 +23,7 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/editor_summernote.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,9 +477,9 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
@@ -491,20 +487,22 @@
 								
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link active">LISTAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -515,13 +513,19 @@
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
+						<!-- /forms -->
+
+						<!-- Components -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
-							<li class="nav-item nav-item-submenu">
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								
@@ -539,36 +543,8 @@
 								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
-						</li>
-						
-							</ul>
-						</li>
-						<!-- /forms -->
-
-						<!-- Components -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.php" class="nav-link">Modals</a></li>
-								<li class="nav-item"><a href="components_dropdowns.php" class="nav-link">Dropdown menus</a></li>
-								<li class="nav-item"><a href="components_tabs.php" class="nav-link">Tabs component</a></li>
-								<li class="nav-item"><a href="components_pills.php" class="nav-link">Pills component</a></li>
-								<li class="nav-item"><a href="components_collapsible.php" class="nav-link">Collapsible</a></li>
-								<li class="nav-item"><a href="components_navs.php" class="nav-link">Navs</a></li>
-								<li class="nav-item"><a href="components_buttons.php" class="nav-link">Buttons</a></li>
-								<li class="nav-item"><a href="components_popups.php" class="nav-link">Tooltips and popovers</a></li>
-								<li class="nav-item"><a href="components_alerts.php" class="nav-link">Alerts</a></li>
-								<li class="nav-item"><a href="components_pagination.php" class="nav-link">Pagination</a></li>
-								<li class="nav-item"><a href="components_badges.php" class="nav-link">Badges</a></li>
-								<li class="nav-item"><a href="components_progress.php" class="nav-link">Progress</a></li>
-								<li class="nav-item"><a href="components_breadcrumbs.php" class="nav-link">Breadcrumbs</a></li>
-								<li class="nav-item"><a href="components_media.php" class="nav-link">Media objects</a></li>
-								<li class="nav-item"><a href="components_scrollspy.php" class="nav-link">Scrollspy</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
+								<!--
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.php" class="nav-link">Page header</a></li>
@@ -576,7 +552,7 @@
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="content_cards.php" class="nav-link">Cards</a></li>
 								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">Card content</a></li>
-								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">Card layouts</a></li>
+								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link active">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.php" class="nav-link">Card header elements</a></li>
 								<li class="nav-item"><a href="content_cards_footer.php" class="nav-link">Card footer elements</a></li>
 								<li class="nav-item"><a href="content_cards_draggable.php" class="nav-link">Draggable cards</a></li>
@@ -1224,7 +1200,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Card Layouts</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1241,8 +1217,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_summernote.php" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Summernote</span>
+							<a href="content_cards_layouts.php" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Card layouts</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1278,376 +1254,537 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
-
-
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
-
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
-
-
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
-
-
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
-	<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EMPRESAS</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-
-					<div class="card-body">
+				<div class="card-body">
 						
-					</div>	
-<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>NOMBRE DE LA EMPRESA</th>
-									<th>UBICACIÓN</th>
-									<th>RFC</th>
-									<th>PAIS</th>
-									<th>PROPIETARIO</th>
-									<th>CORREO</th>
-									<th>REPRESENTANTE LEGAL</th>
-									<th>TELEFONO</th>
-									<th>FRANQUISIA</th>
-									<th>IGNAGURACION</th>
-																		
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>A&E COSMETICS</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>EMMA VERONICA PALACIOS VIERA</td>
-									<td>A&ECOSMETICS@GMAIL.COM</td>
-									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
-									<td>831 102 4044</td>
-									<td>COSMETICOS</td>
-									<td>23/10/18</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>PAPELERIA "3 HERMANOS"</td>
-									<td>CIUDAD MANTE, TAMPS.</td>
-									<td>PAC3191017RC9</td>
-									<td>MEXICO</td>
-									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
-									<td>3HERMANOS@HOTMAIL.COM</td>
-									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
-									<td>832 167 5638</td>
-									<td>MATERIAL ESCOLAR</td>
-									<td>12/05/19</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>"R Y H"</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>ROHA191012292</td>
-									<td>MEXICO</td>
-									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
-									<td>RYH@GMAIL.COM</td>
-									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
-									<td>832 456 7890</td>
-									<td>ABARROTES</td>
-									<td>31/08/15</td>
-								</tr>
-									<tr>
-									<td>4</td>
-									<td>CUIDADO CON EL PERRO</td>
-									<td>CIUDAD VICTORIA, TAMPS</td>
-									<td>CUCP191011839</td>
-									<td>MEXICO</td>
-									<td>SUGEY SALAZAR MALDONADO</td>
-									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
-									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
-									<td>832 487 1023</td>
-									<td>ROPA</td>
-									<td>23/12/16</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>LA COMERCIAL</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>BRYAN ISRAEL LEAL ALONSO</td>
-									<td>LACOMERCIAL@GMAIL.COM</td>
-									<td>HANNIA MELISSA PADRON SERNA</td>
-									<td>832 123 5647</td>
-									<td>ABARROTES</td>
-									<td>23/11/19</td>
-								</tr>
-									
-								</tr>
-							</tbody>
-						</table>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Alumnos</legend>
+<p>Sexo:
+  <input type="radio" name="hm" value="h" required> Hombre
+  <input type="radio" name="hm" value="m" required> Mujer
+</p>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CARRERA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+							<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+								
+							</div>
+
+				<!-- Cards in grid columns -->
+				<!--
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Card grid
+					</h6>
+					<span class="text-muted d-block">Render cards in grid columns</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
 					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 12 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(24)</span>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Or kind rest bred with am shed then. In raptures building an bringing be. Elderly is detract tedious assured private so to visited. Do travelling companions contrasted.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 5 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(63)</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /cards in grid columns -->
+
+
+				<!-- Card group -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card group
+					</h6>
+					<span class="text-muted d-block">Single element with equal size columns</span>
+				</div>
+
+				<div class="card-group mb-sm-3">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-half font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(12)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(24)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(63)</span>
+							</span>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card group -->
+
+
+				<!-- Seamless card group -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Seamless card group
+					</h6>
+					<span class="text-muted d-block">Card group without borders</span>
+				</div>
+
+				<div class="card-group mb-sm-3">
+					<div class="card border-right-0 shadow-0">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-half font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(12)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card border-right-0 shadow-0">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(24)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card shadow-0">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(63)</span>
+							</span>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /seamless card group -->
+
+
+				<!-- Card deck -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card deck
+					</h6>
+					<span class="text-muted d-block">Cards with equal width and height</span>
+				</div>
+
+				<div class="card-deck mb-sm-3">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-half font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(12)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(24)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(63)</span>
+							</span>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card deck -->
+
+
+				<!-- Card columns -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card columns
+					</h6>
+					<span class="text-muted d-block">Cards in Masonry-like layout</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body bg-blue text-center" style="background-image: url(global_assets/images/backgrounds/panel_bg.png); background-size: contain;">
+							<div class="mb-3">
+								<h5 class="font-weight-semibold mb-0 mt-1">
+									Victoria Davidson
+								</h5>
+
+								<span class="d-block">Head of UX</span>
+							</div>
+
+							<a href="#" class="d-inline-block mb-3">
+								<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="110" height="110" alt="">
+							</a>
+
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><a href="#" class="btn btn-outline btn-icon text-white btn-lg border-white rounded-round">
+									<i class="icon-phone"></i></a>
+								</li>
+								<li class="list-inline-item"><a href="#" class="btn btn-outline btn-icon text-white btn-lg border-white rounded-round">
+									<i class="icon-bubbles4"></i></a>
+								</li>
+								<li class="list-inline-item"><a href="#" class="btn btn-outline btn-icon text-white btn-lg border-white rounded-round">
+									<i class="icon-envelop4"></i></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex flex-wrap justify-content-between mb-2">
+									<span class="font-size-xs line-height-xs text-uppercase text-muted font-weight-semibold">Nov 12, 11:25am</span>
+									<span class="font-size-xs line-height-xs text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+								</div>
+
+								<h6 class="pt-1">
+									<a href="#">Ticket #462 - Application design and development</a>
+								</h6>
+
+								<p class="mb-3">Contrasted unreserved as mr particular collecting it everything as indulgence. Seems ask meant merry could put. Age old begin had boy noisy.</p>
+
+								<div class="d-flex flex-wrap align-items-center">
+									<a href="#" class="mr-1"><img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="36" height="36" alt=""></a>
+									<a href="#" class="mr-1"><img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="36" height="36" alt=""></a>
+									<a href="#" class="mr-1"><img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="36" height="36" alt=""></a>
+									<a href="#" class="btn btn-outline bg-grey border-grey text-grey-600 btn-icon rounded-round border-2"><i class="icon-plus2"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<a href="#" class="font-weight-semibold text-default d-block">Eugene Kopyov</a>
+										<span class="text-muted">Amsterdam, Netherlands</span>
+									</div>
+								</div>
+							</div>
+
+							<img class="card-img" src="global_assets/images/placeholders/placeholder.jpg" alt="Card image cap">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title that wraps to a new line</h5>
+								<p class="card-text">By impossible of in difficulty discovered celebrated ye. Justice joy manners boy met resolve produce. Bed head loud next plan.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between bg-transparent border-top-0 pt-0">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img" src="global_assets/images/placeholders/placeholder.jpg" alt="Card image cap">
+						</div>
+
+						<div class="card bg-pink-400 text-white text-center p-3" style="background-image: url(global_assets/images/backgrounds/panel_bg.png); background-size: contain;">
+							<div>
+								<a href="#" class="btn btn-lg btn-icon mb-3 mt-1 btn-outline text-white border-white bg-white rounded-round border-2">
+									<i class="icon-quotes-right"></i>
+								</a>
+							</div>
+
+							<blockquote class="blockquote mb-0">
+								<p>"Delivered is to ye belonging enjoyment preferred. Astonished and acceptance men two discretion"</p>
+								<footer class="blockquote-footer text-white">
+									<span>
+										Someone famous in <cite title="Source Title">Source Title</cite>
+									</span>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body">
+							<div class="media mb-3">
+								<div class="media-body">
+									<h6 class="mb-0 font-weight-semibold">Server maintenance</h6>
+									<span class="text-muted">Until 1st of June</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-cog3 icon-2x text-success"></i>
+								</div>
+							</div>
+
+							<div class="progress mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-success" style="width: 67%">
+									<span class="sr-only">67% Complete</span>
+								</div>
+							</div>
+							<div>
+				                <span class="float-right">67%</span>
+				                Re-indexing
+			                </div>
+						</div>
+
+						<div class="card">
+							<img class="card-img-top" src="global_assets/images/placeholders/placeholder.jpg" alt="Card image cap">
+
+							<div class="card-footer d-flex justify-content-between border-0 pb-0 bg-transparent">
+								<ul class="list-inline mb-0 mr-2">
+									<li class="list-inline-item">
+										<a href="#" class="text-pink-400"><i class="icon-heart5"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-default"><i class="icon-bubble2"></i></a>
+									</li>
+								</ul>
+
+								<span class="text-muted">2 hours ago</span>
+							</div>
+
+							<div class="card-body">
+								<p class="card-text">Debating all she mistaken indulged believed provided declared. He many kept on draw lain song as same. Whether at dearest certain spirits is entered in to. Rich fine bred real use.</p>
+								<p class="card-text">
+									<a href="#" class="mr-1">#limitless</a>
+									<a href="#" class="mr-1">#template</a>
+									<a href="#" class="mr-1">#is</a>
+									<a href="#" class="mr-1">#awesome</a>
+								</p>
+							</div>
+
+							<div class="card-footer">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="Add comment...">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card columns -->
+
 			</div>
 			<!-- /content area -->
 

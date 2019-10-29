@@ -23,11 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script src="global_assets/js/plugins/notifications/noty.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/editor_summernote.js"></script>
+	<script src="global_assets/js/demo_pages/extra_jgrowl_noty.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,9 +481,9 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
@@ -491,20 +491,22 @@
 								
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link active">LISTAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -515,13 +517,19 @@
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
+						<!-- /forms -->
+
+						<!-- Components -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
-							<li class="nav-item nav-item-submenu">
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								
@@ -539,116 +547,6 @@
 								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
-						</li>
-						
-							</ul>
-						</li>
-						<!-- /forms -->
-
-						<!-- Components -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.php" class="nav-link">Modals</a></li>
-								<li class="nav-item"><a href="components_dropdowns.php" class="nav-link">Dropdown menus</a></li>
-								<li class="nav-item"><a href="components_tabs.php" class="nav-link">Tabs component</a></li>
-								<li class="nav-item"><a href="components_pills.php" class="nav-link">Pills component</a></li>
-								<li class="nav-item"><a href="components_collapsible.php" class="nav-link">Collapsible</a></li>
-								<li class="nav-item"><a href="components_navs.php" class="nav-link">Navs</a></li>
-								<li class="nav-item"><a href="components_buttons.php" class="nav-link">Buttons</a></li>
-								<li class="nav-item"><a href="components_popups.php" class="nav-link">Tooltips and popovers</a></li>
-								<li class="nav-item"><a href="components_alerts.php" class="nav-link">Alerts</a></li>
-								<li class="nav-item"><a href="components_pagination.php" class="nav-link">Pagination</a></li>
-								<li class="nav-item"><a href="components_badges.php" class="nav-link">Badges</a></li>
-								<li class="nav-item"><a href="components_progress.php" class="nav-link">Progress</a></li>
-								<li class="nav-item"><a href="components_breadcrumbs.php" class="nav-link">Breadcrumbs</a></li>
-								<li class="nav-item"><a href="components_media.php" class="nav-link">Media objects</a></li>
-								<li class="nav-item"><a href="components_scrollspy.php" class="nav-link">Scrollspy</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
-								<li class="nav-item"><a href="content_page_header.php" class="nav-link">Page header</a></li>
-								<li class="nav-item"><a href="content_page_footer.php" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_cards.php" class="nav-link">Cards</a></li>
-								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">Card content</a></li>
-								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">Card layouts</a></li>
-								<li class="nav-item"><a href="content_cards_header.php" class="nav-link">Card header elements</a></li>
-								<li class="nav-item"><a href="content_cards_footer.php" class="nav-link">Card footer elements</a></li>
-								<li class="nav-item"><a href="content_cards_draggable.php" class="nav-link">Draggable cards</a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_text_styling.php" class="nav-link">Text styling</a></li>
-								<li class="nav-item"><a href="content_typography.php" class="nav-link">Typography</a></li>
-								<li class="nav-item"><a href="content_helpers.php" class="nav-link">Helper classes</a></li>
-								<li class="nav-item"><a href="content_helpers_flex.php" class="nav-link">Flex utilities</a></li>
-								<li class="nav-item"><a href="content_syntax_highlighter.php" class="nav-link">Syntax highlighter</a></li>
-								<li class="nav-item"><a href="content_grid.php" class="nav-link">Grid system</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
-								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">PNotify notifications</a></li>
-								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">jGrowl and Noty notifications</a></li>
-								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">SweetAlert notifications</a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="extra_sliders_noui.php" class="nav-link">NoUI sliders</a></li>
-								<li class="nav-item"><a href="extra_sliders_ion.php" class="nav-link">Ion range sliders</a></li>
-								<li class="nav-item"><a href="extra_trees.php" class="nav-link">Dynamic tree views</a></li>
-								<li class="nav-item"><a href="extra_context_menu.php" class="nav-link">Context menu</a></li>
-								<li class="nav-item"><a href="extra_fab.php" class="nav-link">Floating action buttons</a></li>
-								<li class="nav-item"><a href="extra_session_timeout.php" class="nav-link">Session timeout</a></li>
-								<li class="nav-item"><a href="extra_idle_timeout.php" class="nav-link">Idle timeout</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-droplet2"></i> <span>Color system</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Color system">
-								<li class="nav-item"><a href="colors_primary.php" class="nav-link">Primary palette</a></li>
-								<li class="nav-item"><a href="colors_danger.php" class="nav-link">Danger palette</a></li>
-								<li class="nav-item"><a href="colors_success.php" class="nav-link">Success palette</a></li>
-								<li class="nav-item"><a href="colors_warning.php" class="nav-link">Warning palette</a></li>
-								<li class="nav-item"><a href="colors_info.php" class="nav-link">Info palette</a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="colors_pink.php" class="nav-link">Pink palette</a></li>
-								<li class="nav-item"><a href="colors_violet.php" class="nav-link">Violet palette</a></li>
-								<li class="nav-item"><a href="colors_purple.php" class="nav-link">Purple palette</a></li>
-								<li class="nav-item"><a href="colors_indigo.php" class="nav-link">Indigo palette</a></li>
-								<li class="nav-item"><a href="colors_blue.php" class="nav-link">Blue palette</a></li>
-								<li class="nav-item"><a href="colors_teal.php" class="nav-link">Teal palette</a></li>
-								<li class="nav-item"><a href="colors_green.php" class="nav-link">Green palette</a></li>
-								<li class="nav-item"><a href="colors_orange.php" class="nav-link">Orange palette</a></li>
-								<li class="nav-item"><a href="colors_brown.php" class="nav-link">Brown palette</a></li>
-								<li class="nav-item"><a href="colors_grey.php" class="nav-link">Grey palette</a></li>
-								<li class="nav-item"><a href="colors_slate.php" class="nav-link">Slate palette</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-spinner2 spinner"></i> <span>Animations</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Animations">
-								<li class="nav-item"><a href="animations_css3.php" class="nav-link">CSS3 animations</a></li>
-								<li class="nav-item nav-item-submenu">
-									<a href="#" class="nav-link">Velocity animations</a>
-									<ul class="nav nav-group-sub">
-										<li class="nav-item"><a href="animations_velocity_basic.php" class="nav-link">Basic usage</a></li>
-										<li class="nav-item"><a href="animations_velocity_ui.php" class="nav-link">UI pack effects</a></li>
-										<li class="nav-item"><a href="animations_velocity_examples.php" class="nav-link">Advanced examples</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-thumbs-up2"></i> <span>Icons</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Icons">
-								<li class="nav-item"><a href="icons_icomoon.php" class="nav-link">Icomoon</a></li>
-								<li class="nav-item"><a href="icons_material.php" class="nav-link">Material</a></li>
-								<li class="nav-item"><a href="icons_fontawesome.php" class="nav-link">Font awesome</a></li>
-							</ul>
-						</li>/-->
 						<!-- /components -->
 
 						<!-- Layout -->
@@ -1224,7 +1122,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Extra</span> - jGrowl &amp; Noty</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1241,8 +1139,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_summernote.php" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Summernote</span>
+							<a href="extra_jgrowl_noty.php" class="breadcrumb-item">Extra</a>
+							<span class="breadcrumb-item active">jGrowl &amp; Noty</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1278,376 +1176,397 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
-
-
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
-
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
-
-
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
-
-
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
-	<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EMPRESAS</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-
-					<div class="card-body">
+<div class="card-body">
 						
-					</div>	
-<div class="table-responsive">
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Alumnos</legend>
+<p>Sexo:
+  <input type="radio" name="hm" value="h" required> Hombre
+  <input type="radio" name="hm" value="m" required> Mujer
+</p>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CARRERA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FECHA DE SESION</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">TEMA ATENDIDO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+							<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+								
+							</div>
+				<!-- Noty notifications -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Noty notifications</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Noty is a jQuery plugin that makes it easy to create <code>alert</code> - <code>success</code> - <code>error</code> - <code>warning</code> - <code>information</code> - <code>confirmation</code> messages as an alternative the standard alert dialog. The API provides lots of other options to customise the text, animation, speed, buttons and much more. It also has various callbacks for the buttons such as opening and closing the notifications and queue control.
+					</div>
+
+					<div class="table-responsive">
 						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>NOMBRE DE LA EMPRESA</th>
-									<th>UBICACIÓN</th>
-									<th>RFC</th>
-									<th>PAIS</th>
-									<th>PROPIETARIO</th>
-									<th>CORREO</th>
-									<th>REPRESENTANTE LEGAL</th>
-									<th>TELEFONO</th>
-									<th>FRANQUISIA</th>
-									<th>IGNAGURACION</th>
-																		
-								</tr>
-							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>A&E COSMETICS</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>EMMA VERONICA PALACIOS VIERA</td>
-									<td>A&ECOSMETICS@GMAIL.COM</td>
-									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
-									<td>831 102 4044</td>
-									<td>COSMETICOS</td>
-									<td>23/10/18</td>
+								<tr class="table-active">
+									<th colspan="3">Notification layouts</th>
 								</tr>
 								<tr>
-									<td>2</td>
-									<td>PAPELERIA "3 HERMANOS"</td>
-									<td>CIUDAD MANTE, TAMPS.</td>
-									<td>PAC3191017RC9</td>
-									<td>MEXICO</td>
-									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
-									<td>3HERMANOS@HOTMAIL.COM</td>
-									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
-									<td>832 167 5638</td>
-									<td>MATERIAL ESCOLAR</td>
-									<td>12/05/19</td>
+									<td style="width: 20%;">Error notice</td>
+									<td style="width: 20%;">
+										<button type="button" class="btn btn-danger" id="noty_error">Launch <i class="icon-play3 ml-2"></i></button>
+									</td>
+									<td>Error notification. To use, add <code>type: 'error'</code> option to the notification configuration</td>
 								</tr>
 								<tr>
-									<td>3</td>
-									<td>"R Y H"</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>ROHA191012292</td>
-									<td>MEXICO</td>
-									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
-									<td>RYH@GMAIL.COM</td>
-									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
-									<td>832 456 7890</td>
-									<td>ABARROTES</td>
-									<td>31/08/15</td>
-								</tr>
-									<tr>
-									<td>4</td>
-									<td>CUIDADO CON EL PERRO</td>
-									<td>CIUDAD VICTORIA, TAMPS</td>
-									<td>CUCP191011839</td>
-									<td>MEXICO</td>
-									<td>SUGEY SALAZAR MALDONADO</td>
-									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
-									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
-									<td>832 487 1023</td>
-									<td>ROPA</td>
-									<td>23/12/16</td>
+									<td>Success notice</td>
+									<td><button type="button" class="btn btn-success" id="noty_success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success notification. To use, add <code>type: 'success'</code> option to the notification configuration</td>
 								</tr>
 								<tr>
-									<td>5</td>
-									<td>LA COMERCIAL</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>BRYAN ISRAEL LEAL ALONSO</td>
-									<td>LACOMERCIAL@GMAIL.COM</td>
-									<td>HANNIA MELISSA PADRON SERNA</td>
-									<td>832 123 5647</td>
-									<td>ABARROTES</td>
-									<td>23/11/19</td>
+									<td>Warning notice</td>
+									<td><button type="button" class="btn btn-warning" id="noty_warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning notification. To use, add <code>type: 'warning'</code> option to the notification configuration</td>
 								</tr>
-									
+								<tr>
+									<td>Information notice</td>
+									<td><button type="button" class="btn bg-blue" id="noty_info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info notification. To use, add <code>type: 'info'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Alert notice</td>
+									<td><button type="button" class="btn bg-slate-600" id="noty_alert">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Simple alert layout. To use, add <code>type: 'alert'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Confirmation dialog</td>
+									<td><button type="button" class="btn btn-light" id="noty_confirm">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Confirmation dialog with buttons and callbacks. To use, add <code>type: 'confirm'</code> option to the notification configuration</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Notification position. Top</th>
+								</tr>
+								<tr>
+									<td>Top position</td>
+									<td><button type="button" class="btn btn-light" id="noty_top">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top notification position. To use, add <code>layout: 'top'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Top left position</td>
+									<td><button type="button" class="btn btn-light" id="noty_top_left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top left notification position. To use, add <code>layout: 'topLeft'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Top center position</td>
+									<td><button type="button" class="btn btn-light" id="noty_top_center">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top center notification position. To use, add <code>layout: 'topCenter'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Top right position</td>
+									<td><button type="button" class="btn btn-light" id="noty_top_right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top right notification position. To use, add <code>layout: 'topRight'</code> option to the notification configuration</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Notification position. Center</th>
+								</tr>
+								<tr>
+									<td>Center left position</td>
+									<td><button type="button" class="btn btn-light" id="noty_center_left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Center left notification position. To use, add <code>layout: 'centerLeft'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Center position</td>
+									<td><button type="button" class="btn btn-light" id="noty_center">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Center notification position. To use, add <code>layout: 'center'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Center right position</td>
+									<td><button type="button" class="btn btn-light" id="noty_center_right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Center right notification position. To use, add <code>layout: 'centerRight'</code> option to the notification configuration</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Notification position. Bottom</th>
+								</tr>
+								<tr>
+									<td>Bottom left position</td>
+									<td><button type="button" class="btn btn-light" id="noty_bottom_left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom left notification position. To use, add <code>layout: 'bottomLeft'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Bottom center position</td>
+									<td><button type="button" class="btn btn-light" id="noty_bottom_center">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom center notification position. To use, add <code>layout: 'bottomCenter'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Bottom right position</td>
+									<td><button type="button" class="btn btn-light" id="noty_bottom_right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom right notification position. To use, add <code>layout: 'bottomRight'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Bottom position</td>
+									<td><button type="button" class="btn btn-light" id="noty_bottom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom notification position. To use, add <code>layout: 'bottom'</code> option to the notification configuration</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Other examples</th>
+								</tr>
+								<tr>
+									<td>Overlay</td>
+									<td><button type="button" class="btn btn-light" id="noty_overlay">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>To display a dark page overlay when notification is shown, set <code>modal</code> to <code>true</code> in noty config</td>
+								</tr>
+								<tr>
+									<td>Sticky</td>
+									<td><button type="button" class="btn btn-light" id="noty_sticky">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Set <code>timeout</code> option to <code>false</code> to disable timer. Progress bar will be also disabled</td>
+								</tr>
+								<tr>
+									<td>Close button</td>
+									<td><button type="button" class="btn btn-light" id="noty_close">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>By default, notification is closable on click. To use close button instead, use <code>closeWith: ['button']</code> option</td>
+								</tr>
+								<tr>
+									<td>No progress</td>
+									<td><button type="button" class="btn btn-light" id="noty_progress">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Noty's <code>progressBar</code> option displays a progress bar if timeout is not false. Set to <code>false</code> to disable</td>
+								</tr>
+								<tr>
+									<td>Styled</td>
+									<td><button type="button" class="btn btn-light" id="noty_styled">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>To use <strong>styled</strong> theme, add <code>  alert alert-danger alert-styled-left p-0</code> classes to <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Styled white</td>
+									<td><button type="button" class="btn btn-light" id="noty_styled_white">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>To use <strong>styled</strong> theme with white background, add <code> alert alert-success alert-styled-left p-0 bg-white</code> classes to <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Solid styled</td>
+									<td><button type="button" class="btn btn-light" id="noty_solid_styled">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>To use <strong>solid styled</strong> theme, add <code> alert bg-info text-white alert-styled-left p-0</code> classes to <code>theme</code> option</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
+				</div>/-->
+				<!-- /noty notifications -->
+
+
+				<!-- jGrowl notifications -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">jGrowl notifications</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						jGrowl is a pretty flexible and easy to use jQuery plugin that raises unobtrusive messages within the browser, similar to the way that OS X's Growl Framework works. The idea is simple, deliver notifications to the end user in a noticeable way that doesn't obstruct the work flow and yet keeps the user informed. Supports 6 screen positions, 5 contextual color alternatives and various options.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-active">
+									<th colspan="3">Solid color notifications</th>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Default notice</td>
+									<td style="width: 20%;"><button type="button" class="btn btn-primary" id="jgrowl-default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Basic configuration using <code>theme: 'bg-primary'</code> theme added to the config</td>
+								</tr>
+								<tr>
+									<td>Danger notice</td>
+									<td><button type="button" class="btn btn-danger" id="jgrowl-danger">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Danger notification. To use, add <code>theme: 'bg-danger'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Success notice</td>
+									<td><button type="button" class="btn btn-success" id="jgrowl-success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success notification. To use, add <code>theme: 'bg-success'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Warning notice</td>
+									<td><button type="button" class="btn btn-warning" id="jgrowl-warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning notification. To use, add <code>theme: 'bg-warning'</code> option to the notification configuration</td>
+								</tr>
+								<tr>
+									<td>Info notice</td>
+									<td><button type="button" class="btn btn-info" id="jgrowl-info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info notification. To use, add <code>theme: 'bg-info'</code> option to the notification configuration</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Basic notification styling</th>
+								</tr>
+								<tr>
+									<td>Default notice</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-alert-default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Default notification style. To use, add <code>theme: 'alert-*'</code> contextual class to the plugin configuration</td>
+								</tr>
+								<tr>
+									<td>Left icon</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-styled-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with left icon. To use, add <code>'alert-styled-left'</code> with contextual class to the <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Right icon</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-styled-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with right icon. To use, add <code>'alert-styled-right'</code> with contextual class to the <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Custom styles</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-custom-styled">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification with custom color variations of text, border and background</td>
+								</tr>
+								<tr>
+									<td>Display arrow</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-styled-arrow">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Display arrow. To use, add <code>'alert-arrow-left'</code> or <code>*-right</code> to the <code>theme</code> option</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Additional styles</th>
+								</tr>
+								<tr>
+									<td>Notice with left icon</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-solid-styled-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Solid color notification with left icon. To use, add <code>'bg-* alert-styled-left'</code> to the <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Notice with right icon</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-solid-styled-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Solid color notification with right icon. To use, add <code>'bg-* alert-styled-right'</code> to the <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Custom colors</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-solid-custom-styled">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Alert sith custom styles. To use, add <code>'alert-styled-custom'</code> with other classes to the <code>theme</code> option</td>
+								</tr>
+								<tr>
+									<td>Rounded alert</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-rounded">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Alert with rounded corners. To use, add <code>'alert-rounded'</code> to the <code>theme</code> option</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">jGrowl options</th>
+								</tr>
+								<tr>
+									<td>Sticky notice</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-sticky">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>When set to <code>true</code> a message will stick to the screen until it is intentionally closed by the user</td>
+								</tr>
+								<tr>
+									<td>Long life</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-long-life">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>The lifespan of a non-sticky message on the screen. In current example it is 10 seconds</td>
+								</tr>
+								<tr>
+									<td>Animation speed</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-animation">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>The animation speed used to open and close a notification. In current example it is <code>100ms</code></td>
+								</tr>
+								<tr>
+									<td>Callbacks</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-callbacks">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>All callbacks receive the notification's DOM context, the notifications message and it's option object. Check out your <code>console</code></td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">jGrowl positions</th>
+								</tr>
+								<tr>
+									<td>Top left position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-top-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top left notification position. To use, add <code>position: 'top-left'</code> option to the notification config</td>
+								</tr>
+								<tr>
+									<td>Top center position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-top-center">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top center notification position. To use, add <code>position: 'top-center'</code> option to the notification config</td>
+								</tr>
+								<tr>
+									<td>Top right position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-top-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Top right notification position. To use, add <code>position: 'top-right'</code> option to the notification config</td>
+								</tr>
+								<tr>
+									<td>Page center position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-center">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Center notification position. To use, add <code>position: 'center'</code> option to the notification config</td>
+								</tr>
+								<tr>
+									<td>Bottom left position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-bottom-left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom left notification position. To use, add <code>position: 'bottom-left'</code> option to the notification config</td>
+								</tr>
+								<tr>
+									<td>Bottom center position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-bottom-center">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom center notification position. To use, add <code>position: 'bottom-center'</code> option to the notification config</td>
+								</tr>
+								<tr>
+									<td>Bottom right position</td>
+									<td><button type="button" class="btn btn-light" id="jgrowl-bottom-right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Bottom right notification position. To use, add <code>position: 'bottom-right'</code> option to the notification config</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>/-->
+				<!-- /jGrowl notifications -->
+
 			</div>
 			<!-- /content area -->
 

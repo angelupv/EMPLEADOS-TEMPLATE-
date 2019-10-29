@@ -23,11 +23,10 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="global_assets/js/plugins/media/fancybox.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/editor_summernote.js"></script>
+	<script src="global_assets/js/demo_pages/content_cards_content.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,9 +480,9 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
@@ -491,20 +490,22 @@
 								
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link active">LISTAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -515,13 +516,20 @@
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
+						<!-- /forms -->
+
+						<!-- Components -->
+						
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
-							<li class="nav-item nav-item-submenu">
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								
@@ -539,10 +547,6 @@
 								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
-						</li>
-						
-							</ul>
-						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -568,14 +572,14 @@
 								<li class="nav-item"><a href="components_scrollspy.php" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.php" class="nav-link">Page header</a></li>
 								<li class="nav-item"><a href="content_page_footer.php" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="content_cards.php" class="nav-link">Cards</a></li>
-								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">Card content</a></li>
+								<li class="nav-item"><a href="content_cards_content.php" class="nav-link active">Card content</a></li>
 								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.php" class="nav-link">Card header elements</a></li>
 								<li class="nav-item"><a href="content_cards_footer.php" class="nav-link">Card footer elements</a></li>
@@ -1221,10 +1225,11 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
+			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Card Content</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1241,8 +1246,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_summernote.php" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Summernote</span>
+							<a href="content_cards_content.php" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Card content</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1278,376 +1283,1323 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
-
-
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
-
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
-
-
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
-
-
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
-	<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EMPRESAS</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-
-					<div class="card-body">
+<div class="card-body">
 						
-					</div>	
-<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>NOMBRE DE LA EMPRESA</th>
-									<th>UBICACIÓN</th>
-									<th>RFC</th>
-									<th>PAIS</th>
-									<th>PROPIETARIO</th>
-									<th>CORREO</th>
-									<th>REPRESENTANTE LEGAL</th>
-									<th>TELEFONO</th>
-									<th>FRANQUISIA</th>
-									<th>IGNAGURACION</th>
-																		
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>A&E COSMETICS</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>EMMA VERONICA PALACIOS VIERA</td>
-									<td>A&ECOSMETICS@GMAIL.COM</td>
-									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
-									<td>831 102 4044</td>
-									<td>COSMETICOS</td>
-									<td>23/10/18</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>PAPELERIA "3 HERMANOS"</td>
-									<td>CIUDAD MANTE, TAMPS.</td>
-									<td>PAC3191017RC9</td>
-									<td>MEXICO</td>
-									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
-									<td>3HERMANOS@HOTMAIL.COM</td>
-									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
-									<td>832 167 5638</td>
-									<td>MATERIAL ESCOLAR</td>
-									<td>12/05/19</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>"R Y H"</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>ROHA191012292</td>
-									<td>MEXICO</td>
-									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
-									<td>RYH@GMAIL.COM</td>
-									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
-									<td>832 456 7890</td>
-									<td>ABARROTES</td>
-									<td>31/08/15</td>
-								</tr>
-									<tr>
-									<td>4</td>
-									<td>CUIDADO CON EL PERRO</td>
-									<td>CIUDAD VICTORIA, TAMPS</td>
-									<td>CUCP191011839</td>
-									<td>MEXICO</td>
-									<td>SUGEY SALAZAR MALDONADO</td>
-									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
-									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
-									<td>832 487 1023</td>
-									<td>ROPA</td>
-									<td>23/12/16</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>LA COMERCIAL</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>BRYAN ISRAEL LEAL ALONSO</td>
-									<td>LACOMERCIAL@GMAIL.COM</td>
-									<td>HANNIA MELISSA PADRON SERNA</td>
-									<td>832 123 5647</td>
-									<td>ABARROTES</td>
-									<td>23/11/19</td>
-								</tr>
-									
-								</tr>
-							</tbody>
-						</table>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Alumnos</legend>
+<p>Sexo:
+  <input type="radio" name="hm" value="h" required> Hombre
+  <input type="radio" name="hm" value="m" required> Mujer
+</p>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CARRERA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+							<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+								
+							</div>
+				<!-- Card image placement -->
+				
+
+
+						<!-- Top placement -->
+						<!--
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay card-img-top">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Top placement</h5>
+								<p class="card-text">Default <code>top</code> placement - image always comes first in the card with text or other content below. Use <code>.card-img-top</code> image class to round top image corners.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /top placement -->
+
+
+						<!-- Below card header -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-transparent header-elements-inline">
+								<h6 class="card-title">Below card header</h6>
+								<div class="header-elements">
+									<span class="badge bg-danger">Paid</span>
+			                	</div>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<p class="card-text">Example of the card image, placed right after card header and before card content body. Image requires <code>.img-fluid</code> class for proper sizing.</p>
+							</div>
+
+							<div class="card-footer">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="Add comment...">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /below card header -->
+
 					</div>
+
+					<div class="col-md-4">
+
+						<!-- Middle placement -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Middle placement</h5>
+								<p class="card-text">Example of <code>middle</code> placement - image placed between card content containers (card header, card body and card footer). Image requires <code>.img-fluid</code> class for proper sizing.</p>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25 am</span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+							</div>
+						</div>/-->
+						<!-- /middle placement -->
+
+
+						<!-- Multiple titles -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-light d-flex justify-content-between">
+								<span><i class="icon-user-check mr-2"></i> <a href="#">Eugene Kopyov</a></span>
+								<span class="text-muted">Added 2 hours ago</span>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title font-weight-semibold">Multiple titles</h6>
+								<p class="card-text">Another example of middle image placement - after header, before body that includes card title. Image also requires <code>.img-fluid</code> class.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<ul class="list-inline mb-0 mr-2">
+									<li class="list-inline-item">
+										<a href="#" class="text-pink-400"><i class="icon-heart5"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-default"><i class="icon-bubble2"></i></a>
+									</li>
+								</ul>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /multiple titles -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Bottom placement -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Bottom placement</h5>
+								<p class="card-text">Example of <code>bottom</code> placement - image always comes last in the card with text or other content above. Use <code>.card-img-bottom</code> image class to round bottom image corners.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between align-items-center">
+								<div class="text-muted"><i class="icon-spinner2 spinner mr-2"></i> Processing...</div>
+
+								<div class="progress w-100 w-sm-auto wmin-sm-200 mt-2 mt-sm-0" style="height: 0.375rem;">
+									<div class="progress-bar bg-indigo-400 progress-bar-striped progress-bar-animated" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /bottom placement -->
+
+
+						<!-- Multiple footers -->
+						<!--
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pb-0">
+								<span class="text-muted">23 430 followers</span>
+
+								<ul class="list-inline list-inline-condensed mb-0">
+									<li class="list-inline-item">
+										<a href="#" class="text-indigo-400"><i class="icon-thumbs-up2"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-danger"><i class="icon-thumbs-down2"></i></a>
+									</li>
+									<li class="list-inline-item ml-3">
+										<a href="#" class="text-muted"><i class="icon-flag4"></i></a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title font-weight-semibold">Multiple footers</h6>
+								<p class="card-text">In this example card image is on top, but content has multiple containers - use spacing utility classes to control vertical spacing of card content.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<a href="#" class="text-default"><i class="icon-bubble2 mr-2"></i> Comment</a>
+								<span class="text-muted"><i class="icon-eye mr-2"></i> 673</span>
+							</div>
+						</div>/-->
+						<!-- /multiple footers -->
+
+					</div>
+				</div>
+				<!-- /card image placement -->
+
+
+				<!-- Card image overlays -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card image overlays
+					</h6>
+					<span class="text-muted d-block">Link, zoom and overlay with actions</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">/-->
+
+						<!-- Linked image -->
+						<!--
+						<div class="card">
+							<a href="#">
+								<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+							</a>
+
+							<div class="card-body">
+								<h5 class="card-title">Linked image</h5>
+								<p class="card-text">By default, cards are designed to showcase linked images with minimal required markup, including default class for rounded corners.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-half font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(43)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /linked image -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Zooming -->
+						<!--
+						<div class="card">
+							<div class="card-img-actions">
+								<a href="global_assets/images/placeholders/placeholder.jpg" data-popup="lightbox">
+									<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+									<span class="card-img-actions-overlay card-img-top">
+										<i class="icon-plus3 icon-2x"></i>
+									</span>
+								</a>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Zooming</h5>
+								<p class="card-text">Extend card image with simple zoomable lightbox. The icon is inserted directly in php and can be easily changed.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 2 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(86)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /zooming -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Overlay buttons -->
+						<!--
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid" src="global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay card-img-top">
+									<a href="global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Overlay buttons</h5>
+								<p class="card-text">Add as many buttons or links as you want, all of them will be vertically and horizontally centered. Supports all available styles.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated yesterday</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(79)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /overlay buttons -->
+
+					</div>
+				</div>
+				<!-- /card image overlays -->
+
+
+				<!-- Card video placement -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card video options
+					</h6>
+					<span class="text-muted d-block">Video container placements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">/-->
+
+						<!-- Top placement -->
+						<!--
+						<div class="card">
+							<div class="embed-responsive embed-responsive-16by9 card-img-top">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/173541384?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Top placement</h5>
+								<p class="card-text">Default <code>top</code> placement - video always comes first in the card with text or other content below. Use <code>.card-img-top</code> helper class to round top video container corners.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /top placement -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Middle placement -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Middle placement</h5>
+								<p class="card-text">Example of <code>middle</code> placement - video placed between card content containers (header, body and footer). Middle option doesn't require any additional video container classes.</p>
+							</div>
+
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/173652088?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25 am</span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+							</div>
+						</div>/-->
+						<!-- /middle placement -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Bottom placement -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Bottom placement</h5>
+								<p class="card-text">Example of <code>bottom</code> placement - video always comes last in the card with text or other content above. Use <code>.card-img-bottom</code> helper class to round bottom video container corners.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between align-items-center">
+								<div class="text-muted"><i class="icon-spinner2 spinner mr-2"></i> Uploading...</div>
+
+								<div class="progress w-100 w-sm-auto wmin-sm-200 mt-2 mt-sm-0" style="height: 0.375rem;">
+									<div class="progress-bar bg-success-400 progress-bar-striped progress-bar-animated" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="embed-responsive embed-responsive-16by9 card-img-bottom">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/127423845?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+						</div>/-->
+						<!-- /bottom placement -->
+
+					</div>
+				</div>
+				<!-- /card video placement -->
+
+
+				<!-- Card text options -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card text options
+					</h6>
+					<span class="text-muted d-block">Various text placement variations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">/-->
+
+						<!-- White header and footer -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-white d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#">#4323</a></span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 4 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">White header and footer</h6>
+								<p class="card-text">This example demonstrates how header and footer can handle multiple text containers. Both containers have white background color.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<span class="text-muted">Issued 23.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /white header and footer -->
+
+
+						<!-- Dark header, transparent footer -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-dark text-white d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25am</span>
+								<span class="font-size-sm text-uppercase font-weight-semibold">Due in 12 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Dark header, transparent footer</h6>
+								<p class="card-text">You can easily mix header and footer styles on the fly just by adding utility classes to the footer and header containers.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /dark header, transparent footer -->
+
+
+						<!-- Transparent header, white footer -->
+						<!--
+						<div class="card">
+							<div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Transparent header, white footer</h6>
+								<p class="card-text">This combination can be useful when your main content and actions need to be separated, but visually be a part of the card.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /transparent header, white footer -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Grey header and footer -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-light d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#">#5490</a></span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 3 days</span>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Grey header and footer</h6>
+								<p class="card-text">In this example header and footer have light grey background color. Grey color is default for the footer, but header requires <code>.bg-light</code> class.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Issued 26.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /grey header and footer -->
+
+
+						<!-- Transparent header, dark footer -->
+						<!--
+						<div class="card">
+							<div class="card-header d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase text-muted">Dec 28, 03:49am</span>
+								<span class="font-size-sm text-uppercase text-danger font-weight-semibold">Overdue</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Transparent header, dark footer</h6>
+								<p class="card-text">This example demonstrates transparent card header and dark card footer. Card title is placed inside card body content.</p>
+							</div>
+
+							<div class="card-footer bg-dark text-white d-flex justify-content-between">
+								<span>Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-empty3 font-size-base text-orange-300"></i>
+									<span class="opacity-75 ml-2">(53)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /transparent header, dark footer -->
+
+
+						<!-- Transparent header and footer -->
+						<!--
+						<div class="card">
+							<div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Transparent header and footer</h6>
+								<p class="card-text">If you need to extend the card with 2 extra areas with context info without separation, this combination might be very useful.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /transparent header and footer -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Custom header and footer colors -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-dark d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#" class="text-white">#2490</a></span>
+								<span class="font-size-sm text-uppercase font-weight-semibold">Due in 2 days</span>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Custom header and footer color</h6>
+								<p class="card-text">You can easily mix footer and header colors - just add color helper class to both containers and optional <code>.text-white</code> class to links.</p>
+							</div>
+
+							<div class="card-footer bg-dark d-flex justify-content-between">
+								<span class="opacity-75">Issued 26.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#" class="text-white">Edit</a></li>
+									<li class="list-inline-item"><a href="#" class="text-white">Delete</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /custom header and footer colors -->
+
+
+						<!-- Custom border color -->
+						<!--
+						<div class="card border-success">
+							<div class="card-header alpha-success border-success d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Jan 3, 02:50am</span>
+								<span class="font-size-sm text-uppercase text-success-700 font-weight-semibold">Due in 5 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Custom border color</h6>
+								<p class="card-text">If you want to highlight cards or content areas, add color helper classes to the card and/or card footer and header.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<span class="text-muted">Uploaded 4 days ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(452)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /custom border class -->
+
+
+						<!-- Grey header, transparent footer -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-light d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Grey header, transparent footer</h6>
+								<p class="card-text">And this combination is a perfect solution for displaying header with alternate content that is not really important, but nice to have.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /grey header, transparent footer -->
+
+					</div>
+				</div>
+				<!-- /card text options -->
+
+
+				<!-- Card content alignment -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card content alignment
+					</h6>
+					<span class="text-muted d-block">Horizontal and vertical content alignment</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">/-->
+
+						<!-- Left alignment -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<i class="icon-checkmark3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Left alignment</h5>
+								<p class="mb-3">Left content alignment is the default option in left-to-right direction that doesn't require any extra utility classes.</p>
+
+								<a href="#" class="btn bg-success">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>/-->
+						<!-- /left alignment -->
+
+
+						<!-- Top alignment -->
+						<!--
+						<div class="card text-center" style="min-height: 350px;">
+							<div class="card-body">
+								<i class="icon-checkmark3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Top alignment</h5>
+								<p class="mb-3">Top content alignment is also the default option in LTR layout. Other vertical alignment options require flex utility classes.</p>
+
+								<a href="#" class="btn bg-success">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>/-->
+						<!-- /top alignment -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Center alignment -->
+						<!--
+						<div class="card text-center">
+							<div class="card-body">
+								<i class="icon-cross2 icon-2x text-danger border-danger border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Center alignment</h5>
+								<p class="mb-3">Use <code>.text-center</code> alignment utility class to center content horizontally. Responsive options are also available</p>
+
+								<a href="#" class="btn bg-danger-400">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>/-->
+						<!-- /center alignment -->
+
+
+						<!-- Middle alignment -->
+						<!--
+						<div class="card card-body justify-content-center text-center" style="min-height: 350px;">
+							<div>
+								<i class="icon-cross2 icon-2x text-danger border-danger border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Middle alignment</h5>
+								<p class="mb-3">Use <code>.justify-content-center</code> class to center content vertically. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-danger-400">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>/-->
+						<!-- /middle alignment -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Right alignment -->
+						<!--
+						<div class="card text-right">
+							<div class="card-body">
+								<i class="icon-question7 icon-2x text-blue border-blue border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Right alignment</h5>
+								<p class="mb-3">Use <code>.text-right</code> alignment utility class to center content horizontally. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-blue">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>/-->
+						<!-- /right alignment -->
+
+
+						<!-- Bottom alignment -->
+						<!--
+						<div class="card card-body justify-content-end text-center" style="min-height: 350px;">
+							<div>
+								<i class="icon-question7 icon-2x text-blue border-blue border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Bottom alignment</h5>
+								<p class="mb-3">Use <code>.justify-content-end</code> class to stick content to the bottom. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-blue">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>/-->
+						<!-- /bottom alignment -->
+
+					</div>
+				</div>
+				<!-- /card content alignment -->
+
+
+				<!-- Card table options -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card table options
+					</h6>
+					<span class="text-muted d-block">Various table placement options</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">/-->
+
+						<!-- Card body + table -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Card body + table</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Simple example of the table that comes right after card body container (default placement). Doesn't require any additional classes since default table style doesn't include horizontal borders.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-footer bg-light d-flex justify-content-between">
+								<div>
+									<div class="list-icons">
+				                		<a href="#" class="list-icons-item"><i class="icon-file-eye"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-pdf"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-excel"></i></a>
+				                	</div>
+			                	</div>
+
+								<ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<li class="list-inline-item"><a href="#">Download</a></li>
+									<li class="list-inline-item"><a href="#">Upload</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /card body + table -->
+
+
+						<!-- Table + card body -->
+						<!--
+						<div class="card">
+							<div class="card-header bg-transparent header-elements-inline">
+								<h5 class="card-title">Table + card body</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-body">
+								In this example card body container comes after table - by default all table cells have top border, in this specific case card body includes top border for better visual content separation.
+							</div>
+
+							<div class="card-footer bg-light d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left py-sm-2">
+								<div>3290 entries found</div>
+
+								<ul class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between mt-2 mt-sm-0">
+									<li class="page-item disabled"><a href="#" class="page-link">← Older</a></li>
+									<li class="page-item"><a href="#" class="page-link">Newer →</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /table + card body -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Combined table styles -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Combined table styles</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								In this example table combines all default table styles: stripes, borders and row highlight. As always, all tables require base <code>.table</code> class for proper styling that matches Limitless theme.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<div>
+									<div class="list-icons">
+				                		<a href="#" class="list-icons-item"><i class="icon-file-eye"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-pdf"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-excel"></i></a>
+				                	</div>
+			                	</div>
+
+								<ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<li class="list-inline-item"><a href="#">Download</a></li>
+									<li class="list-inline-item"><a href="#">Upload</a></li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /combined table styles -->
+
+
+						<!-- Table at the bottom -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Table at the bottom</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								This element's order can be handy if you need to show the table at the very bottom of the card, below all other content containers - header, body and footer. You can of course add other content below.
+							</div>
+
+							<div class="card-footer bg-light d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left py-sm-2">
+								<div>5332 entries found</div>
+
+								<ul class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between mt-2 mt-sm-0">
+									<li class="page-item disabled"><a href="#" class="page-link">← Older</a></li>
+									<li class="page-item"><a href="#" class="page-link">Newer →</a></li>
+								</ul>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>/-->
+						<!-- /table at the bottom -->
+
+					</div>
+				</div>
+				<!-- /card table options -->
+
+
+				<!-- Card navigation options -->
+				<!--
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card navigation options
+					</h6>
+					<span class="text-muted d-block">Adapted navigation list for cards</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">/-->
+
+						<!-- Text list group -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Text list group</h5>
+								<p class="card-text">Create lists of content in a card with a flush list group. Use <code>.list-group-flush</code> class to remove borders and rounded corners.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<li class="list-group-item">
+									Sheared coasted so concurrent
+									<span class="badge badge-dark ml-auto">New</span>
+								</li>
+								<li class="list-group-item">
+									Goodness instead gull vulture
+									<span class="badge bg-pink-400 badge-pill ml-auto">38</span>
+								</li>
+								<li class="list-group-item">
+									Devilish yellow unsafe jerkily
+									<span class="badge bg-indigo-400 ml-auto">Fixed</span>
+								</li>
+								<li class="list-group-item">
+									Relentless ouch essentially
+									<span class="badge bg-success badge-pill ml-auto">40</span>
+								</li>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /text list group -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Linked list group -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Linked list group</h5>
+								<p class="card-text">Actionable list group items with hover, disabled, and active states. Use flex utility classes if your list items contain badges, text etc.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<a href="#" class="list-group-item list-group-item-action">
+									<span class="font-weight-semibold">
+										<i class="icon-grid mr-2"></i>
+										Basic components
+									</span>
+									<span class="badge bg-success ml-auto">New</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action active">
+									<span class="font-weight-semibold">
+										<i class="icon-alignment-unalign mr-2"></i>
+										Data tables extensions
+									</span>
+									<span class="badge bg-indigo-400 badge-pill ml-auto">38</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<span class="font-weight-semibold">
+										<i class="icon-cube3 mr-2"></i>
+										Application pages
+									</span>
+									<span class="badge bg-pink-400 ml-auto">Fixed</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action disabled">
+									<span class="font-weight-semibold">
+										<i class="icon-transmission mr-2"></i>
+										Horizontal navigation
+									</span>
+									<span class="badge bg-dark badge-pill ml-auto">40</span>
+								</a>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated 2 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(86)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /linked list group -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Multi column -->
+						<!--
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Multi column</h5>
+								<p class="card-text">Simple example of list nav with multiple columns. Use a set of responsive flex and spacing utility classes for proper positioning and spacing.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Full name:</span>
+									<div class="ml-auto">Victoria Anna Davidson</div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Phone number:</span>
+									<div class="ml-auto">+31 641 266545</div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Corporate email:</span>
+									<div class="ml-auto"><a href="#">corporate@domain.com</a></div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Personal email:</span>
+									<div class="ml-auto"><a href="#">personal@domain.com</a></div>
+								</li>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated yesterday</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(79)</span>
+								</span>
+							</div>
+						</div>/-->
+						<!-- /multi column -->
+
+					</div>
+				</div>
+				<!-- /card navigation options -->
+
 			</div>
 			<!-- /content area -->
 

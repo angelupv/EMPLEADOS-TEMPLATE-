@@ -42,7 +42,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-			<a href="index.html" class="d-inline-block">
+			<a href="index.php" class="d-inline-block">
 				<img src="global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -509,33 +509,51 @@
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link active">REGISTRAR</a></li>
-								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link active">REGISTRAR</a></li>
+								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">EDITAR</a></li>
-								<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="editor_code.php" class="nav-link">Code editor</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>VACACIONES</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">LISTADO</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">REGISTRAR</a></li>
-								<li class="nav-item"><a href="picker_location.html" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="picker_date.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="picker_color.php" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 							<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">PAGO DE TRANSPORTE</a></li>
+								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
+							<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
+								
+								<li class="nav-item"><a href="content_cards.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">EDITAR</a></li>
+								
+							</ul>
+
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-people"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
+								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
+								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
 						</li>
 						<!--
 						<li class="nav-item nav-item-submenu">

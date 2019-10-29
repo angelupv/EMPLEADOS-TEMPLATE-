@@ -23,11 +23,14 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
+	<script src="global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-
+	<script src="global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/editor_summernote.js"></script>
+	<script src="global_assets/js/demo_pages/extra_sweetalert.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,9 +484,9 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
@@ -491,20 +494,22 @@
 								
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link active">LISTAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -515,13 +520,19 @@
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
+						<!-- /forms -->
+
+						<!-- Components -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
-							<li class="nav-item nav-item-submenu">
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								
@@ -539,116 +550,6 @@
 								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
-						</li>
-						
-							</ul>
-						</li>
-						<!-- /forms -->
-
-						<!-- Components -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.php" class="nav-link">Modals</a></li>
-								<li class="nav-item"><a href="components_dropdowns.php" class="nav-link">Dropdown menus</a></li>
-								<li class="nav-item"><a href="components_tabs.php" class="nav-link">Tabs component</a></li>
-								<li class="nav-item"><a href="components_pills.php" class="nav-link">Pills component</a></li>
-								<li class="nav-item"><a href="components_collapsible.php" class="nav-link">Collapsible</a></li>
-								<li class="nav-item"><a href="components_navs.php" class="nav-link">Navs</a></li>
-								<li class="nav-item"><a href="components_buttons.php" class="nav-link">Buttons</a></li>
-								<li class="nav-item"><a href="components_popups.php" class="nav-link">Tooltips and popovers</a></li>
-								<li class="nav-item"><a href="components_alerts.php" class="nav-link">Alerts</a></li>
-								<li class="nav-item"><a href="components_pagination.php" class="nav-link">Pagination</a></li>
-								<li class="nav-item"><a href="components_badges.php" class="nav-link">Badges</a></li>
-								<li class="nav-item"><a href="components_progress.php" class="nav-link">Progress</a></li>
-								<li class="nav-item"><a href="components_breadcrumbs.php" class="nav-link">Breadcrumbs</a></li>
-								<li class="nav-item"><a href="components_media.php" class="nav-link">Media objects</a></li>
-								<li class="nav-item"><a href="components_scrollspy.php" class="nav-link">Scrollspy</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
-								<li class="nav-item"><a href="content_page_header.php" class="nav-link">Page header</a></li>
-								<li class="nav-item"><a href="content_page_footer.php" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_cards.php" class="nav-link">Cards</a></li>
-								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">Card content</a></li>
-								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">Card layouts</a></li>
-								<li class="nav-item"><a href="content_cards_header.php" class="nav-link">Card header elements</a></li>
-								<li class="nav-item"><a href="content_cards_footer.php" class="nav-link">Card footer elements</a></li>
-								<li class="nav-item"><a href="content_cards_draggable.php" class="nav-link">Draggable cards</a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_text_styling.php" class="nav-link">Text styling</a></li>
-								<li class="nav-item"><a href="content_typography.php" class="nav-link">Typography</a></li>
-								<li class="nav-item"><a href="content_helpers.php" class="nav-link">Helper classes</a></li>
-								<li class="nav-item"><a href="content_helpers_flex.php" class="nav-link">Flex utilities</a></li>
-								<li class="nav-item"><a href="content_syntax_highlighter.php" class="nav-link">Syntax highlighter</a></li>
-								<li class="nav-item"><a href="content_grid.php" class="nav-link">Grid system</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
-								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">PNotify notifications</a></li>
-								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">jGrowl and Noty notifications</a></li>
-								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">SweetAlert notifications</a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="extra_sliders_noui.php" class="nav-link">NoUI sliders</a></li>
-								<li class="nav-item"><a href="extra_sliders_ion.php" class="nav-link">Ion range sliders</a></li>
-								<li class="nav-item"><a href="extra_trees.php" class="nav-link">Dynamic tree views</a></li>
-								<li class="nav-item"><a href="extra_context_menu.php" class="nav-link">Context menu</a></li>
-								<li class="nav-item"><a href="extra_fab.php" class="nav-link">Floating action buttons</a></li>
-								<li class="nav-item"><a href="extra_session_timeout.php" class="nav-link">Session timeout</a></li>
-								<li class="nav-item"><a href="extra_idle_timeout.php" class="nav-link">Idle timeout</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-droplet2"></i> <span>Color system</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Color system">
-								<li class="nav-item"><a href="colors_primary.php" class="nav-link">Primary palette</a></li>
-								<li class="nav-item"><a href="colors_danger.php" class="nav-link">Danger palette</a></li>
-								<li class="nav-item"><a href="colors_success.php" class="nav-link">Success palette</a></li>
-								<li class="nav-item"><a href="colors_warning.php" class="nav-link">Warning palette</a></li>
-								<li class="nav-item"><a href="colors_info.php" class="nav-link">Info palette</a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="colors_pink.php" class="nav-link">Pink palette</a></li>
-								<li class="nav-item"><a href="colors_violet.php" class="nav-link">Violet palette</a></li>
-								<li class="nav-item"><a href="colors_purple.php" class="nav-link">Purple palette</a></li>
-								<li class="nav-item"><a href="colors_indigo.php" class="nav-link">Indigo palette</a></li>
-								<li class="nav-item"><a href="colors_blue.php" class="nav-link">Blue palette</a></li>
-								<li class="nav-item"><a href="colors_teal.php" class="nav-link">Teal palette</a></li>
-								<li class="nav-item"><a href="colors_green.php" class="nav-link">Green palette</a></li>
-								<li class="nav-item"><a href="colors_orange.php" class="nav-link">Orange palette</a></li>
-								<li class="nav-item"><a href="colors_brown.php" class="nav-link">Brown palette</a></li>
-								<li class="nav-item"><a href="colors_grey.php" class="nav-link">Grey palette</a></li>
-								<li class="nav-item"><a href="colors_slate.php" class="nav-link">Slate palette</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-spinner2 spinner"></i> <span>Animations</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Animations">
-								<li class="nav-item"><a href="animations_css3.php" class="nav-link">CSS3 animations</a></li>
-								<li class="nav-item nav-item-submenu">
-									<a href="#" class="nav-link">Velocity animations</a>
-									<ul class="nav nav-group-sub">
-										<li class="nav-item"><a href="animations_velocity_basic.php" class="nav-link">Basic usage</a></li>
-										<li class="nav-item"><a href="animations_velocity_ui.php" class="nav-link">UI pack effects</a></li>
-										<li class="nav-item"><a href="animations_velocity_examples.php" class="nav-link">Advanced examples</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-thumbs-up2"></i> <span>Icons</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Icons">
-								<li class="nav-item"><a href="icons_icomoon.php" class="nav-link">Icomoon</a></li>
-								<li class="nav-item"><a href="icons_material.php" class="nav-link">Material</a></li>
-								<li class="nav-item"><a href="icons_fontawesome.php" class="nav-link">Font awesome</a></li>
-							</ul>
-						</li>/-->
 						<!-- /components -->
 
 						<!-- Layout -->
@@ -1224,7 +1125,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Extra</span> - SweetAlert</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1241,8 +1142,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_summernote.php" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Summernote</span>
+							<a href="extra_sweetalert.php" class="breadcrumb-item">Extra</a>
+							<span class="breadcrumb-item active">SweetAlert</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1278,376 +1179,373 @@
 
 			<!-- Content area -->
 			<div class="content">
-
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
-
-
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
-
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
-
-
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
-
-
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
-	<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EMPRESAS</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-
-					<div class="card-body">
+<div class="card-body">
 						
-					</div>	
-<div class="table-responsive">
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Alumnos</legend>
+<p>Sexo:
+  <input type="radio" name="hm" value="h" required> Hombre
+  <input type="radio" name="hm" value="m" required> Mujer
+</p>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">NOMBRE</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">MATRICULA</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">CARRERA</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">FECHA DE SESION</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">TEMA ATENDIDO</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+							<div class="modal-footer">
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">FILING<i class="icon-play3 ml-2"></i></button></td>
+								
+							</div>
+								
+							</div>
+				<!-- Info alert -->
+				<!--
+				<div class="alert alert-info bg-white alert-styled-left alert-arrow-left alert-dismissible">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+					<h6 class="alert-heading font-weight-semibold mb-1">IE11 support</h6>
+					Sweet Alert library doesn't support IE11 by default. In order to enable IE11 support, you need to include 2 additional files: <code>promise.min.js</code> and <code>fetch.min.js</code> polyfills located in <code>/js/polyfills/</code> folder.
+			    </div>/-->
+			    <!-- /info alert -->
+
+
+				<!-- Sweetalert examples -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">SweetAlert Notifications</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						SweetAlert is a simple yet powerful replacement for JS popup boxes. With this extension you can easily replace boring browser alerts with beautiful animated popups that look like a modal dialog. Supports form controls (input fields, checkboxes, selects, radios etc) with validation, various notification types with animated icons and bunch of options for deeper customization. 
+					</div>
+
+					<div class="table-responsive">
 						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>NOMBRE DE LA EMPRESA</th>
-									<th>UBICACIÓN</th>
-									<th>RFC</th>
-									<th>PAIS</th>
-									<th>PROPIETARIO</th>
-									<th>CORREO</th>
-									<th>REPRESENTANTE LEGAL</th>
-									<th>TELEFONO</th>
-									<th>FRANQUISIA</th>
-									<th>IGNAGURACION</th>
-																		
-								</tr>
-							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>A&E COSMETICS</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>EMMA VERONICA PALACIOS VIERA</td>
-									<td>A&ECOSMETICS@GMAIL.COM</td>
-									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
-									<td>831 102 4044</td>
-									<td>COSMETICOS</td>
-									<td>23/10/18</td>
+								<tr class="table-border-double table-active">
+									<th colspan="3">Notification types</th>
 								</tr>
 								<tr>
-									<td>2</td>
-									<td>PAPELERIA "3 HERMANOS"</td>
-									<td>CIUDAD MANTE, TAMPS.</td>
-									<td>PAC3191017RC9</td>
-									<td>MEXICO</td>
-									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
-									<td>3HERMANOS@HOTMAIL.COM</td>
-									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
-									<td>832 167 5638</td>
-									<td>MATERIAL ESCOLAR</td>
-									<td>12/05/19</td>
+									<td>Success type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success notification type using <code>type: success</code> option</td>
 								</tr>
 								<tr>
-									<td>3</td>
-									<td>"R Y H"</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>ROHA191012292</td>
-									<td>MEXICO</td>
-									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
-									<td>RYH@GMAIL.COM</td>
-									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
-									<td>832 456 7890</td>
-									<td>ABARROTES</td>
-									<td>31/08/15</td>
-								</tr>
-									<tr>
-									<td>4</td>
-									<td>CUIDADO CON EL PERRO</td>
-									<td>CIUDAD VICTORIA, TAMPS</td>
-									<td>CUCP191011839</td>
-									<td>MEXICO</td>
-									<td>SUGEY SALAZAR MALDONADO</td>
-									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
-									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
-									<td>832 487 1023</td>
-									<td>ROPA</td>
-									<td>23/12/16</td>
+									<td>Error type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_error">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Error notification type using <code>type: error</code> option</td>
 								</tr>
 								<tr>
-									<td>5</td>
-									<td>LA COMERCIAL</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>BRYAN ISRAEL LEAL ALONSO</td>
-									<td>LACOMERCIAL@GMAIL.COM</td>
-									<td>HANNIA MELISSA PADRON SERNA</td>
-									<td>832 123 5647</td>
-									<td>ABARROTES</td>
-									<td>23/11/19</td>
+									<td>Warning type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning notification type using <code>type: warning</code> option</td>
 								</tr>
-									
+								<tr>
+									<td>Info type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info notification type using <code>type: info</code> option</td>
+								</tr>
+								<tr>
+									<td>Question type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_question">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Question notification type using <code>type: question</code> option</td>
+								</tr>
+								<tr>
+									<td>Combine messages</td>
+									<td><button type="button" class="btn btn-light" id="sweet_combine">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Message with a function attached to the "Confirm" and "Cancel" buttons</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Basic examples</th>
+								</tr>
+								<tr>
+									<td>Basic alert</td>
+									<td><button type="button" class="btn btn-light" id="sweet_basic">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Basic sweet alert example with title only</td>
+								</tr>
+								<tr>
+									<td>Title with text</td>
+									<td><button type="button" class="btn btn-light" id="sweet_title_text">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Display additional text below the title</td>
+								</tr>
+								<tr>
+									<td>Close button</td>
+									<td><button type="button" class="btn btn-light" id="sweet_close">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Show close button in top right corner of the modal</td>
+								</tr>
+								<tr>
+									<td>Custom padding</td>
+									<td><button type="button" class="btn btn-light" id="sweet_padding">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal window padding in pixels. Default padding value is 20px</td>
+								</tr>
+								<tr>
+									<td>Custom width</td>
+									<td><button type="button" class="btn btn-light" id="sweet_width">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal window width, including paddings (box-sizing: border-box). Can be in px or %</td>
+								</tr>
+								<tr>
+									<td>Auto closer</td>
+									<td><button type="button" class="btn btn-light" id="sweet_auto_closer">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Close the alert after specified amount of time using <code>timer</code> option</td>
+								</tr>
+								<tr>
+									<td>Dynamic queue</td>
+									<td><button type="button" class="btn btn-light" id="sweet_queue">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Display a loading animation while working on request</td>
+								</tr>
+								<tr>
+									<td>AJAX requests</td>
+									<td><button type="button" class="btn btn-light" id="sweet_ajax">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example with AJAX request, validation and callback</td>
+								</tr>
+								<tr>
+									<td>With php message</td>
+									<td><button type="button" class="btn btn-light" id="sweet_php">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add support of php in alert message</td>
+								</tr>
+								<tr>
+									<td>With custom image</td>
+									<td><button type="button" class="btn btn-light" id="sweet_image">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification message with a custom image. Image size is specified in config</td>
+								</tr>
+								<tr>
+									<td>With custom background image</td>
+									<td><button type="button" class="btn btn-light" id="sweet_bg">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Notification message with a custom background image. Image source is specified in config</td>
+								</tr>
+								<tr>
+									<td>Chaining notifications</td>
+									<td><button type="button" class="btn btn-light" id="sweet_chain">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Display multiple chaining modals with steps progress</td>
+								</tr>
+								<tr>
+									<td>Reversed buttons</td>
+									<td><button type="button" class="btn btn-light" id="sweet_reverse_buttons">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Set to <code>true</code> if you want to invert default buttons positions ("Confirm"-button on the right side)</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td>Fullscreen</td>
+									<td><button type="button" class="btn btn-light" id="sweet_fullscreen">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Use <code>grow: 'fullscreen'</code> option to show notification in <strong>fullscreen</strong> mode</td>
+								</tr>
+								<tr>
+									<td>Stretched vertically</td>
+									<td><button type="button" class="btn btn-light" id="sweet_column">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Use <code>grow: 'column'</code> option to show notification in <strong>column</strong> mode</td>
+								</tr>
+								<tr>
+									<td>Stretched horizontally</td>
+									<td><button type="button" class="btn btn-light" id="sweet_row">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Use <code>grow: 'row'</code> to show notification in <strong>row</strong> mode</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td>Disabled keyboard interaction</td>
+									<td><button type="button" class="btn btn-light" id="sweet_disabled_keyboard">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This example can't be dismissed by pressing the <kbd>Escape</kbd> , <kbd>Space</kbd> or <kbd>Enter</kbd> keys</td>
+								</tr>
+								<tr>
+									<td>Disabled animation</td>
+									<td><button type="button" class="btn btn-light" id="sweet_disabled_animation">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>If <code>animation</code> option is set to <code>false</code>, modal CSS animation will be disabled</td>
+								</tr>
+								<tr>
+									<td>Disabled backdrop</td>
+									<td><button type="button" class="btn btn-light" id="sweet_disabled_backdrop">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Set <code>backdrop</code> option to <code>false</code> to disable a full screen click-to-dismiss backdrop</td>
+								</tr>
+								<tr>
+									<td>Disabled outside click</td>
+									<td><button type="button" class="btn btn-light" id="sweet_disabled_outside_click">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Set <code>allowOutsideClick</code> option to <code>false</code> to disable modal dismiss by clicking outside it</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Input types</th>
+								</tr>
+								<tr>
+									<td>Text input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_text">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>text</code> input type</td>
+								</tr>
+								<tr>
+									<td>Email input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_email">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>email</code> input type</td>
+								</tr>
+								<tr>
+									<td>URL input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_url">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>url</code> input type</td>
+								</tr>
+								<tr>
+									<td>Password input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_password">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>password</code> input type</td>
+								</tr>
+								<tr>
+									<td>Textarea input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_textarea">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>textarea</code> input type</td>
+								</tr>
+								<tr>
+									<td>Select input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_select">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>select</code> input type</td>
+								</tr>
+								<tr>
+									<td>Select2 single</td>
+									<td><button type="button" class="btn btn-light" id="sweet_select2_single">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <strong>single</strong> <code>select2</code> select</td>
+								</tr>
+								<tr>
+									<td>Select2 multiple</td>
+									<td><button type="button" class="btn btn-light" id="sweet_select2_multiple">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <strong>multiple</strong> <code>select2</code> select</td>
+								</tr>
+								<tr>
+									<td>Multiselect</td>
+									<td><button type="button" class="btn btn-light" id="sweet_multiselect">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert modal with Bootstrap Multiselect and validation</td>
+								</tr>
+								<tr>
+									<td>Radio input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_radio">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert popup with default <code>radio</code> input type</td>
+								</tr>
+								<tr>
+									<td>Radio custom</td>
+									<td><button type="button" class="btn btn-light" id="sweet_radio_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert popup with custom <code>radio</code> input type</td>
+								</tr>
+								<tr>
+									<td>Checkbox input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_checkbox">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert popup with default <code>checkbox</code> input type</td>
+								</tr>
+								<tr>
+									<td>Checkbox custom</td>
+									<td><button type="button" class="btn btn-light" id="sweet_checkbox_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert popup with custom <code>checkbox</code> input type</td>
+								</tr>
+								<tr>
+									<td>Switchery</td>
+									<td><button type="button" class="btn btn-light" id="sweet_switchery">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert popup with custom <code>switchery</code> checkbox type</td>
+								</tr>
+								<tr>
+									<td>File input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_file">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of SweetAlert popup with default <code>file</code> input type</td>
+								</tr>
+								<tr>
+									<td>Range input type</td>
+									<td><button type="button" class="btn btn-light" id="sweet_range">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of <code>range</code> input type</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Positions</th>
+								</tr>
+								<tr>
+									<td>Top</td>
+									<td><button type="button" class="btn btn-light" id="sweet_top">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'top'</code> to change notification position to <strong>top</strong></td>
+								</tr>
+								<tr>
+									<td>Top left</td>
+									<td><button type="button" class="btn btn-light" id="sweet_top_left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'top-left'</code> to change notification position to <strong>top left</strong></td>
+								</tr>
+								<tr>
+									<td>Top right</td>
+									<td><button type="button" class="btn btn-light" id="sweet_top_right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'top-right'</code> to change notification position to <strong>top right</strong></td>
+								</tr>
+								<tr>
+									<td>Center left</td>
+									<td><button type="button" class="btn btn-light" id="sweet_center_left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'center-left'</code> to change notification position to <strong>center left</strong></td>
+								</tr>
+								<tr>
+									<td>Center right</td>
+									<td><button type="button" class="btn btn-light" id="sweet_center_right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'center-right'</code> to change notification position to <strong>center right</strong></td>
+								</tr>
+								<tr>
+									<td>Bottom</td>
+									<td><button type="button" class="btn btn-light" id="sweet_bottom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'bottom'</code> to change notification position to <strong>bottom</strong></td>
+								</tr>
+								<tr>
+									<td>Bottom left</td>
+									<td><button type="button" class="btn btn-light" id="sweet_bottom_left">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'bottom-left'</code> to change notification position to <strong>bottom left</strong></td>
+								</tr>
+								<tr>
+									<td>Bottom right</td>
+									<td><button type="button" class="btn btn-light" id="sweet_bottom_right">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Add <code>position: 'bottom-right'</code> to change notification position to <strong>bottom right</strong></td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Callbacks</th>
+								</tr>
+								<tr>
+									<td>onOpen</td>
+									<td><button type="button" class="btn btn-light" id="sweet_onopen">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Function to run when modal <code>opens</code>, provides modal DOM element as the first argument</td>
+								</tr>
+								<tr>
+									<td>onClose</td>
+									<td><button type="button" class="btn btn-light" id="sweet_onclose">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Function to run when modal <code>closes</code>, provides modal DOM element as the first argument</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
+				</div>/-->
+				<!-- /sweetalert examples -->
+
 			</div>
 			<!-- /content area -->
 

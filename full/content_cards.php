@@ -23,11 +23,7 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/editor_summernote.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -481,9 +477,9 @@
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">SECCIONES</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>EMPLEADOS</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i>EMPLEADOS<span></span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.php" class="nav-link">REGISTRAR</a></li>
@@ -491,20 +487,22 @@
 								
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>DEPARTAMENTOS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTAR</a></li>
+								<li class="nav-item"><a href="alpaca_basic.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="alpaca_controls.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>EMPRESAS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.php" class="nav-link active">LISTAR</a></li>
+								<li class="nav-item"><a href="editor_summernote.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.php" class="nav-link">EDITAR</a></li>
+								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -515,13 +513,19 @@
 								<li class="nav-item"><a href="picker_location.php" class="nav-link">EDITAR</a></li>
 							</ul>
 						</li>
+						<!-- /forms -->
+
+						<!-- Components -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>PAGO DE TRANSPORTE</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>PAGO DE TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.php" class="nav-link">PAGO DE TRANSPORTE</a></li>
 								
 							</ul>
-							<li class="nav-item nav-item-submenu">
+						</li>
+						
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								
@@ -539,14 +543,7 @@
 								<li class="nav-item"><a href="extra_pnotify.php" class="nav-link">LISTADO</a></li>
 								<li class="nav-item"><a href="extra_jgrowl_noty.php" class="nav-link">REGISTRAR</a></li>
 								<li class="nav-item"><a href="extra_sweetalert.php" class="nav-link">EDITAR</a></li>
-						</li>
-						
-							</ul>
-						</li>
-						<!-- /forms -->
-
-						<!-- Components -->
-						<!--
+								<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -568,13 +565,13 @@
 								<li class="nav-item"><a href="components_scrollspy.php" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.php" class="nav-link">Page header</a></li>
 								<li class="nav-item"><a href="content_page_footer.php" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_cards.php" class="nav-link">Cards</a></li>
+								<li class="nav-item"><a href="content_cards.php" class="nav-link active">Cards</a></li>
 								<li class="nav-item"><a href="content_cards_content.php" class="nav-link">Card content</a></li>
 								<li class="nav-item"><a href="content_cards_layouts.php" class="nav-link">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.php" class="nav-link">Card header elements</a></li>
@@ -814,7 +811,7 @@
 								</li>
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
-						</li>/-->
+						</li>
 						<!-- /layout -->
 
 						<!-- Data visualization -->
@@ -1221,10 +1218,11 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
+			
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editors</span> - Summernote</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Cards</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1241,8 +1239,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="editor_summernote.php" class="breadcrumb-item">Editors</a>
-							<span class="breadcrumb-item active">Summernote</span>
+							<a href="content_cards.php" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Cards</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1279,375 +1277,1320 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
-
-
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
-
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
-
-
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
-
-
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
-	<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">EMPRESAS</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-
-					<div class="card-body">
-						
-					</div>	
 <div class="table-responsive">
 						<table class="table">
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>NOMBRE DE LA EMPRESA</th>
-									<th>UBICACIÓN</th>
-									<th>RFC</th>
-									<th>PAIS</th>
-									<th>PROPIETARIO</th>
-									<th>CORREO</th>
-									<th>REPRESENTANTE LEGAL</th>
-									<th>TELEFONO</th>
-									<th>FRANQUISIA</th>
-									<th>IGNAGURACION</th>
-																		
+									<th>Nombre y Apellido</th>
+									<th>Matricula</th>
+									<th>Carrera</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td>A&E COSMETICS</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>EMMA VERONICA PALACIOS VIERA</td>
-									<td>A&ECOSMETICS@GMAIL.COM</td>
-									<td>ANGEL URIEL HERNANDEZ CEPEDA</td>
-									<td>831 102 4044</td>
-									<td>COSMETICOS</td>
-									<td>23/10/18</td>
+									<td>Angel Uriel Hernandez Cepeda</td>
+									<td>1930236</td>
+									<td>ITI</td>
+									
 								</tr>
 								<tr>
 									<td>2</td>
-									<td>PAPELERIA "3 HERMANOS"</td>
-									<td>CIUDAD MANTE, TAMPS.</td>
-									<td>PAC3191017RC9</td>
-									<td>MEXICO</td>
-									<td>YULISSA DANIELA MATINEZ CIDRIAN</td>
-									<td>3HERMANOS@HOTMAIL.COM</td>
-									<td>YULISSA DANIELA MARTINEZ CIDRIAN</td>
-									<td>832 167 5638</td>
-									<td>MATERIAL ESCOLAR</td>
-									<td>12/05/19</td>
+									<td>Yulissa Daniela Martinez Cidrian</td>
+									<td>1938462</td>
+									<td>ITI</td>
 								</tr>
 								<tr>
 									<td>3</td>
-									<td>"R Y H"</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>ROHA191012292</td>
-									<td>MEXICO</td>
-									<td>HECTOR EDUARDO CAMACHO LEMUS</td>
-									<td>RYH@GMAIL.COM</td>
-									<td>MELISSA GUADALUPE CAMACHO LEMUS</td>
-									<td>832 456 7890</td>
-									<td>ABARROTES</td>
-									<td>31/08/15</td>
+									<td>America Patricia</td>
+									<td>1945622</td>
+									<td>LAIGE</td>
 								</tr>
-									<tr>
+								<tr>
 									<td>4</td>
-									<td>CUIDADO CON EL PERRO</td>
-									<td>CIUDAD VICTORIA, TAMPS</td>
-									<td>CUCP191011839</td>
-									<td>MEXICO</td>
-									<td>SUGEY SALAZAR MALDONADO</td>
-									<td>CUIDADOCONELPERRO@GMAIL.COM</td>
-									<td>KATTYA MARGARYTA HERNANDEZ GARCIA</td>
-									<td>832 487 1023</td>
-									<td>ROPA</td>
-									<td>23/12/16</td>
+									<td>Emma Veronica Palacios Viera</td>
+									<td>1992195</td>
+									<td>BIOMEDICA</td>
 								</tr>
 								<tr>
 									<td>5</td>
-									<td>LA COMERCIAL</td>
-									<td>XICOTENCATL, TAMPS.</td>
-									<td>COCA19101331A</td>
-									<td>MEXICO</td>
-									<td>BRYAN ISRAEL LEAL ALONSO</td>
-									<td>LACOMERCIAL@GMAIL.COM</td>
-									<td>HANNIA MELISSA PADRON SERNA</td>
-									<td>832 123 5647</td>
-									<td>ABARROTES</td>
-									<td>23/11/19</td>
+									<td>Sugey Salazar</td>
+									<td>2601200</td>
+									<td>DOCENCIA</td>
 								</tr>
-									
+								<tr>
+									<td>6</td>
+									<td>Citlali Dayanira Castillo Careon</td>
+									<td>1901280</td>
+									<td>ITI</td>
 								</tr>
+							
 							</tbody>
 						</table>
 					</div>
+				<!-- Card titles and subtitles -->
+				<!--<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Card titles and subtitles
+					</h6>
+					<span class="text-muted d-block">Titles, subtitles and header elements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Card title</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic card example without header elements
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Card title <span class="font-size-base ml-2">With inline subtitle</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Basic card with inline header subtitle
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">
+									Card title
+									<span class="d-block font-size-base">With block subtitle</span>
+								</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic card with block header subtitle
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Card controls</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								Basic card with card controls
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Card controls <span class="font-size-base ml-2">and inline subtitle</span></h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+		                	</div>
+
+							<div class="card-body">
+								Card with inline header subtitle and card controls
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">
+									Card controls
+									<span class="d-block font-size-base">and block subtitle</span>
+								</h6>
+
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								Card with block header subtitle and card controls
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card titles and subtitles -->
+
+
+				<!-- Card titles -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card title options
+					</h6>
+					<span class="text-muted d-block">Card heading font options for titles</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="font-weight-semibold">Semibold</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with semibold
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Semibold</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing semibold text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="text-thin">Thin</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with thin
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="text-thin">Thin</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing thin text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="font-weight-bold">Bold</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with bold
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-bold">Bold</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing bold text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold text-uppercase">Uppercase</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing semibold uppercase text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="font-weight-semibold font-italic">Italic</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with italic
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="text-thin">Thin</span> <span class="font-weight-semibold text-uppercase">Uppercase</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing thin text with semibold uppercase
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <small>Small tag</small></h6>
+							</div>
+							
+							<div class="card-body">
+								Regular text with subtitle
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold text-uppercase">Uppercase</span> <small>Small tag</small></h6>
+							</div>
+							
+							<div class="card-body">
+								Semibold uppercase text with subtitle
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-muted">Muted</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with muted color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-primary">Primary</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with primary color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-danger">Danger</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with danger color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-success">Success</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with success color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-warning">Warning</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with warning color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-info">Info</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with info color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-teal">Teal</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with custom color
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card titles -->
+
+
+				<!-- Card title sizes -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card title sizing
+					</h6>
+					<span class="text-muted d-block">Card title font colors using standard php headings</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h1 class="card-title">H1 title</h1>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H1 title heading using <code>&lt;h1 class="card-title"></code> markup
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h3 class="card-title">H3 title</h3>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H3 title heading using <code>&lt;h3 class="card-title"></code> markup
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">H5 title</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H5 title heading using <code>&lt;h5 class="card-title"></code> markup
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h2 class="card-title">H2 title</h2>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H2 title heading using <code>&lt;h2 class="card-title"></code> markup
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h4 class="card-title">H4 title</h4>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H4 title heading using <code>&lt;h4 class="card-title"></code> markup
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">H6 title</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H6 title heading using <code>&lt;h6 class="card-title"></code> markup
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card title sizes -->
+
+
+				<!-- Header options -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card header options
+					</h6>
+					<span class="text-muted d-block">Background, text and border colors</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Condensed header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Default flat card style using <code>.card</code> class
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">White header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with white header color - add <code>.bg-white</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-light header-elements-inline">
+								<h6 class="card-title">Light header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with light header color - add <code>.bg-light</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-dark text-white header-elements-inline">
+								<h6 class="card-title">Dark header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with dark header color - add <code>.bg-dark</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-primary text-white header-elements-inline">
+								<h6 class="card-title">Primary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with primary header color - add <code>.bg-primary</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-secondary text-white header-elements-inline">
+								<h6 class="card-title">Secondary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with secondary header color - add <code>.bg-secondary</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-success text-white header-elements-inline">
+								<h6 class="card-title">Green (success) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with green (success context) header - add <code>.bg-success</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-warning text-white header-elements-inline">
+								<h6 class="card-title">Orange (warning) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with orange (warning context) header - add <code>.bg-warning</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-danger text-white header-elements-inline">
+								<h6 class="card-title">Red (danger) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with red (danger context) header - add <code>.bg-danger</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-info text-white header-elements-inline">
+								<h6 class="card-title">Blue (info) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with blue (info context) header - add <code>.bg-info</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header alpha-success text-success-800 header-elements-inline">
+								<h6 class="card-title">Custom light color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom light colors - add <code>.alpha-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-teal-400 text-white header-elements-inline">
+								<h6 class="card-title">Custom dark color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom dark colors - add <code>.bg-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /header options -->
+
+
+				<!-- Bordered cards title -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Bordered cards
+					</h6>
+					<span class="text-muted d-block">Available card styles and colors</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-primary">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Condensed header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Default flat card style using <code>.card</code> class
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-grey-300">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">White header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with white header color - add <code>.bg-white</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-grey-300">
+							<div class="card-header bg-light border-grey-300 header-elements-inline">
+								<h6 class="card-title">Light header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with light header color - add <code>.bg-light</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-dark">
+							<div class="card-header bg-dark text-white header-elements-inline">
+								<h6 class="card-title">Dark header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with dark header color - add <code>.bg-dark</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-primary">
+							<div class="card-header bg-primary text-white header-elements-inline">
+								<h6 class="card-title">Primary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with primary header color - add <code>.bg-primary</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-secondary">
+							<div class="card-header bg-secondary text-white header-elements-inline">
+								<h6 class="card-title">Secondary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with secondary header color - add <code>.bg-secondary</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-success">
+							<div class="card-header bg-success text-white header-elements-inline">
+								<h6 class="card-title">Green (success) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with green (success context) header - add <code>.bg-success</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-warning">
+							<div class="card-header bg-warning text-white header-elements-inline">
+								<h6 class="card-title">Orange (warning) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with orange (warning context) header - add <code>.bg-warning</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-danger">
+							<div class="card-header bg-danger text-white header-elements-inline">
+								<h6 class="card-title">Red (danger) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with red (danger context) header - add <code>.bg-danger</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-info">
+							<div class="card-header bg-info text-white header-elements-inline">
+								<h6 class="card-title">Blue (info) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with blue (info context) header - add <code>.bg-info</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-success">
+							<div class="card-header alpha-success text-success-800 border-bottom-success header-elements-inline">
+								<h6 class="card-title">Custom light color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom light colors - add <code>.alpha-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-teal-400">
+							<div class="card-header bg-teal-400 text-white header-elements-inline">
+								<h6 class="card-title">Custom dark color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom dark colors - add <code>.bg-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /bordered cards -->
+
+
+				<!-- Card borders -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card borders
+					</h6>
+					<span class="text-muted d-block">Custom 4 side borders for content cards</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-top-success rounded-top-0">
+							<div class="card-header">
+								<h6 class="card-title">Top custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>top</strong> border. Use optional <code>.rounded-top-0</code> class to remove rounded top corners
+							</div>
+						</div>
+
+						<div class="card border-left-danger rounded-left-0">
+							<div class="card-header">
+								<h6 class="card-title">Left custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>left</strong> border. Use optional <code>.rounded-left-0</code> class to remove rounded left corners
+							</div>
+						</div>
+
+						<div class="card border-top-info border-bottom-info rounded-0">
+							<div class="card-header">
+								<h6 class="card-title">Top and bottom borders</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>top</strong> and <strong>bottom</strong> borders. Use optional <code>.rounded-0</code> class to remove rounded corners
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-bottom-success rounded-bottom-0">
+							<div class="card-header">
+								<h6 class="card-title">Bottom custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>bottom</strong> border. Use optional <code>.rounded-bottom-0</code> class to remove rounded bottom corners
+							</div>
+						</div>
+
+						<div class="card border-right-danger rounded-right-0">
+							<div class="card-header">
+								<h6 class="card-title">Right custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>right</strong> border. Use optional <code>.rounded-right-0</code> class to remove rounded right corners
+							</div>
+						</div>
+
+						<div class="card border-left-info border-right-info rounded-0">
+							<div class="card-header">
+								<h6 class="card-title">Left and right borders</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>left</strong> and <strong>right</strong> borders. Use optional <code>.rounded-0</code> class to remove rounded corners
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card borders -->
+
+
+				<!-- Bordered cards border width -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Border sizing
+					</h6>
+					<span class="text-muted d-block">Available in 1 default and 2 optional sizes</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-top-warning border-bottom-warning rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Basic</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic border size of the element, defined in core variables. Any card border can be highlighted with proper class name
+							</div>
+						</div>
+
+						<div class="card border-top-2 border-top-slate border-bottom-2 border-bottom-slate rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Double</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Double border size using <code>.border-*-2</code> class, where "*" is border direction. Use <code>.border-2</code> class to make all borders thicker
+							</div>
+						</div>
+
+						<div class="card border-top-3 border-top-success border-bottom-3 border-bottom-success rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Tripple</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Tripple border size using <code>.border-*-3</code> class, where "*" is border direction. Use <code>.border-3</code> class to make all borders thicker
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-left-blue border-right-blue rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Basic</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic border size of the element, defined in core variables. Any card border can be highlighted with proper class name
+							</div>
+						</div>
+
+						<div class="card border-left-2 border-left-indigo-400 border-right-2 border-right-indigo-400 rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Double</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Double border size using <code>.border-*-2</code> class, where "*" is border direction. Use <code>.border-2</code> class to make all borders thicker
+							</div>
+						</div>
+
+						<div class="card border-left-3 border-left-pink-400 border-right-3 border-right-pink-400 rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Tripple</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Tripple border size using <code>.border-*-3</code> class, where "*" is border direction. Use <code>.border-3</code> class to make all borders thicker
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /bordered cards border width -->
+
+
+				<!-- Card backgrounds -->
+				<!--
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card backgrounds
+					</h6>
+					<span class="text-muted d-block">Optional default and custom background colors</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card bg-light">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Light background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with light background color using <code>.bg-light</code> class
+							</div>
+						</div>
+
+						<div class="card bg-primary text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Primary background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with primary background color using <code>.bg-primary</code> class
+							</div>
+						</div>
+
+						<div class="card bg-danger text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Red (danger) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with red (danger) background color using <code>.bg-danger</code> class
+							</div>
+						</div>
+
+						<div class="card bg-success text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Green (success) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with green (success) background color using <code>.bg-success</code> class
+							</div>
+						</div>
+
+						<div class="card alpha-success border-success">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Alpha backgrounds</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with custom light background color using <code>.alpha-*</code> class
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card bg-dark text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Dark background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with dark background color using <code>.bg-dark</code> class
+							</div>
+						</div>
+
+						<div class="card bg-secondary text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Secondary background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with secondary background color using <code>.bg-secondary</code> class
+							</div>
+						</div>
+
+						<div class="card bg-warning text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Orange (warning) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with orange (warning) background color using <code>.bg-warning</code> class
+							</div>
+						</div>
+
+						<div class="card bg-info text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Blue (info) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with blue (info) background color using <code>.bg-info</code> class
+							</div>
+						</div>
+
+						<div class="card bg-purple-300 text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Custom background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with custom background color using <code>.bg-*</code> classes
+							</div>
+						</div>
+					</div>
+				</div>/-->
+				<!-- /card backgrounds -->
+
 			</div>
 			<!-- /content area -->
 
